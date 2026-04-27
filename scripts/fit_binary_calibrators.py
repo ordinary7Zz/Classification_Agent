@@ -83,7 +83,7 @@ def load_label_mapping(label_path: Path) -> Dict[str, int]:
 
 
 def build_registry_from_config(config: Dict[str, Any]) -> ModelRegistry:
-    """与 demo_thyroid_models 中注册逻辑一致，便于复用同一套 yaml。"""
+    """与 main 中注册逻辑一致，便于复用同一套 yaml。"""
     registry = ModelRegistry()
     paths_config = config
 
