@@ -1,0 +1,234 @@
+# Classification Agent Configuration
+# agent_llm: 大模型 API 配置（与具体厂商无关，可配置 Gemini / 百炼 Qwen 等）
+agent_llm:
+  api_key: "sk-5dcf871f08cb4adb95bc131efa0337a1"
+  model_name: "qwen-plus-2025-12-01"
+  temperature: 0.3
+  max_tokens: 1024
+
+# Model Paths Configuration (甲状腺模型路径)
+# 支持配置多个模型，每个模型使用不同的权重文件
+# training_data_devices: 该模型训练数据集的设备信息（可选，如果未配置会自动从base_datasets和base_datasets_info推导）
+#   例如: ["GE Logiq E9", "ARIETTA 850"]，如果未配置或为空，会自动从dataset_info.base_datasets和base_datasets_info推导
+dino_unet:
+  models:
+    - name: "all_datasets"  # 模型名称
+      model_path: "weights/all_datasets/dino_unet_train_all_datasets_epoch_40.pth"
+      use_tirads: false  # true: 使用 TI-RADS 分类, false: 使用良恶性分类
+      # 在原始数据集测试集上的性能
+      base_dataset_performance:
+        DDTI:
+          accuracy: 0.8298
+          auc: 0.7533
+          ece: 0.1601
+        TN3K:
+          accuracy: 0.6891
+          auc: 0.7685
+          ece: 0.2442
+        ThyroidXL:
+          accuracy: 0.8491
+          auc: 0.9301
+          ece: 0.1089
+        TN5K:
+          accuracy: 0.9132
+          auc: 0.9545
+          ece: 0.0626
+        Cine-Clip:
+          accuracy: 0.9997
+          auc: 1.0000
+          ece: 0.0002
+      # 训练数据集规模信息
+      dataset_info:
+        base_datasets: ["TN3K", "ThyroidXL", "TN5K", "Cine-Clip"]
+        dataset_size: 31304
+    - name: "TN3K"  # 模型名称（可选，用于区分不同模型）
+      model_path: "weights/TN3K/dino_unet_train_multitask_TN3K_epoch_50.pth"
+      use_tirads: false  # true: 使用 TI-RADS 分类, false: 使用良恶性分类
+      # training_data_devices: 可选，如果未配置会自动从base_datasets推导
+      # 在原始数据集测试集上的性能
+      base_dataset_performance:
+        DDTI:
+          accuracy: 0.8712  
+          auc: 0.4131
+          ece: 0.1266 
+        TN3K:
+          accuracy: 0.6823  
+          auc: 0.7656
+          ece: 0.2856
+        ThyroidXL:
+          accuracy: 0.7694 
+          auc: 0.8799
+          ece: 0.2081
+        TN5K:
+          accuracy: 0.7831
+          auc: 0.8451
+          ece: 0.1892
+        Cine-Clip:
+          accuracy: 0.7301
+          auc: 0.6598
+          ece: 0.2488
+      # 训练数据集规模信息
+      dataset_info:
+        base_datasets: ["TN3K"]
+        dataset_size: 4633  # 训练数据集的总样本数量（待填充）
+    - name: "TN5K"
+      model_path: "weights/TN5K/dino_unet_train_multitask_TN5K_epoch_50.pth"
+      use_tirads: false
+      # training_data_devices: 可选，如果未配置会自动从base_datasets推导
+      # 在原始数据集测试集上的性能
+      base_dataset_performance:
+        DDTI:
+          accuracy: 0.4608
+          auc: 0.7599
+          ece: 0.5310
+        TN3K:
+          accuracy: 0.7340
+          auc: 0.8200
+          ece: 0.2241
+        ThyroidXL:
+          accuracy: 0.7275
+          auc: 0.8996
+          ece: 0.2593
+        TN5K:
+          accuracy: 0.8986
+          auc: 0.9526
+          ece: 0.0812
+        Cine-Clip:
+          accuracy: 0.7309
+          auc: 0.7536
+          ece: 0.2465
+      # 训练数据集规模信息
+      dataset_info:
+        base_datasets: ["TN5K"]
+        dataset_size: 3400
+    - name: "ThyroidXL"
+      model_path: "weights/ThyroidXL/dino_unet_train_multitask_ThyroidXL_epoch_50.pth"
+      use_tirads: false
+      # training_data_devices: 可选，如果未配置会自动从base_datasets推导
+      # 在原始数据集测试集上的性能
+      base_dataset_performance:
+        DDTI:
+          accuracy: 0.8452
+          auc: 0.7093
+          ece: 0.1469
+        TN3K:
+          accuracy: 0.7561
+          auc: 0.8161
+          ece: 0.2254
+        ThyroidXL:
+          accuracy: 0.8388
+          auc: 0.9275
+          ece: 0.1403
+        TN5K:
+          accuracy: 0.7435
+          auc: 0.8503
+          ece: 0.2334
+        Cine-Clip:
+          accuracy: 0.8656
+          auc: 0.7192
+          ece: 0.1220
+      # 训练数据集规模信息
+      dataset_info:
+        base_datasets: ["ThyroidXL"]
+        dataset_size: 9441
+    - name: "Cine-Clip"
+      model_path: "weights/Cine-Clip/dino_unet_train_multitask_Cine-Clip_epoch_50.pth"
+      use_tirads: false
+      # training_data_devices: 可选，如果未配置会自动从base_datasets推导
+      # 在原始数据集测试集上的性能
+      base_dataset_performance:
+        DDTI:
+          accuracy: 0.6535
+          auc: 0.5391
+          ece: 0.3340
+        TN3K:
+          accuracy: 0.6153
+          auc: 0.5018
+          ece: 0.3832
+        ThyroidXL:
+          accuracy: 0.5356
+          auc: 0.4144
+          ece: 0.4643
+        TN5K:
+          accuracy: 0.2759
+          auc: 0.5482
+          ece: 0.7242
+        Cine-Clip:
+          accuracy: 1.0000
+          auc: 1.0000
+          ece: 1.0000
+      # 训练数据集规模信息
+      dataset_info:
+        base_datasets: ["CineClip"]
+        dataset_size: 13830
+
+autogluon:
+  models:
+    - name: "autogluon_radiomics_dataset3"  # 模型名称
+      model_dir: "weights/dataset_3/autogluon_model_20260106_215755"
+      # training_data_devices: 可选，如果未配置会自动从base_datasets推导
+      # 在原始数据集测试集上的性能
+      base_dataset_performance:
+        TN3K:
+          accuracy: 0.6970  
+          auc: 0.7214  
+        ThyroidXL:
+          accuracy: 0.9186  
+          auc: 0.9726  
+        TN5K:
+          accuracy: 0.858  
+          auc: 0.8664  
+      # 训练数据集规模信息
+      dataset_info:
+        base_datasets: ["TN3K", "ThyroidXL", "TN5K"]
+        dataset_size: 15109
+
+# Base Datasets Information (原始数据集信息)
+# 记录每个原始数据集的主要设备分布，用于推断输入数据可能来自哪个原始数据集
+base_datasets_info:
+  TN3K:
+    main_devices: ["GE Logiq E9", "ARIETTA 850", "RESONA 70B", "Hitachi Aloka Arietta V70"]  # TN3K数据集的主要设备
+    centers:
+      - "Zhujiang Hospital, Southern Medical University"
+    years: [2016, 2020]    
+  ThyroidXL:
+    main_devices: ["Hitachi Aloka Arietta V70"]  # ThyroidXL数据集的主要设备
+    centers:
+      - "National Hospital of Endocrinology, Hanoi, Vietnam"
+    years: [2023, 2025]                  # 采集年份范围
+  TN5K:
+    main_devices: ["GE Logiq E9", "GE S7"]  # TN5K数据集的主要设备
+    probe_frequency_mhz: [5, 12]
+    Imaging mode: B-mode Ultrasound (2D)
+    centers:
+      - "National Cancer Center/Cancer Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College"
+  CineClip:
+    main_devices: []  # CineClip数据集的主要设备
+    centers:
+      - "Stanford University Medical Center"
+
+# Data Paths (输入数据路径)
+data:
+  image_input: "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/ThyroidXL/test/images"
+  mask_input: "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/ThyroidXL/test/masks"
+  label_file: "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/ThyroidXL/test/ThyroidXL_test_label.json"  # 标签文件路径；为 null 时将根据 output_dir 自动推断
+  device_info: ["Hitachi Aloka Arietta V70"]
+
+# Output Configuration (输出配置)
+output:
+  output_dir: "output/ThyroidXL/llm"
+  
+# 二分类概率校准（可选；由 scripts/fit_binary_calibrators.py 离线生成 JSON）
+# enabled: false 或未配置时与原先一致；加载失败或文件损坏时自动回退为不校准
+calibration:
+  enabled: false
+  artifacts_dir: "calibration/artifacts"
+
+# Agent Configuration
+agent:
+  decision_threshold: 0.5
+  max_retries: 3
+  max_batch_size: 2  # Maximum images per batch API call
+  enable_agent: true  # true: 使用大模型决策；false: 不调用大模型，按 top_k 置信度 soft voting
+  top_k: 3  # 无 Agent 时：对 top_confidence 最高的 top_k 个模型做 soft voting；有 Agent 且存在分歧时：大模型选出 top_k 个模型再融合。为 1 时与原先单模型决策一致
+

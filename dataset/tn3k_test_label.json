@@ -1,0 +1,2458 @@
+[
+  {
+    "filename": "0000.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0001.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0002.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0003.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0004.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0005.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0006.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0007.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0008.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0009.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0010.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0011.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0012.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0013.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0014.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0015.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0016.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0017.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0018.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0019.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0020.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0021.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0022.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0023.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0024.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0025.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0026.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0027.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0028.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0029.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0030.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0031.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0032.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0033.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0034.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0035.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0036.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0037.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0038.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0039.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0040.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0041.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0042.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0043.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0044.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0045.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0046.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0047.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0048.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0049.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0050.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0051.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0052.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0053.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0054.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0055.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0056.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0057.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0058.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0059.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0060.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0061.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0062.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0063.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0064.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0065.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0066.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0067.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0068.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0069.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0070.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0071.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0072.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0073.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0074.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0075.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0076.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0077.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0078.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0079.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0080.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0081.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0082.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0083.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0084.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0085.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0086.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0087.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0088.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0089.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0090.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0091.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0092.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0093.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0094.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0095.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0096.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0097.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0098.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0099.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0100.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0101.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0102.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0103.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0104.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0105.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0106.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0107.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0108.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0109.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0110.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0111.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0112.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0113.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0114.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0115.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0116.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0117.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0118.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0119.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0120.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0121.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0122.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0123.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0124.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0125.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0126.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0127.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0128.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0129.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0130.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0131.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0132.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0133.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0134.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0135.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0136.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0137.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0138.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0139.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0140.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0141.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0142.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0143.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0144.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0145.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0146.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0147.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0148.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0149.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0150.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0151.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0152.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0153.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0154.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0155.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0156.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0157.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0158.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0159.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0160.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0161.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0162.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0163.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0164.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0165.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0166.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0167.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0168.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0169.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0170.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0171.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0172.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0173.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0174.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0175.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0176.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0177.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0178.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0179.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0180.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0181.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0182.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0183.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0184.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0185.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0186.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0187.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0188.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0189.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0190.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0191.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0192.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0193.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0194.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0195.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0196.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0197.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0198.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0199.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0200.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0201.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0202.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0203.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0204.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0205.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0206.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0207.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0208.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0209.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0210.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0211.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0212.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0213.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0214.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0215.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0216.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0217.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0218.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0219.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0220.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0221.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0222.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0223.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0224.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0225.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0226.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0227.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0228.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0229.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0230.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0231.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0232.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0233.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0234.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0235.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0236.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0237.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0238.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0239.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0240.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0241.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0242.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0243.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0244.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0245.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0246.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0247.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0248.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0249.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0250.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0251.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0252.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0253.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0254.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0255.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0256.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0257.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0258.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0259.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0260.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0261.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0262.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0263.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0264.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0265.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0266.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0267.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0268.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0269.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0270.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0271.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0272.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0273.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0274.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0275.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0276.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0277.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0278.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0279.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0280.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0281.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0282.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0283.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0284.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0285.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0286.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0287.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0288.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0289.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0290.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0291.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0292.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0293.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0294.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0295.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0296.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0297.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0298.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0299.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0300.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0301.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0302.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0303.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0304.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0305.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0306.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0307.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0308.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0309.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0310.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0311.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0312.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0313.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0314.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0315.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0316.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0317.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0318.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0319.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0320.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0321.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0322.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0323.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0324.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0325.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0326.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0327.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0328.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0329.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0330.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0331.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0332.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0333.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0334.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0335.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0336.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0337.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0338.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0339.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0340.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0341.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0342.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0343.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0344.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0345.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0346.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0347.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0348.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0349.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0350.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0351.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0352.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0353.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0354.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0355.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0356.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0357.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0358.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0359.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0360.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0361.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0362.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0363.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0364.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0365.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0366.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0367.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0368.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0369.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0370.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0371.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0372.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0373.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0374.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0375.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0376.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0377.jpg",
+    "malignancy": 0
+  },
+  {
+    "filename": "0378.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0379.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0380.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0381.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0382.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0383.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0384.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0385.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0386.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0387.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0388.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0389.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0390.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0391.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0392.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0393.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0394.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0395.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0396.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0397.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0398.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0399.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0400.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0401.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0402.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0403.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0404.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0405.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0406.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0407.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0408.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0409.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0410.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0411.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0412.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0413.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0414.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0415.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0416.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0417.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0418.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0419.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0420.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0421.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0422.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0423.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0424.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0425.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0426.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0427.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0428.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0429.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0430.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0431.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0432.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0433.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0434.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0435.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0436.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0437.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0438.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0439.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0440.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0441.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0442.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0443.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0444.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0445.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0446.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0447.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0448.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0449.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0450.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0451.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0452.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0453.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0454.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0455.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0456.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0457.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0458.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0459.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0460.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0461.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0462.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0463.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0464.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0465.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0466.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0467.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0468.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0469.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0470.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0471.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0472.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0473.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0474.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0475.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0476.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0477.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0478.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0479.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0480.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0481.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0482.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0483.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0484.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0485.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0486.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0487.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0488.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0489.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0490.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0491.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0492.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0493.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0494.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0495.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0496.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0497.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0498.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0499.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0500.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0501.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0502.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0503.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0504.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0505.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0506.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0507.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0508.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0509.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0510.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0511.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0512.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0513.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0514.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0515.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0516.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0517.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0518.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0519.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0520.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0521.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0522.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0523.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0524.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0525.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0526.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0527.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0528.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0529.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0530.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0531.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0532.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0533.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0534.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0535.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0536.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0537.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0538.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0539.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0540.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0541.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0542.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0543.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0544.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0545.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0546.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0547.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0548.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0549.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0550.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0551.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0552.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0553.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0554.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0555.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0556.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0557.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0558.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0559.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0560.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0561.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0562.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0563.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0564.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0565.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0566.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0567.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0568.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0569.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0570.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0571.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0572.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0573.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0574.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0575.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0576.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0577.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0578.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0579.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0580.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0581.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0582.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0583.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0584.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0585.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0586.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0587.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0588.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0589.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0590.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0591.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0592.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0593.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0594.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0595.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0596.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0597.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0598.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0599.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0600.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0601.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0602.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0603.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0604.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0605.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0606.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0607.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0608.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0609.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0610.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0611.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0612.jpg",
+    "malignancy": 1
+  },
+  {
+    "filename": "0613.jpg",
+    "malignancy": 1
+  }
+]

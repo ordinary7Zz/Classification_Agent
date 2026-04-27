@@ -1,0 +1,1 @@
+python scripts/fit_binary_calibrators.py --config config/config.yaml --method platt

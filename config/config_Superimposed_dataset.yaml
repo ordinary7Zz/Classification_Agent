@@ -1,0 +1,186 @@
+# Classification Agent Configuration
+# agent_llm: 大模型 API 配置（与具体厂商无关，可配置 Gemini / 百炼 Qwen 等）
+agent_llm:
+  api_key: "sk-5dcf871f08cb4adb95bc131efa0337a1"
+  model_name: "qwen2.5-14b-instruct-1m"
+  temperature: 0.3
+  max_tokens: 1024
+
+# Model Paths Configuration (甲状腺模型路径)
+# 支持配置多个模型，每个模型使用不同的权重文件
+# training_data_devices: 该模型训练数据集的设备信息（可选，如果未配置会自动从base_datasets和base_datasets_info推导）
+#   例如: ["GE Logiq E9", "ARIETTA 850"]，如果未配置或为空，会自动从dataset_info.base_datasets和base_datasets_info推导
+dino_unet:
+  models:
+    - name: "all_datasets"  # 模型名称
+      model_path: "weights/all_datasets/dino_unet_train_all_datasets_epoch_40.pth"
+      use_tirads: false  # true: 使用 TI-RADS 分类, false: 使用良恶性分类
+      # 在原始数据集测试集上的性能
+      base_dataset_performance:
+        DDTI:
+          accuracy: 0.8298
+          auc: 0.7533
+          ece: 0.1601
+        TN3K:
+          accuracy: 0.6891
+          auc: 0.7685
+          ece: 0.2442
+        ThyroidXL:
+          accuracy: 0.8491
+          auc: 0.9301
+          ece: 0.1089
+        TN5K:
+          accuracy: 0.9132
+          auc: 0.9545
+          ece: 0.0626
+        Cine-Clip:
+          accuracy: 0.9997
+          auc: 1.0000
+          ece: 0.0002
+      # 训练数据集规模信息
+      dataset_info:
+        base_datasets: ["TN3K", "ThyroidXL", "TN5K", "Cine-Clip"]
+        dataset_size: 31304
+    - name: "dataset_1"  # 模型名称
+      model_path: "weights/dataset_1/dino_unet_gamtl_train_multitask_dataset_1_epoch_50.pth"
+      use_tirads: false  # true: 使用 TI-RADS 分类, false: 使用良恶性分类
+      # 在原始数据集测试集上的性能
+      base_dataset_performance:
+        TN3K:
+          accuracy: 0.7103
+          auc: 0.786
+        ThyroidXL:
+          accuracy: 0.7766
+          auc: 0.8795
+        TN5K:
+          accuracy: 0.7508
+          auc: 0.8177
+      # 训练数据集规模信息
+      dataset_info:
+        base_datasets: ["TN3K"]
+        dataset_size: 4024
+    - name: "dataset2"  # 模型名称
+      model_path: "weights/dataset_2/dino_unet_gamtl_train_multitask_dataset_2_epoch_50.pth"
+      use_tirads: false  # true: 使用 TI-RADS 分类, false: 使用良恶性分类
+      # 在原始数据集测试集上的性能
+      base_dataset_performance:
+        TN3K:
+          accuracy: 0.6934
+          auc: 0.7576
+        ThyroidXL:
+          accuracy: 0.8425
+          auc: 0.9283
+        TN5K:
+          accuracy: 0.7785
+          auc: 0.8083
+      # 训练数据集规模信息
+      dataset_info:
+        base_datasets: ["TN3K", "ThyroidXL"]
+        dataset_size: 12134
+    - name: "dataset_3"  # 模型名称
+      model_path: "weights/dataset_3/dino_unet_gamtl_train_multitask_dataset_3_epoch_50.pth"
+      use_tirads: false  # true: 使用 TI-RADS 分类, false: 使用良恶性分类
+      # 在原始数据集测试集上的性能
+      base_dataset_performance:
+        TN3K:
+          accuracy: 0.7332
+          auc: 0.7947
+        ThyroidXL:
+          accuracy: 0.8305
+          auc: 0.9304
+        TN5K:
+          accuracy: 0.9121
+          auc: 0.9614
+      # 训练数据集规模信息
+      dataset_info:
+        base_datasets: ["TN3K", "ThyroidXL", "TN5K"]
+        dataset_size: 15109
+    - name: "dataset_4"  # 模型名称
+      model_path: "weights/dataset_4/dino_unet_gamtl_train_multitask_dataset_4_epoch_50.pth"
+      use_tirads: false  # true: 使用 TI-RADS 分类, false: 使用良恶性分类
+      # 在原始数据集测试集上的性能
+      base_dataset_performance:
+        TN3K:
+          accuracy: 0.7146
+          auc: 0.7916
+        ThyroidXL:
+          accuracy: 0.8519
+          auc: 0.9312
+        TN5K:
+          accuracy: 0.9001
+          auc: 0.9403
+      # 训练数据集规模信息
+      dataset_info:
+        base_datasets: ["TN3K", "ThyroidXL", "TN5K", "Cine-Clip"]
+        dataset_size: 25557
+    
+autogluon:
+  models:
+    - name: "autogluon_radiomics_dataset3"  # 模型名称
+      model_dir: "weights/dataset_3/autogluon_model_20260106_215755"
+      # training_data_devices: 可选，如果未配置会自动从base_datasets推导
+      # 在原始数据集测试集上的性能
+      base_dataset_performance:
+        TN3K:
+          accuracy: 0.6970  
+          auc: 0.7214  
+        ThyroidXL:
+          accuracy: 0.9186  
+          auc: 0.9726  
+        TN5K:
+          accuracy: 0.858  
+          auc: 0.8664  
+      # 训练数据集规模信息
+      dataset_info:
+        base_datasets: ["TN3K", "ThyroidXL", "TN5K"]
+        dataset_size: 15109
+
+# Base Datasets Information (原始数据集信息)
+# 记录每个原始数据集的主要设备分布，用于推断输入数据可能来自哪个原始数据集
+base_datasets_info:
+  TN3K:
+    main_devices: ["GE Logiq E9", "ARIETTA 850", "RESONA 70B", "Hitachi Aloka Arietta V70"]  # TN3K数据集的主要设备
+    centers:
+      - "Zhujiang Hospital, Southern Medical University"
+    years: [2016, 2020]    
+  ThyroidXL:
+    main_devices: ["Hitachi Aloka Arietta V70"]  # ThyroidXL数据集的主要设备
+    centers:
+      - "National Hospital of Endocrinology, Hanoi, Vietnam"
+    years: [2023, 2025]                  # 采集年份范围
+  TN5K:
+    main_devices: ["GE Logiq E9", "GE S7"]  # TN5K数据集的主要设备
+    probe_frequency_mhz: [5, 12]
+    Imaging mode: B-mode Ultrasound (2D)
+    centers:
+      - "National Cancer Center/Cancer Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College"
+  CineClip:
+    main_devices: []  # CineClip数据集的主要设备
+    centers:
+      - "Stanford University Medical Center"
+
+# Data Paths (输入数据路径)
+data:
+  image_input: "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/Cine-Clip/test/images"
+  mask_input: "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/Cine-Clip/test/masks"
+  device_info: ["GE Logiq E9", "ARIETTA 850", "RESONA 70B", "Hitachi Aloka Arietta V70"]  # 输入数据集的设备信息（列表，例如: ["GE", "Siemens"]），如果未知可以为 null
+  label_file: "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/Cine-Clip/test/Cine-Clip_test_label.json"  # 标签文件路径；为 null 时将根据 output_dir 自动推断
+
+# Output Configuration (输出配置)
+output:
+  output_dir: "output/Cine-Clip/Superimposed_dataset"
+  
+# 二分类概率校准（可选；由 scripts/fit_binary_calibrators.py 离线生成 JSON）
+# enabled: false 或未配置时与原先一致；加载失败或文件损坏时自动回退为不校准
+calibration:
+  enabled: false
+  artifacts_dir: "calibration/artifacts"
+
+# Agent Configuration
+agent:
+  decision_threshold: 0.5
+  max_retries: 3
+  max_batch_size: 2  # Maximum images per batch API call
+  enable_agent: false  # true: 使用大模型决策；false: 不调用大模型，按 top_k 置信度 soft voting
+  top_k: 6  # 无 Agent 时：对 top_confidence 最高的 top_k 个模型做 soft voting；有 Agent 且存在分歧时：大模型选出 top_k 个模型再融合。为 1 时与原先单模型决策一致
+
