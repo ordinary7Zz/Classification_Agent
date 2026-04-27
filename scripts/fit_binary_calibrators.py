@@ -30,7 +30,7 @@ from calibration.binary_calibration import (  # noqa: E402
     fit_binary_calibrator,
     save_calibrator_json,
 )
-from demo_thyroid_models import (  # noqa: E402
+from main import (  # noqa: E402
     derive_training_data_devices,
     find_corresponding_mask,
     get_image_files,

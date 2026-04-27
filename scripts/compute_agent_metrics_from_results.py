@@ -2,7 +2,7 @@
 根据 Agent 最终输出的 results_*.json 与标签文件，计算分类 Agent 的平均性能。
 
 支持：
-- 结果 JSON：demo_thyroid_models.py 输出的格式（image_name, predicted_class, confidence）
+- 结果 JSON：main.py 输出的格式（image_name, predicted_class, confidence）
 - 标签 JSON：列表 [{"filename": "xx.jpg", "malignancy": 0|1}] 或 字典 {"xx.jpg": 0|1}，malignancy 0=良性 1=恶性
 - 预测类别名：中文 良性/恶性 或 英文 benign/malignant 均可
 
