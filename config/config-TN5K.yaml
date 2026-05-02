@@ -187,7 +187,7 @@ data:
 
 # Output Configuration (输出配置)
 output:
-  output_dir: "output/TN5K/llm"
+  output_dir: "output/TN5K/no_llm"
   
 # 二分类概率校准（可选；由 scripts/fit_binary_calibrators.py 离线生成 JSON）
 # enabled: false 或未配置时与原先一致；加载失败或文件损坏时自动回退为不校准
