@@ -181,7 +181,7 @@ base_datasets_info:
 data:
   image_input: "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/500_TestData_Malignancy_Cls/images"
   mask_input: "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/500_TestData_Malignancy_Cls/masks"
-  label_file: "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/500_TestData_Malignancy_Cls/500_TestData_Malignancy_Cls_label.json"  # 标签文件路径；为 null 时将根据 output_dir 自动推断
+  label_file: "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/500_TestData_Malignancy_Cls/500_TestData_Malignancy_Cls.json"  # 标签文件路径；为 null 时将根据 output_dir 自动推断
   device_info: []
   start_index: 0  # 从第几个样本开始（仅目录输入有效）
   total_count: null  # 本次推理处理多少张；null 表示处理到末尾
