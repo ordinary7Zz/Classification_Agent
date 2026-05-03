@@ -1,0 +1,225 @@
+当前项目运行说明
+================
+
+一、项目主流程概览
+----------------
+当前项目的主入口文件是 main.py。
+整体运行流程如下：
+
+1. 读取配置文件（YAML）
+2. 扫描标签文件（如果存在）
+3. 注册 DINO-UNet 模型和 AutoGluon-PyRadiomics 模型
+4. 加载待预测图像，以及需要时加载 mask
+5. 对所有图像做多模型推理
+6. 使用 Agent LLM 或 soft voting 做最终决策
+7. 保存 results_*.json
+8. 如果存在标签，则进一步计算平均分类指标，并保存 agent_metrics_*.json
+9. 使用 scripts/plot_auroc_from_results.py 基于 results_*.json 绘制 AUROC 曲线
+
+
+二、main.py 的作用
+------------------
+main.py 是整个分类流程的统一入口，负责：
+
+- 读取配置文件
+- 加载多个分类模型
+- 批量读取图像/掩码
+- 汇总多模型结果
+- 输出最终分类结果
+- 保存评估所需字段，供后续绘制 AUROC 曲线
+
+现在 main.py 输出的 results_*.json 已经扩展了以下字段：
+
+- image_name
+- selected_model
+- predicted_class
+- confidence
+- malignant_probability
+- ground_truth_label
+- decision_threshold
+- all_predictions
+
+其中：
+- malignant_probability：最终恶性概率，可直接用于 ROC / AUROC 计算
+- ground_truth_label：真实标签（0=良性，1=恶性），只有在标签文件可用时才会写入
+
+因此，现在新的 results_*.json 可以直接用于绘制 AUROC 曲线。
+
+
+三、运行前需要检查的配置
+----------------------
+以 config/config-Copy1.yaml 为例，重点检查以下内容：
+
+1. 大模型配置
+   agent_llm:
+     api_key
+     model_name
+
+   说明：
+   - 如果 enable_agent: true，则需要有效的 API key
+   - 不要把真实 key 提交到代码仓库
+
+2. 模型路径
+   dino_unet.models[*].model_path
+   autogluon.models[*].model_dir
+
+   说明：
+   - 这些路径必须真实存在，否则对应模型会被跳过
+
+3. 数据路径
+   data.image_input
+   data.mask_input
+   data.label_file
+
+   说明：
+   - image_input：待预测图像文件或图像目录
+   - mask_input：需要掩码的模型才会用到
+   - label_file：如果想计算 AUROC，必须保证标签文件可用
+
+4. 输出目录
+   output.output_dir
+
+   说明：
+   - results_*.json 和 agent_metrics_*.json 会保存在这里
+
+5. Agent 开关
+   agent.enable_agent
+
+   说明：
+   - true：使用大模型做综合决策
+   - false：不调用大模型，按 top_k soft voting 生成最终结果
+
+
+四、推荐运行步骤
+----------------
+步骤 1：检查配置文件
+建议先检查：
+
+- config/config-Copy1.yaml
+
+重点确认：
+- API key 是否有效
+- 图像路径、mask 路径、标签路径是否正确
+- 模型权重路径是否存在
+- output.output_dir 是否是你想保存结果的位置
+
+
+步骤 2：运行 main.py
+在项目根目录执行：
+
+python main.py --config config/config-Copy1.yaml
+
+运行完成后，通常会在 output.output_dir 下生成：
+
+- results_时间戳.json
+- agent_metrics_时间戳.json
+
+例如当前配置中：
+
+output:
+  output_dir: output/ThyroidXL/llm
+
+则结果通常会保存在：
+
+output/ThyroidXL/llm/
+
+
+步骤 3：确认 results_*.json 中包含 AUROC 所需字段
+新的 results_*.json 中，应当能看到类似字段：
+
+- malignant_probability
+- ground_truth_label
+
+如果没有 ground_truth_label，通常说明：
+- data.label_file 没有配置
+- 或者标签文件路径不正确
+- 或者标签文件中的文件名与 image_name 没有成功匹配
+
+没有 ground_truth_label 时，plot_auroc_from_results.py 无法绘制 AUROC。
+
+
+五、绘制 AUROC 曲线
+-------------------
+绘图脚本位置：
+
+scripts/plot_auroc_from_results.py
+
+基本用法：
+
+python scripts/plot_auroc_from_results.py --results output/ThyroidXL/llm/results_xxxxxxxxxxxxx.json
+
+如果希望手动指定输出图片路径：
+
+python scripts/plot_auroc_from_results.py ^
+  --results output/ThyroidXL/llm/results_xxxxxxxxxxxxx.json ^
+  --output output/ThyroidXL/llm/auroc.png ^
+  --title "ThyroidXL ROC Curve"
+
+说明：
+- --results：main.py 生成的 results_*.json
+- --output：输出 ROC 图片路径；不写时会默认保存在 results 同目录下
+- --title：图标题，可选
+
+脚本会输出：
+- 可用样本数
+- 跳过样本数
+- 阳性样本数
+- 阴性样本数
+- AUROC 数值
+- ROC 图保存路径
+
+
+六、一个完整示例
+----------------
+1. 先运行主流程：
+
+python main.py --config config/config-Copy1.yaml
+
+2. 假设生成的结果文件是：
+
+output/ThyroidXL/llm/results_20260502_123456.json
+
+3. 再绘制 AUROC：
+
+python scripts/plot_auroc_from_results.py --results output/ThyroidXL/llm/results_20260502_123456.json
+
+4. 如果想把图保存为指定名字：
+
+python scripts/plot_auroc_from_results.py ^
+  --results output/ThyroidXL/llm/results_20260502_123456.json ^
+  --output output/ThyroidXL/llm/thyroidxl_auroc.png ^
+  --title "ThyroidXL AUROC"
+
+
+七、常见问题
+-----------
+1. main.py 能运行，但画不了 AUROC
+   可能原因：
+   - 没有提供 label_file
+   - label_file 路径错误
+   - results_*.json 中没有 ground_truth_label
+
+2. plot_auroc_from_results.py 报缺少 scikit-learn
+   需要先安装依赖：
+
+   pip install scikit-learn
+
+3. plot_auroc_from_results.py 报只有单一类别
+   说明当前结果中只有 0 类或只有 1 类，无法计算标准 AUROC
+
+4. 某些模型被跳过
+   一般是因为：
+   - model_path 不存在
+   - model_dir 不存在
+   - 需要 mask 的模型没有拿到对应 mask
+
+
+八、推荐的最简执行命令
+----------------------
+1. 运行分类主流程：
+
+python main.py --config config/config-Copy1.yaml
+
+2. 使用生成的 results 文件绘制 AUROC：
+
+python scripts/plot_auroc_from_results.py --results output/ThyroidXL/llm/results_你的时间戳.json

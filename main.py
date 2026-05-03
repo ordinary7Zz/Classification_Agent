@@ -165,6 +165,86 @@ def resolve_label_path(paths_config: dict) -> tuple[Optional[Path], str]:
     return None, "none"
 
 
+def _load_labels(label_path: Path) -> dict[str, int]:
+    with open(label_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    labels: dict[str, int] = {}
+    if isinstance(data, list):
+        for item in data:
+            if not isinstance(item, dict):
+                continue
+            fn = item.get("filename") or item.get("image_name")
+            mal = item.get("malignancy", item.get("label"))
+            if fn is None or mal is None:
+                continue
+            labels[str(fn)] = int(mal)
+    elif isinstance(data, dict):
+        for k, v in data.items():
+            labels[str(k)] = int(v)
+    return labels
+
+
+def _label_lookup(labels: dict[str, int], image_name: str):
+    if image_name in labels:
+        return labels[image_name]
+
+    ext = Path(image_name).suffix
+    stem = Path(image_name).stem
+    tokens = stem.split("_")
+    if len(tokens) >= 2:
+        candidate = tokens[-1] + ext
+        if candidate in labels:
+            return labels[candidate]
+    return None
+
+
+def _infer_malignant_probability(predicted_class: str, confidence: float) -> float:
+    pred_class = str(predicted_class).strip()
+    pred_lower = pred_class.lower()
+    if pred_class in {"恶性", "malignant", "1"} or pred_lower in {"恶性", "malignant", "1"}:
+        return float(confidence)
+    if pred_class in {"良性", "benign", "0"} or pred_lower in {"良性", "benign", "0"}:
+        return float(1.0 - confidence)
+    return 0.5
+
+
+def _build_result_dict(
+    image_file: Path,
+    selected_model: str,
+    predicted_class: str,
+    confidence: float,
+    reasoning: str,
+    predictions: list,
+    labels: Optional[dict[str, int]],
+    decision_threshold: float,
+) -> dict:
+    image_name = image_file.name
+    ground_truth_label = _label_lookup(labels, image_name) if labels is not None else None
+    malignant_probability = _infer_malignant_probability(predicted_class, confidence)
+
+    return {
+        "image_file": str(image_file),
+        "image_name": image_name,
+        "selected_model": selected_model,
+        "predicted_class": predicted_class,
+        "confidence": float(confidence),
+        "malignant_probability": float(malignant_probability),
+        "ground_truth_label": None if ground_truth_label is None else int(ground_truth_label),
+        "decision_threshold": float(decision_threshold),
+        "reasoning": reasoning,
+        "all_predictions": [
+            {
+                "model": p.model_name,
+                "top_class": p.top_class,
+                "top_confidence": float(p.top_confidence),
+                "predictions": {k: float(v) for k, v in p.predictions.items()}
+            }
+            for p in predictions
+        ]
+    }
+
+
 def main(config_path: str = "config/config.yaml"):
     print("=" * 70)
     print("甲状腺结节分类 Agent")
@@ -366,18 +446,77 @@ def main(config_path: str = "config/config.yaml"):
         return
 
     image_input_path = Path(image_input)
+    data_config = paths_config.get('data', {}) if isinstance(paths_config, dict) else {}
+    raw_start_index = data_config.get('start_index', 0)
+    raw_total_count = data_config.get('total_count', None)
+
+    try:
+        start_index = int(raw_start_index or 0)
+    except (TypeError, ValueError):
+        print(f"✗ data.start_index 配置无效: {raw_start_index}")
+        print("   start_index 必须是大于等于 0 的整数")
+        return
+
+    if start_index < 0:
+        print(f"✗ data.start_index 配置无效: {start_index}")
+        print("   start_index 必须是大于等于 0 的整数")
+        return
+
+    total_count = None
+    if raw_total_count is not None and str(raw_total_count).strip().lower() != 'null':
+        try:
+            total_count = int(raw_total_count)
+        except (TypeError, ValueError):
+            print(f"✗ data.total_count 配置无效: {raw_total_count}")
+            print("   total_count 必须是正整数或 null")
+            return
+        if total_count <= 0:
+            print(f"✗ data.total_count 配置无效: {total_count}")
+            print("   total_count 必须是正整数或 null")
+            return
+
     if image_input_path.is_file():
+        if start_index not in {0} or (total_count is not None and total_count != 1):
+            print("✗ 当前 data.image_input 是单个文件，start_index/total_count 切片配置仅对目录输入有意义")
+            print("   单文件输入时仅允许 start_index=0，且 total_count 为 null 或 1")
+            return
         image_files = [image_input_path]
         print(f"✓ 检测到单个图像文件")
     elif image_input_path.is_dir():
         image_files = get_image_files(image_input)
-        print(f"✓ 检测到图像目录，找到 {len(image_files)} 个图像文件")
+        total_images = len(image_files)
+        print(f"✓ 检测到图像目录，找到 {total_images} 个图像文件")
+
+        if total_images == 0:
+            print("✗ 未找到任何图像文件")
+            return
+
+        if start_index >= total_images:
+            print(f"✗ data.start_index 超出范围: {start_index}")
+            print(f"   当前目录共有 {total_images} 个图像文件，有效索引范围为 0 到 {total_images - 1}")
+            return
+
+        if total_count is None:
+            end_index = total_images
+            image_files = image_files[start_index:]
+            total_count_display = '直到末尾'
+        else:
+            end_index = min(start_index + total_count, total_images)
+            image_files = image_files[start_index:end_index]
+            total_count_display = str(total_count)
+
+        print("    数据切片配置:")
+        print(f"      原始总数: {total_images}")
+        print(f"      start_index: {start_index}")
+        print(f"      total_count: {total_count_display}")
+        print(f"      实际范围: [{start_index}, {end_index})")
+        print(f"      实际处理数量: {len(image_files)}")
     else:
         print(f"✗ 无效的路径类型")
         return
 
     if len(image_files) == 0:
-        print("✗ 未找到任何图像文件")
+        print("✗ 当前切片范围内没有可处理的图像文件")
         return
 
     mask_input = None
@@ -534,6 +673,14 @@ def main(config_path: str = "config/config.yaml"):
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_file = output_dir / f"results_{timestamp}.json"
 
+    decision_threshold = float(paths_config.get("agent", {}).get("decision_threshold", 0.5))
+    labels_for_results: Optional[dict[str, int]] = None
+    if resolved_label_path is not None and resolved_label_path.exists():
+        try:
+            labels_for_results = _load_labels(resolved_label_path)
+        except Exception as e:
+            print(f"⚠️ 标签文件加载失败，结果中将不写入 ground_truth_label: {e}")
+
     all_results = []
 
     if enable_agent and agent is not None:
@@ -574,23 +721,16 @@ def main(config_path: str = "config/config.yaml"):
                 print(f"  置信度: {decision.confidence:.4f}")
                 print(f"  理由: {decision.reasoning}")
 
-                result_dict = {
-                    "image_file": str(image_file),
-                    "image_name": image_file.name,
-                    "selected_model": decision.selected_model,
-                    "predicted_class": decision.selected_class,
-                    "confidence": float(decision.confidence),
-                    "reasoning": decision.reasoning,
-                    "all_predictions": [
-                        {
-                            "model": p.model_name,
-                            "top_class": p.top_class,
-                            "top_confidence": float(p.top_confidence),
-                            "predictions": {k: float(v) for k, v in p.predictions.items()}
-                        }
-                        for p in predictions_dict.values()
-                    ]
-                }
+                result_dict = _build_result_dict(
+                    image_file=image_file,
+                    selected_model=decision.selected_model,
+                    predicted_class=decision.selected_class,
+                    confidence=float(decision.confidence),
+                    reasoning=decision.reasoning,
+                    predictions=list(predictions_dict.values()),
+                    labels=labels_for_results,
+                    decision_threshold=decision_threshold,
+                )
                 all_results.append(result_dict)
 
         except Exception as e:
@@ -609,23 +749,16 @@ def main(config_path: str = "config/config.yaml"):
                         input_data_info=paths_config.get('data', {})
                     )
 
-                    result_dict = {
-                        "image_file": str(image_file),
-                        "image_name": image_file.name,
-                        "selected_model": decision.selected_model,
-                        "predicted_class": decision.selected_class,
-                        "confidence": float(decision.confidence),
-                        "reasoning": decision.reasoning,
-                        "all_predictions": [
-                            {
-                                "model": p.model_name,
-                                "top_class": p.top_class,
-                                "top_confidence": float(p.top_confidence),
-                                "predictions": {k: float(v) for k, v in p.predictions.items()}
-                            }
-                            for p in predictions
-                        ]
-                    }
+                    result_dict = _build_result_dict(
+                        image_file=image_file,
+                        selected_model=decision.selected_model,
+                        predicted_class=decision.selected_class,
+                        confidence=float(decision.confidence),
+                        reasoning=decision.reasoning,
+                        predictions=predictions,
+                        labels=labels_for_results,
+                        decision_threshold=decision_threshold,
+                    )
                     all_results.append(result_dict)
 
                 except Exception as e2:
@@ -661,23 +794,16 @@ def main(config_path: str = "config/config.yaml"):
             print(f"  置信度: {best_confidence:.4f}")
             print(f"  理由: {reasoning}")
 
-            result_dict = {
-                "image_file": str(image_file),
-                "image_name": image_file.name,
-                "selected_model": selected_model_name,
-                "predicted_class": selected_class,
-                "confidence": float(best_confidence),
-                "reasoning": reasoning,
-                "all_predictions": [
-                    {
-                        "model": p.model_name,
-                        "top_class": p.top_class,
-                        "top_confidence": float(p.top_confidence),
-                        "predictions": {k: float(v) for k, v in p.predictions.items()}
-                    }
-                    for p in predictions
-                ]
-            }
+            result_dict = _build_result_dict(
+                image_file=image_file,
+                selected_model=selected_model_name,
+                predicted_class=selected_class,
+                confidence=float(best_confidence),
+                reasoning=reasoning,
+                predictions=predictions,
+                labels=labels_for_results,
+                decision_threshold=decision_threshold,
+            )
             all_results.append(result_dict)
 
     if len(all_results) > 0:
@@ -711,38 +837,6 @@ def main(config_path: str = "config/config.yaml"):
             print(f"  {pred_class}: {count} 次 ({count/len(all_results)*100:.1f}%)")
 
         decision_threshold = float(paths_config.get("agent", {}).get("decision_threshold", 0.5))
-
-        def _load_labels(label_path: Path) -> dict[str, int]:
-            with open(label_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-
-            labels: dict[str, int] = {}
-            if isinstance(data, list):
-                for item in data:
-                    if not isinstance(item, dict):
-                        continue
-                    fn = item.get("filename") or item.get("image_name")
-                    mal = item.get("malignancy", item.get("label"))
-                    if fn is None or mal is None:
-                        continue
-                    labels[str(fn)] = int(mal)
-            elif isinstance(data, dict):
-                for k, v in data.items():
-                    labels[str(k)] = int(v)
-            return labels
-
-        def _label_lookup(labels: dict[str, int], image_name: str):
-            if image_name in labels:
-                return labels[image_name]
-
-            ext = Path(image_name).suffix
-            stem = Path(image_name).stem
-            tokens = stem.split("_")
-            if len(tokens) >= 2:
-                candidate = tokens[-1] + ext
-                if candidate in labels:
-                    return labels[candidate]
-            return None
 
         def _ece_binary(y_true: np.ndarray, y_prob: np.ndarray, n_bins: int = 10) -> float:
             y_true = y_true.astype(np.float64)
@@ -835,94 +929,91 @@ def main(config_path: str = "config/config.yaml"):
             return out
 
         try:
+            labels = None
             label_path = resolved_label_path
-            if label_path is None or not label_path.exists():
-                print("\n【平均分类指标】跳过：未找到可用 labels 文件")
-            else:
+            if label_path is not None and label_path.exists():
                 labels = _load_labels(label_path)
 
-                y_true_list: list[int] = []
-                y_prob_list: list[float] = []
-                for r in all_results:
+            y_true_list: list[int] = []
+            y_prob_list: list[float] = []
+            for r in all_results:
+                gt = r.get("ground_truth_label", None)
+                if gt is None and labels is not None:
                     image_name = r.get("image_name") or ""
                     gt = _label_lookup(labels, image_name)
-                    if gt is None:
-                        continue
+                if gt is None:
+                    continue
 
+                p_malignant = r.get("malignant_probability", None)
+                if p_malignant is None:
                     pred_class = str(r.get("predicted_class", "")).strip()
                     conf = float(r.get("confidence", 0.5))
-                    pred_lower = pred_class.lower()
-                    if pred_class in {"恶性", "malignant", "1"} or pred_lower in {"恶性", "malignant", "1"}:
-                        p_malignant = conf
-                    elif pred_class in {"良性", "benign", "0"} or pred_lower in {"良性", "benign", "0"}:
-                        p_malignant = 1.0 - conf
+                    p_malignant = _infer_malignant_probability(pred_class, conf)
+
+                y_true_list.append(int(gt))
+                y_prob_list.append(float(p_malignant))
+
+            y_true = np.asarray(y_true_list, dtype=np.int32)
+            y_prob = np.asarray(y_prob_list, dtype=np.float64)
+            n_eval = int(y_true.shape[0])
+
+            if n_eval == 0:
+                print("\n【平均分类指标】跳过：results 中缺少可用于评估的 ground_truth_label/malignant_probability，且无法通过 labels 对齐")
+            else:
+                n_boot = int(paths_config.get("agent", {}).get("metrics_n_boot", 2000))
+                boot_seed = int(paths_config.get("agent", {}).get("metrics_bootstrap_seed", 0))
+                point = _compute_point_metrics(y_true, y_prob, decision_threshold)
+                ci95 = _compute_bootstrap_ci95(
+                    y_true=y_true,
+                    y_prob=y_prob,
+                    threshold=decision_threshold,
+                    n_boot=n_boot,
+                    seed=boot_seed,
+                )
+
+                print("\n【平均分类指标】")
+                print(f"  样本数: {n_eval}")
+                print(f"  Bootstrap: n_boot={n_boot}, seed={boot_seed}")
+                pretty_names = [
+                    ("AUROC", "auroc"),
+                    ("AUPRC", "auprc"),
+                    ("Acc", "acc"),
+                    ("Prec", "prec"),
+                    ("Recall", "recall"),
+                    ("F1", "f1"),
+                    ("Specificity", "specificity"),
+                    ("ECE", "ece"),
+                ]
+                for display, key in pretty_names:
+                    v = point[key]
+                    c = ci95[key]
+                    if v is None or np.isnan(v) or c["mean"] is None:
+                        print(f"  {display}: N/A")
                     else:
-                        p_malignant = 0.5
+                        print(
+                            f"  {display}: {float(v):.4f}  "
+                            f"(mean={float(c['mean']):.4f}, CI95=[{float(c['ci95_lower']):.4f}, {float(c['ci95_upper']):.4f}])"
+                        )
 
-                    y_true_list.append(gt)
-                    y_prob_list.append(p_malignant)
-
-                y_true = np.asarray(y_true_list, dtype=np.int32)
-                y_prob = np.asarray(y_prob_list, dtype=np.float64)
-                n_eval = int(y_true.shape[0])
-
-                if n_eval == 0:
-                    print("\n【平均分类指标】跳过：results 与 labels 无对齐样本")
-                else:
-                    n_boot = int(paths_config.get("agent", {}).get("metrics_n_boot", 2000))
-                    boot_seed = int(paths_config.get("agent", {}).get("metrics_bootstrap_seed", 0))
-                    point = _compute_point_metrics(y_true, y_prob, decision_threshold)
-                    ci95 = _compute_bootstrap_ci95(
-                        y_true=y_true,
-                        y_prob=y_prob,
-                        threshold=decision_threshold,
-                        n_boot=n_boot,
-                        seed=boot_seed,
-                    )
-
-                    print("\n【平均分类指标】")
-                    print(f"  样本数: {n_eval}")
-                    print(f"  Bootstrap: n_boot={n_boot}, seed={boot_seed}")
-                    pretty_names = [
-                        ("AUROC", "auroc"),
-                        ("AUPRC", "auprc"),
-                        ("Acc", "acc"),
-                        ("Prec", "prec"),
-                        ("Recall", "recall"),
-                        ("F1", "f1"),
-                        ("Specificity", "specificity"),
-                        ("ECE", "ece"),
-                    ]
-                    for display, key in pretty_names:
-                        v = point[key]
-                        c = ci95[key]
-                        if v is None or np.isnan(v) or c["mean"] is None:
-                            print(f"  {display}: N/A")
-                        else:
-                            print(
-                                f"  {display}: {float(v):.4f}  "
-                                f"(mean={float(c['mean']):.4f}, CI95=[{float(c['ci95_lower']):.4f}, {float(c['ci95_upper']):.4f}])"
-                            )
-
-                    metrics_out = {
-                        "label_path": str(label_path),
-                        "n_samples": n_eval,
-                        "threshold": decision_threshold,
-                        "n_boot": n_boot,
-                        "metrics": {k: (None if np.isnan(v) else round(float(v), 6)) for k, v in point.items()},
-                        "metrics_ci95": {
-                            k: {
-                                "mean": None if v["mean"] is None else round(float(v["mean"]), 6),
-                                "ci95_lower": None if v["ci95_lower"] is None else round(float(v["ci95_lower"]), 6),
-                                "ci95_upper": None if v["ci95_upper"] is None else round(float(v["ci95_upper"]), 6),
-                            }
-                            for k, v in ci95.items()
-                        },
-                    }
-                    metrics_out_path = output_dir / f"agent_metrics_{timestamp}.json"
-                    with open(metrics_out_path, "w", encoding="utf-8") as f:
-                        json.dump(metrics_out, f, ensure_ascii=False, indent=2)
-                    print(f"  指标已保存: {metrics_out_path}")
+                metrics_out = {
+                    "label_path": None if label_path is None else str(label_path),
+                    "n_samples": n_eval,
+                    "threshold": decision_threshold,
+                    "n_boot": n_boot,
+                    "metrics": {k: (None if np.isnan(v) else round(float(v), 6)) for k, v in point.items()},
+                    "metrics_ci95": {
+                        k: {
+                            "mean": None if v["mean"] is None else round(float(v["mean"]), 6),
+                            "ci95_lower": None if v["ci95_lower"] is None else round(float(v["ci95_lower"]), 6),
+                            "ci95_upper": None if v["ci95_upper"] is None else round(float(v["ci95_upper"]), 6),
+                        }
+                        for k, v in ci95.items()
+                    },
+                }
+                metrics_out_path = output_dir / f"agent_metrics_{timestamp}.json"
+                with open(metrics_out_path, "w", encoding="utf-8") as f:
+                    json.dump(metrics_out, f, ensure_ascii=False, indent=2)
+                print(f"  指标已保存: {metrics_out_path}")
         except Exception as e:
             print(f"\n【平均分类指标】计算失败（已跳过）：{e}")
 

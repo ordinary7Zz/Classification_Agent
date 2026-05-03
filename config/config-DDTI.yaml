@@ -165,6 +165,8 @@ data:
   mask_input: "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/DDTI_Classification/all/images_processed"
   label_file: "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/DDTI_Classification/all/DDTI_Classification_test_label.json"  # 标签文件路径；为 null 时将根据 output_dir 自动推断
   device_info: ["TOSHIBA Nemio 30, TOSHIBA Nemio MX"]
+  start_index: 0  # 从第几个样本开始（仅目录输入有效）
+  total_count: null  # 本次推理处理多少张；null 表示处理到末尾
   Probe frequency: "uniformly set to 12 MHz"
   Imaging mode: "B-mode Ultrasound"
   

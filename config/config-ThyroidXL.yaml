@@ -183,6 +183,8 @@ data:
   mask_input: "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/ThyroidXL/test/masks"
   label_file: "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/ThyroidXL/test/ThyroidXL_test_label.json"  # 标签文件路径；为 null 时将根据 output_dir 自动推断
   device_info: ["Hitachi Aloka Arietta V70"]
+  start_index: 0  # 从第几个样本开始（仅目录输入有效）
+  total_count: null  # 本次推理处理多少张；null 表示处理到末尾
 
 # Output Configuration (输出配置)
 output:

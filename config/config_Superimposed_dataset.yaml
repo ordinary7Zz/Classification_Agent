@@ -165,6 +165,8 @@ data:
   mask_input: "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/Cine-Clip/test/masks"
   device_info: ["GE Logiq E9", "ARIETTA 850", "RESONA 70B", "Hitachi Aloka Arietta V70"]  # 输入数据集的设备信息（列表，例如: ["GE", "Siemens"]），如果未知可以为 null
   label_file: "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/Cine-Clip/test/Cine-Clip_test_label.json"  # 标签文件路径；为 null 时将根据 output_dir 自动推断
+  start_index: 0  # 从第几个样本开始（仅目录输入有效）
+  total_count: null  # 本次推理处理多少张；null 表示处理到末尾
 
 # Output Configuration (输出配置)
 output:
