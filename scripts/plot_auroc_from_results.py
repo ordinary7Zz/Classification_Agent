@@ -29,8 +29,14 @@ def extract_roc_inputs(results: list[dict]) -> tuple[np.ndarray, np.ndarray, int
     skipped = 0
 
     for item in results:
-        gt = item.get("ground_truth_label")
-        prob = item.get("malignant_probability")
+        if item.get("record_type") == "roc_summary":
+            continue
+
+        gt = item.get("true_label")
+        prob = item.get("prob_class_1")
+        if gt is None or prob is None:
+            gt = item.get("ground_truth_label")
+            prob = item.get("malignant_probability")
 
         if gt is None or prob is None:
             skipped += 1
@@ -111,7 +117,7 @@ def main():
     y_true, y_prob, skipped = extract_roc_inputs(results)
     if y_true.size == 0:
         raise ValueError(
-            "results_*.json 中没有可用于 AUROC 的样本。请确认文件包含 ground_truth_label 和 malignant_probability 字段。"
+            "results_*.json 中没有可用于 AUROC 的样本。请确认文件包含 true_label/prob_class_1 或旧版 ground_truth_label/malignant_probability 字段。"
         )
 
     unique = np.unique(y_true)

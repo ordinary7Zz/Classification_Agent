@@ -15,6 +15,7 @@ import json
 from datetime import datetime
 from sklearn.metrics import (
     roc_auc_score,
+    roc_curve,
     average_precision_score,
     precision_score,
     recall_score,
@@ -209,6 +210,25 @@ def _infer_malignant_probability(predicted_class: str, confidence: float) -> flo
     return 0.5
 
 
+def _normalize_binary_probs(predicted_class: str, confidence: float, final_class_probs: Optional[dict[str, float]] = None) -> tuple[float, float]:
+    if final_class_probs:
+        p0 = final_class_probs.get("0")
+        p1 = final_class_probs.get("1")
+        if p0 is not None and p1 is not None:
+            return float(p0), float(p1)
+
+    pred_class = str(predicted_class).strip()
+    if pred_class in {"0", "良性", "benign"} or pred_class.lower() in {"0", "良性", "benign"}:
+        p0 = float(confidence)
+        return p0, float(1.0 - p0)
+    if pred_class in {"1", "恶性", "malignant"} or pred_class.lower() in {"1", "恶性", "malignant"}:
+        p1 = float(confidence)
+        return float(1.0 - p1), p1
+
+    p1 = float(_infer_malignant_probability(predicted_class, confidence))
+    return float(1.0 - p1), p1
+
+
 def _build_result_dict(
     image_file: Path,
     selected_model: str,
@@ -217,21 +237,26 @@ def _build_result_dict(
     reasoning: str,
     predictions: list,
     labels: Optional[dict[str, int]],
-    decision_threshold: float,
+    final_class_probs: Optional[dict[str, float]] = None,
 ) -> dict:
     image_name = image_file.name
-    ground_truth_label = _label_lookup(labels, image_name) if labels is not None else None
-    malignant_probability = _infer_malignant_probability(predicted_class, confidence)
+    true_label = _label_lookup(labels, image_name) if labels is not None else None
+    prob_class_0, prob_class_1 = _normalize_binary_probs(
+        predicted_class=predicted_class,
+        confidence=confidence,
+        final_class_probs=final_class_probs,
+    )
 
     return {
+        "record_type": "sample",
         "image_file": str(image_file),
         "image_name": image_name,
         "selected_model": selected_model,
-        "predicted_class": predicted_class,
+        "predicted_class": str(predicted_class),
         "confidence": float(confidence),
-        "malignant_probability": float(malignant_probability),
-        "ground_truth_label": None if ground_truth_label is None else int(ground_truth_label),
-        "decision_threshold": float(decision_threshold),
+        "prob_class_0": float(prob_class_0),
+        "prob_class_1": float(prob_class_1),
+        "true_label": None if true_label is None else int(true_label),
         "reasoning": reasoning,
         "all_predictions": [
             {
@@ -242,6 +267,79 @@ def _build_result_dict(
             }
             for p in predictions
         ]
+    }
+
+
+def _collect_eval_inputs(sample_results: list[dict]) -> tuple[np.ndarray, np.ndarray, list[str]]:
+    y_true_list: list[int] = []
+    y_prob_list: list[float] = []
+    aligned_image_names: list[str] = []
+
+    for item in sample_results:
+        if item.get("record_type") != "sample":
+            continue
+
+        gt = item.get("true_label")
+        prob = item.get("prob_class_1")
+        if gt is None or prob is None:
+            continue
+
+        try:
+            gt_int = int(gt)
+            prob_float = float(prob)
+        except (TypeError, ValueError):
+            continue
+
+        if gt_int not in {0, 1}:
+            continue
+        if not (0.0 <= prob_float <= 1.0):
+            continue
+
+        y_true_list.append(gt_int)
+        y_prob_list.append(prob_float)
+        aligned_image_names.append(str(item.get("image_name") or ""))
+
+    return (
+        np.asarray(y_true_list, dtype=np.int32),
+        np.asarray(y_prob_list, dtype=np.float64),
+        aligned_image_names,
+    )
+
+
+def _build_roc_summary_record(
+    sample_results: list[dict],
+    label_path: Optional[Path],
+    decision_threshold: float,
+) -> dict:
+    y_true, y_prob, aligned_image_names = _collect_eval_inputs(sample_results)
+    fpr_values: list[float] = []
+    tpr_values: list[float] = []
+    threshold_values: list[float] = []
+    roc_auc: Optional[float] = None
+
+    if y_true.size > 0 and len(np.unique(y_true)) > 1:
+        try:
+            fpr, tpr, thresholds = roc_curve(y_true, y_prob)
+            fpr_values = [round(float(v), 6) for v in fpr.tolist()]
+            tpr_values = [round(float(v), 6) for v in tpr.tolist()]
+            threshold_values = [round(float(v), 6) for v in thresholds.tolist()]
+            roc_auc = round(float(roc_auc_score(y_true, y_prob)), 6)
+        except Exception:
+            pass
+
+    return {
+        "record_type": "roc_summary",
+        "label_path": None if label_path is None else str(label_path),
+        "label_key": "malignancy",
+        "decision_threshold": float(decision_threshold),
+        "positive_class_index": 1,
+        "n_total_results": len(sample_results),
+        "n_aligned_samples": int(y_true.shape[0]),
+        "aligned_image_names": aligned_image_names,
+        "roc_curve_fpr": fpr_values,
+        "roc_curve_tpr": tpr_values,
+        "roc_curve_thresholds": threshold_values,
+        "roc_auc": roc_auc,
     }
 
 
@@ -679,7 +777,7 @@ def main(config_path: str = "config/config.yaml"):
         try:
             labels_for_results = _load_labels(resolved_label_path)
         except Exception as e:
-            print(f"⚠️ 标签文件加载失败，结果中将不写入 ground_truth_label: {e}")
+            print(f"⚠️ 标签文件加载失败，结果中将不写入 true_label: {e}")
 
     all_results = []
 
@@ -729,7 +827,6 @@ def main(config_path: str = "config/config.yaml"):
                     reasoning=decision.reasoning,
                     predictions=list(predictions_dict.values()),
                     labels=labels_for_results,
-                    decision_threshold=decision_threshold,
                 )
                 all_results.append(result_dict)
 
@@ -757,7 +854,6 @@ def main(config_path: str = "config/config.yaml"):
                         reasoning=decision.reasoning,
                         predictions=predictions,
                         labels=labels_for_results,
-                        decision_threshold=decision_threshold,
                     )
                     all_results.append(result_dict)
 
@@ -802,7 +898,7 @@ def main(config_path: str = "config/config.yaml"):
                 reasoning=reasoning,
                 predictions=predictions,
                 labels=labels_for_results,
-                decision_threshold=decision_threshold,
+                final_class_probs=avg_class_probs,
             )
             all_results.append(result_dict)
 
@@ -810,9 +906,6 @@ def main(config_path: str = "config/config.yaml"):
         print("\n" + "=" * 70)
         print("保存结果")
         print("=" * 70)
-
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(all_results, f, ensure_ascii=False, indent=2)
 
         print(f"✓ 结果已保存到: {output_file}")
         print(f"  共处理 {len(all_results)} 个图像")
@@ -929,36 +1022,12 @@ def main(config_path: str = "config/config.yaml"):
             return out
 
         try:
-            labels = None
-            label_path = resolved_label_path
-            if label_path is not None and label_path.exists():
-                labels = _load_labels(label_path)
-
-            y_true_list: list[int] = []
-            y_prob_list: list[float] = []
-            for r in all_results:
-                gt = r.get("ground_truth_label", None)
-                if gt is None and labels is not None:
-                    image_name = r.get("image_name") or ""
-                    gt = _label_lookup(labels, image_name)
-                if gt is None:
-                    continue
-
-                p_malignant = r.get("malignant_probability", None)
-                if p_malignant is None:
-                    pred_class = str(r.get("predicted_class", "")).strip()
-                    conf = float(r.get("confidence", 0.5))
-                    p_malignant = _infer_malignant_probability(pred_class, conf)
-
-                y_true_list.append(int(gt))
-                y_prob_list.append(float(p_malignant))
-
-            y_true = np.asarray(y_true_list, dtype=np.int32)
-            y_prob = np.asarray(y_prob_list, dtype=np.float64)
+            label_path = resolved_label_path if resolved_label_path is not None and resolved_label_path.exists() else None
+            y_true, y_prob, _ = _collect_eval_inputs(all_results)
             n_eval = int(y_true.shape[0])
 
             if n_eval == 0:
-                print("\n【平均分类指标】跳过：results 中缺少可用于评估的 ground_truth_label/malignant_probability，且无法通过 labels 对齐")
+                print("\n【平均分类指标】跳过：results 中缺少可用于评估的 true_label/prob_class_1")
             else:
                 n_boot = int(paths_config.get("agent", {}).get("metrics_n_boot", 2000))
                 boot_seed = int(paths_config.get("agent", {}).get("metrics_bootstrap_seed", 0))
@@ -1014,8 +1083,29 @@ def main(config_path: str = "config/config.yaml"):
                 with open(metrics_out_path, "w", encoding="utf-8") as f:
                     json.dump(metrics_out, f, ensure_ascii=False, indent=2)
                 print(f"  指标已保存: {metrics_out_path}")
+
+            results_output = list(all_results)
+            results_output.append(
+                _build_roc_summary_record(
+                    sample_results=all_results,
+                    label_path=label_path,
+                    decision_threshold=decision_threshold,
+                )
+            )
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(results_output, f, ensure_ascii=False, indent=2)
         except Exception as e:
             print(f"\n【平均分类指标】计算失败（已跳过）：{e}")
+            results_output = list(all_results)
+            results_output.append(
+                _build_roc_summary_record(
+                    sample_results=all_results,
+                    label_path=resolved_label_path if resolved_label_path is not None and resolved_label_path.exists() else None,
+                    decision_threshold=decision_threshold,
+                )
+            )
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(results_output, f, ensure_ascii=False, indent=2)
 
     print("\n" + "=" * 70)
     print("运行完成")
