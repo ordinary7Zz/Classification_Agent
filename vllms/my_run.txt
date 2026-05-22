@@ -1,0 +1,177 @@
+项目运行说明
+
+一、当前项目用途
+- 使用多模态模型对甲状腺超声图像做二分类
+- 标签定义：0 = benign，1 = malignant
+- 当前支持模型：Llama-3.2、MedGemma、Qwen3-VL
+- 当前脚本会输出：每张图的预测 CSV + 总体评估指标 + 95% bootstrap 置信区间
+
+二、运行前准备
+1. 进入项目根目录
+   cd /mnt/wangbd8/workspace/ThyroidAgent/Classification_Models/my_vllms
+
+2. 准备 Python 环境
+   需要保证环境中至少有这些包：
+   - torch
+   - transformers
+   - pillow
+   - tqdm
+   - scikit-learn
+   - numpy
+   - modelscope
+
+   典型安装命令：
+   pip install torch transformers pillow tqdm scikit-learn numpy modelscope
+
+3. 准备数据
+   需要：
+   - 图像目录 image_dir
+   - 标签文件 label_json
+
+   当前脚本默认使用过的数据示例：
+   image_dir=/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/DDTI_Classification/all/images
+   label_json=/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/DDTI_Classification/all/DDTI_Classification_test_label.json
+
+4. 标签文件格式
+   label_json 必须是一个 list，元素格式如下：
+   [
+     {"filename": "xxx.png", "malignancy": 0},
+     {"filename": "yyy.png", "malignancy": 1}
+   ]
+
+三、模型准备
+1. Llama-3.2
+   下载命令：
+   python download_llama.py
+
+   当前仓库根目录中的文件 Llama-3.2-11B-Vision-Instruct 记录了模型实际路径：
+   /root/.cache/modelscope/hub/models/LLM-Research/Llama-3___2-11B-Vision-Instruct
+
+2. Qwen3-VL
+   下载命令：
+   python download_qwen3_vl_8b_instruct_modelscope.py
+
+   下载脚本默认目标目录：
+   /mnt/wangbd8/workspace/Qwen3-VL-8B-Instruct
+
+3. MedGemma
+   仓库里没有下载脚本。
+   当前评估脚本示例使用的模型目录是：
+   /mnt/wangbd8/workspace/medgemma-4b-it
+
+四、直接运行命令
+1. 运行 Llama-3.2
+   cd /mnt/wangbd8/workspace/ThyroidAgent/Classification_Models/my_vllms/llama-3.2
+
+   python llama_thyroid_inference.py \
+     --model_dir /root/.cache/modelscope/hub/models/LLM-Research/Llama-3___2-11B-Vision-Instruct \
+     --image_dir /mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/DDTI_Classification/all/images \
+     --label_json /mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/DDTI_Classification/all/DDTI_Classification_test_label.json \
+     --out_csv llama_DDTI_preds.csv \
+     --dtype fp16 \
+     --threshold 0.5 \
+     --ci_bootstrap 2000 \
+     --ci_alpha 0.95 \
+     --ci_seed 42
+
+2. 运行 MedGemma
+   cd /mnt/wangbd8/workspace/ThyroidAgent/Classification_Models/my_vllms/medgemma
+
+   python medgemma_thyroid_binary_eval.py \
+     --model_dir /mnt/wangbd8/workspace/medgemma-4b-it \
+     --image_dir /mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/DDTI_Classification/all/images \
+     --label_json /mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/DDTI_Classification/all/DDTI_Classification_test_label.json \
+     --out_csv medgemma_DDTI_Classification_all_preds.csv \
+     --dtype bf16 \
+     --threshold 0.5 \
+     --ci_bootstrap 2000 \
+     --ci_alpha 0.95 \
+     --ci_seed 42
+
+3. 运行 Qwen3-VL
+   cd /mnt/wangbd8/workspace/ThyroidAgent/Classification_Models/my_vllms/qwen3
+
+   python qwen3_vl_thyroid_binary_eval.py \
+     --model_dir /mnt/wangbd8/workspace/Qwen3-VL-8B-Instruct \
+     --image_dir /mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/DDTI_Classification/all/images \
+     --label_json /mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/DDTI_Classification/all/DDTI_Classification_test_label.json \
+     --out_csv qwen3_vl_DDTI_Classification_all_preds.csv \
+     --dtype bf16 \
+     --threshold 0.5 \
+     --ci_bootstrap 2000 \
+     --ci_alpha 0.95 \
+     --ci_seed 42
+
+五、快速测试命令
+只跑前 10 条样本：
+
+1. Llama-3.2
+   python llama_thyroid_inference.py \
+     --model_dir /root/.cache/modelscope/hub/models/LLM-Research/Llama-3___2-11B-Vision-Instruct \
+     --image_dir /mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/DDTI_Classification/all/images \
+     --label_json /mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/DDTI_Classification/all/DDTI_Classification_test_label.json \
+     --out_csv llama_test_preds.csv \
+     --dtype fp16 \
+     --limit 10
+
+2. MedGemma
+   python medgemma_thyroid_binary_eval.py \
+     --model_dir /mnt/wangbd8/workspace/medgemma-4b-it \
+     --image_dir /mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/DDTI_Classification/all/images \
+     --label_json /mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/DDTI_Classification/all/DDTI_Classification_test_label.json \
+     --out_csv medgemma_test_preds.csv \
+     --dtype bf16 \
+     --limit 10
+
+3. Qwen3-VL
+   python qwen3_vl_thyroid_binary_eval.py \
+     --model_dir /mnt/wangbd8/workspace/Qwen3-VL-8B-Instruct \
+     --image_dir /mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/DDTI_Classification/all/images \
+     --label_json /mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/DDTI_Classification/all/DDTI_Classification_test_label.json \
+     --out_csv qwen3_test_preds.csv \
+     --dtype bf16 \
+     --limit 10
+
+六、输出结果说明
+1. 控制台会打印：
+   - AUROC
+   - AUPRC
+   - Accuracy
+   - F1
+   - Sensitivity
+   - Specificity
+   - 每个指标对应的 95% CI
+   - 混淆矩阵 tn fp fn tp
+
+2. out_csv 会保存每张图的结果，字段包括：
+   - filename
+   - gt_malignant
+   - p_malignant
+   - pred_malignant
+   - logp_0
+   - logp_1
+   - cand0
+   - cand1
+
+七、参数说明
+- --model_dir：模型本地目录
+- --image_dir：图像目录
+- --label_json：标签 json 文件
+- --out_csv：输出预测结果 CSV
+- --dtype：推理精度，可选 bf16 / fp16 / fp32
+- --threshold：二分类阈值，默认 0.5
+- --limit：只跑前 N 个样本，默认 -1 表示全部
+- --ci_bootstrap：bootstrap 重采样次数，默认 2000
+- --ci_alpha：置信水平，默认 0.95
+- --ci_seed：随机种子，默认 42
+- Qwen3-VL 额外支持：
+  - --attn_impl auto
+  - --attn_impl flash_attention_2
+  - --attn_impl sdpa
+  - --attn_impl eager
+
+八、建议执行顺序
+1. 先确认模型目录存在
+2. 先用 --limit 10 做快速测试
+3. 快速测试通过后再跑全量
+4. 查看终端指标和输出 CSV

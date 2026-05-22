@@ -1,0 +1,15 @@
+# 缓存与临时文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+
+# IDE & 系统文件
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
