@@ -44,7 +44,7 @@ dino_unet:
         base_datasets: ["TN3K", "ThyroidXL", "TN5K", "Cine-Clip"]
         dataset_size: 31304
     - name: "TN3K"  # 模型名称（可选，用于区分不同模型）
-      enabled: true
+      enabled: false
       model_path: "weights/TN3K/dino_unet_train_multitask_TN3K_epoch_50.pth"
       use_tirads: false  # true: 使用 TI-RADS 分类, false: 使用良恶性分类
       # training_data_devices: 可选，如果未配置会自动从base_datasets推导
@@ -75,7 +75,7 @@ dino_unet:
         base_datasets: ["TN3K"]
         dataset_size: 4633  # 训练数据集的总样本数量（待填充）
     - name: "TN5K"
-      enabled: true
+      enabled: false
       model_path: "weights/TN5K/dino_unet_train_multitask_TN5K_epoch_50.pth"
       use_tirads: false
       # training_data_devices: 可选，如果未配置会自动从base_datasets推导
@@ -106,7 +106,7 @@ dino_unet:
         base_datasets: ["TN5K"]
         dataset_size: 3400
     - name: "ThyroidXL"
-      enabled: true
+      enabled: false
       model_path: "weights/ThyroidXL/dino_unet_train_multitask_ThyroidXL_epoch_50.pth"
       use_tirads: false
       # training_data_devices: 可选，如果未配置会自动从base_datasets推导
@@ -140,7 +140,7 @@ dino_unet:
 autogluon:
   models:
     - name: "autogluon_radiomics_dataset3"  # 模型名称
-      enabled: true
+      enabled: false
       model_dir: "weights/dataset_3/autogluon_model_20260106_215755"
       # training_data_devices: 可选，如果未配置会自动从base_datasets推导
       # 在原始数据集测试集上的性能
@@ -194,7 +194,7 @@ data:
 
 # Output Configuration (输出配置)
 output:
-  output_dir: "output/500_TestData_Malignancy_Cls/no_llm"
+  output_dir: "output/500_TestData_Malignancy_Cls/no_llm_single_model"
   
 # 二分类概率校准（可选；由 scripts/fit_binary_calibrators.py 离线生成 JSON）
 # enabled: false 或未配置时与原先一致；加载失败或文件损坏时自动回退为不校准
@@ -208,4 +208,4 @@ agent:
   max_retries: 3
   max_batch_size: 2  # Maximum images per batch API call
   enable_agent: false  # true: 使用大模型决策；false: 不调用大模型，按 top_k 置信度 soft voting
-  top_k: 3  # 无 Agent 时：对 top_confidence 最高的 top_k 个模型做 soft voting；有 Agent 且存在分歧时：大模型选出 top_k 个模型再融合。为 1 时与原先单模型决策一致
+  top_k: 1  # 无 Agent 时：对 top_confidence 最高的 top_k 个模型做 soft voting；有 Agent 且存在分歧时：大模型选出 top_k 个模型再融合。为 1 时与原先单模型决策一致
