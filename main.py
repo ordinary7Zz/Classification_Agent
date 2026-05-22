@@ -384,10 +384,18 @@ def main(config_path: str = "config/config.yaml"):
 
         for idx, model_config in enumerate(dino_models_config, 1):
             model_name = model_config.get('name', f'dino_unet_{idx}')
+            enabled = model_config.get('enabled', True)
+
+            print(f"\n    [{idx}] {model_name}")
+            print(f"        启用: {enabled}")
+
+            if not enabled:
+                print(f"        ⚠️  已禁用，跳过")
+                continue
+
             model_path = model_config['model_path']
             use_tirads = model_config.get('use_tirads', False)
 
-            print(f"\n    [{idx}] {model_name}")
             print(f"        路径: {model_path}")
             print(f"        TI-RADS: {use_tirads}")
 
@@ -445,9 +453,17 @@ def main(config_path: str = "config/config.yaml"):
 
         for idx, model_config in enumerate(autogluon_models_config, 1):
             model_name = model_config.get('name', f'autogluon_{idx}')
-            model_dir = model_config['model_dir']
+            enabled = model_config.get('enabled', True)
 
             print(f"\n    [{idx}] {model_name}")
+            print(f"        启用: {enabled}")
+
+            if not enabled:
+                print(f"        ⚠️  已禁用，跳过")
+                continue
+
+            model_dir = model_config['model_dir']
+
             print(f"        目录: {model_dir}")
 
             if not os.path.exists(model_dir):

@@ -8,11 +8,13 @@ agent_llm:
 
 # Model Paths Configuration (甲状腺模型路径)
 # 支持配置多个模型，每个模型使用不同的权重文件
+# enabled: 模型开关（可选，默认 true；为 false 时跳过该模型，兼容旧配置）
 # training_data_devices: 该模型训练数据集的设备信息（可选，如果未配置会自动从base_datasets和base_datasets_info推导）
 #   例如: ["GE Logiq E9", "ARIETTA 850"]，如果未配置或为空，会自动从dataset_info.base_datasets和base_datasets_info推导
 dino_unet:
   models:
     - name: "all_datasets"  # 模型名称
+      enabled: true
       model_path: "weights/all_datasets/dino_unet_train_all_datasets_epoch_40.pth"
       use_tirads: false  # true: 使用 TI-RADS 分类, false: 使用良恶性分类
       # 在原始数据集测试集上的性能
@@ -42,6 +44,7 @@ dino_unet:
         base_datasets: ["TN3K", "ThyroidXL", "TN5K", "Cine-Clip"]
         dataset_size: 31304
     - name: "TN3K"  # 模型名称（可选，用于区分不同模型）
+      enabled: true
       model_path: "weights/TN3K/dino_unet_train_multitask_TN3K_epoch_50.pth"
       use_tirads: false  # true: 使用 TI-RADS 分类, false: 使用良恶性分类
       # training_data_devices: 可选，如果未配置会自动从base_datasets推导
@@ -72,6 +75,7 @@ dino_unet:
         base_datasets: ["TN3K"]
         dataset_size: 4633  # 训练数据集的总样本数量（待填充）
     - name: "TN5K"
+      enabled: true
       model_path: "weights/TN5K/dino_unet_train_multitask_TN5K_epoch_50.pth"
       use_tirads: false
       # training_data_devices: 可选，如果未配置会自动从base_datasets推导
@@ -102,6 +106,7 @@ dino_unet:
         base_datasets: ["TN5K"]
         dataset_size: 3400
     - name: "ThyroidXL"
+      enabled: true
       model_path: "weights/ThyroidXL/dino_unet_train_multitask_ThyroidXL_epoch_50.pth"
       use_tirads: false
       # training_data_devices: 可选，如果未配置会自动从base_datasets推导
@@ -135,6 +140,7 @@ dino_unet:
 autogluon:
   models:
     - name: "autogluon_radiomics_dataset3"  # 模型名称
+      enabled: true
       model_dir: "weights/dataset_3/autogluon_model_20260106_215755"
       # training_data_devices: 可选，如果未配置会自动从base_datasets推导
       # 在原始数据集测试集上的性能
