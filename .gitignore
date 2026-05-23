@@ -25,6 +25,7 @@ dist/
 build/
 *.o
 *.out
+*.pth
 
 # IDE 配置
 .idea/
