@@ -1,0 +1,6287 @@
+{
+  "summary": {
+    "agent_method": {
+      "accuracy": 0.7618110775947571,
+      "precision": 0.6652444005012512,
+      "recall": 0.7661183476448059,
+      "f1_score": 0.7117108702659607,
+      "correct_count": 468,
+      "total_count": 614,
+      "auroc": 0.8147314190864563,
+      "auprc": 0.7284058332443237,
+      "sensitivity": 0.7661183476448059,
+      "specificity": 0.7591517567634583,
+      "youden": 0.5252701044082642,
+      "ci95": {
+        "accuracy": [
+          0.7296416759490967,
+          0.7947883009910583
+        ],
+        "precision": [
+          0.6091516301035881,
+          0.7222222089767456
+        ],
+        "recall": [
+          0.711101944744587,
+          0.81703140437603
+        ],
+        "f1": [
+          0.6653459638357162,
+          0.755906954407692
+        ],
+        "auroc": [
+          0.7790266796946526,
+          0.8501462236046791
+        ],
+        "auprc": [
+          0.6646735444664955,
+          0.7858604460954666
+        ],
+        "sensitivity": [
+          0.711101944744587,
+          0.81703140437603
+        ],
+        "specificity": [
+          0.7161059156060219,
+          0.8016629993915557
+        ],
+        "youden": [
+          0.45729288160800935,
+          0.5941414669156074
+        ]
+      }
+    },
+    "fixed_method": {
+      "accuracy": 0.7618110775947571,
+      "precision": 0.6652444005012512,
+      "recall": 0.7661183476448059,
+      "f1_score": 0.7117108702659607,
+      "correct_count": 468,
+      "total_count": 614,
+      "auroc": 0.8147314190864563,
+      "auprc": 0.7284058332443237,
+      "sensitivity": 0.7661183476448059,
+      "specificity": 0.7591517567634583,
+      "youden": 0.5252701044082642,
+      "ci95": {
+        "accuracy": [
+          0.7296416759490967,
+          0.7947883009910583
+        ],
+        "precision": [
+          0.6091516301035881,
+          0.7222222089767456
+        ],
+        "recall": [
+          0.711101944744587,
+          0.81703140437603
+        ],
+        "f1": [
+          0.6653459638357162,
+          0.755906954407692
+        ],
+        "auroc": [
+          0.7790266796946526,
+          0.8501462236046791
+        ],
+        "auprc": [
+          0.6646735444664955,
+          0.7858604460954666
+        ],
+        "sensitivity": [
+          0.711101944744587,
+          0.81703140437603
+        ],
+        "specificity": [
+          0.7161059156060219,
+          0.8016629993915557
+        ],
+        "youden": [
+          0.45729288160800935,
+          0.5941414669156074
+        ]
+      }
+    },
+    "improvement": {
+      "accuracy_diff": 0.0,
+      "precision_diff": 0.0,
+      "recall_diff": 0.0,
+      "f1_diff": 0.0,
+      "auroc_diff": 0.0,
+      "auprc_diff": 0.0,
+      "sensitivity_diff": 0.0,
+      "specificity_diff": 0.0,
+      "youden_diff": 0.0
+    }
+  },
+  "metric_definition": {
+    "type": "binary",
+    "threshold": 0.5,
+    "negative_class": "良性",
+    "positive_class": "恶性"
+  },
+  "confusion_matrices": {
+    "agent_method": {
+      "恶性": {
+        "恶性": 181,
+        "良性": 55
+      },
+      "良性": {
+        "恶性": 91,
+        "良性": 287
+      }
+    },
+    "fixed_method": {
+      "恶性": {
+        "恶性": 181,
+        "良性": 55
+      },
+      "良性": {
+        "恶性": 91,
+        "良性": 287
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "image_name": "0000.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999710321426392,
+      "fixed_prob_positive": 0.9999710321426392,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0001.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9997521042823792,
+      "fixed_prob_positive": 0.9997521042823792,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0002.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00019631571194622666,
+      "fixed_prob_positive": 0.00019631571194622666,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0003.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0008338494226336479,
+      "fixed_prob_positive": 0.0008338494226336479,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0004.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.001828505890443921,
+      "fixed_prob_positive": 0.001828505890443921,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0005.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.000594839861150831,
+      "fixed_prob_positive": 0.000594839861150831,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0006.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0004817706940229982,
+      "fixed_prob_positive": 0.0004817706940229982,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0007.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00013375183334574103,
+      "fixed_prob_positive": 0.00013375183334574103,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0008.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.603319343412295e-05,
+      "fixed_prob_positive": 6.603319343412295e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0009.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.3689760635315906e-05,
+      "fixed_prob_positive": 1.3689760635315906e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0010.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999603033065796,
+      "fixed_prob_positive": 0.9999603033065796,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0011.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.0968405149469618e-05,
+      "fixed_prob_positive": 1.0968405149469618e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0012.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.3292271432874259e-05,
+      "fixed_prob_positive": 1.3292271432874259e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0013.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998977184295654,
+      "fixed_prob_positive": 0.9998977184295654,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0014.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.83071484672837e-05,
+      "fixed_prob_positive": 6.83071484672837e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0015.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999353885650635,
+      "fixed_prob_positive": 0.9999353885650635,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0016.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999748468399048,
+      "fixed_prob_positive": 0.9999748468399048,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0017.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0005725198425352573,
+      "fixed_prob_positive": 0.0005725198425352573,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0018.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.264850137289613e-05,
+      "fixed_prob_positive": 7.264850137289613e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0019.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9990636706352234,
+      "fixed_prob_positive": 0.9990636706352234,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0020.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.6317757146898657e-05,
+      "fixed_prob_positive": 2.6317757146898657e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0021.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.445699581381632e-05,
+      "fixed_prob_positive": 1.445699581381632e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0022.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0002472225169185549,
+      "fixed_prob_positive": 0.0002472225169185549,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0023.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.986019848729484e-05,
+      "fixed_prob_positive": 4.986019848729484e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0024.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.1088575774920173e-05,
+      "fixed_prob_positive": 1.1088575774920173e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0025.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999533891677856,
+      "fixed_prob_positive": 0.9999533891677856,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0026.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 8.12713333289139e-05,
+      "fixed_prob_positive": 8.12713333289139e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0027.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.001195569639094174,
+      "fixed_prob_positive": 0.001195569639094174,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0028.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0005760501371696591,
+      "fixed_prob_positive": 0.0005760501371696591,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0029.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.718129588989541e-05,
+      "fixed_prob_positive": 6.718129588989541e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0030.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999791383743286,
+      "fixed_prob_positive": 0.9999791383743286,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0031.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9993367791175842,
+      "fixed_prob_positive": 0.9993367791175842,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0032.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999972939491272,
+      "fixed_prob_positive": 0.999972939491272,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0033.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999560117721558,
+      "fixed_prob_positive": 0.9999560117721558,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0034.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9974744915962219,
+      "fixed_prob_positive": 0.9974744915962219,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0035.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9994530081748962,
+      "fixed_prob_positive": 0.9994530081748962,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0036.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999804496765137,
+      "fixed_prob_positive": 0.9999804496765137,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0037.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998577833175659,
+      "fixed_prob_positive": 0.9998577833175659,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0038.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00023614324163645506,
+      "fixed_prob_positive": 0.00023614324163645506,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0039.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.815272480598651e-05,
+      "fixed_prob_positive": 1.815272480598651e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0040.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 8.737600182939786e-06,
+      "fixed_prob_positive": 8.737600182939786e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0041.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.838530730921775e-05,
+      "fixed_prob_positive": 4.838530730921775e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0042.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0005037017399445176,
+      "fixed_prob_positive": 0.0005037017399445176,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0043.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0006604172522202134,
+      "fixed_prob_positive": 0.0006604172522202134,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0044.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9991106390953064,
+      "fixed_prob_positive": 0.9991106390953064,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0045.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00020107050659134984,
+      "fixed_prob_positive": 0.00020107050659134984,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0046.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0009128247038461268,
+      "fixed_prob_positive": 0.0009128247038461268,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0047.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999650716781616,
+      "fixed_prob_positive": 0.9999650716781616,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0048.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9983308911323547,
+      "fixed_prob_positive": 0.9983308911323547,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0049.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.466921670129523e-05,
+      "fixed_prob_positive": 7.466921670129523e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0050.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0018673447193577886,
+      "fixed_prob_positive": 0.0018673447193577886,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0051.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999758005142212,
+      "fixed_prob_positive": 0.9999758005142212,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0052.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 8.317585525219329e-06,
+      "fixed_prob_positive": 8.317585525219329e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0053.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0002184038021368906,
+      "fixed_prob_positive": 0.0002184038021368906,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0054.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.2235366486711428e-05,
+      "fixed_prob_positive": 2.2235366486711428e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0055.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.95038033882156e-05,
+      "fixed_prob_positive": 6.95038033882156e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0056.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999649524688721,
+      "fixed_prob_positive": 0.9999649524688721,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0057.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.337212991842534e-06,
+      "fixed_prob_positive": 7.337212991842534e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0058.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.0183001904806588e-05,
+      "fixed_prob_positive": 1.0183001904806588e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0059.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.7802269212552346e-05,
+      "fixed_prob_positive": 1.7802269212552346e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0060.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00016801936726551503,
+      "fixed_prob_positive": 0.00016801936726551503,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0061.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00010607181320665404,
+      "fixed_prob_positive": 0.00010607181320665404,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0062.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.8549669877975248e-05,
+      "fixed_prob_positive": 2.8549669877975248e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0063.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.6639811039785855e-05,
+      "fixed_prob_positive": 2.6639811039785855e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0064.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.502419687923975e-05,
+      "fixed_prob_positive": 4.502419687923975e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0065.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.409858825558331e-05,
+      "fixed_prob_positive": 2.409858825558331e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0066.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.7084894352592528e-05,
+      "fixed_prob_positive": 1.7084894352592528e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0067.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999749660491943,
+      "fixed_prob_positive": 0.9999749660491943,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0068.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9995433688163757,
+      "fixed_prob_positive": 0.9995433688163757,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0069.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.854474122519605e-06,
+      "fixed_prob_positive": 6.854474122519605e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0070.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.649689344660146e-06,
+      "fixed_prob_positive": 4.649689344660146e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0071.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.908649574033916e-05,
+      "fixed_prob_positive": 1.908649574033916e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0072.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0004326844937168062,
+      "fixed_prob_positive": 0.0004326844937168062,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0073.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9992806315422058,
+      "fixed_prob_positive": 0.9992806315422058,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0074.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.1272897609160282e-05,
+      "fixed_prob_positive": 1.1272897609160282e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0075.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.2374220609199256e-05,
+      "fixed_prob_positive": 3.2374220609199256e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0076.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.636965837155003e-05,
+      "fixed_prob_positive": 2.636965837155003e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0077.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9996669292449951,
+      "fixed_prob_positive": 0.9996669292449951,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0078.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999802112579346,
+      "fixed_prob_positive": 0.9999802112579346,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0079.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0002234353160019964,
+      "fixed_prob_positive": 0.0002234353160019964,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0080.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.763673445675522e-05,
+      "fixed_prob_positive": 6.763673445675522e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0081.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00013448168465401977,
+      "fixed_prob_positive": 0.00013448168465401977,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0082.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999713897705078,
+      "fixed_prob_positive": 0.9999713897705078,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0083.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.322938472498208e-06,
+      "fixed_prob_positive": 7.322938472498208e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0084.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 9.25365475268336e-06,
+      "fixed_prob_positive": 9.25365475268336e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0085.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.000415390997659415,
+      "fixed_prob_positive": 0.000415390997659415,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0086.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9992008805274963,
+      "fixed_prob_positive": 0.9992008805274963,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0087.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00013490088167600334,
+      "fixed_prob_positive": 0.00013490088167600334,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0088.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0008613818790763617,
+      "fixed_prob_positive": 0.0008613818790763617,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0089.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00013248756295070052,
+      "fixed_prob_positive": 0.00013248756295070052,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0090.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999804496765137,
+      "fixed_prob_positive": 0.9999804496765137,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0091.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.000651890819426626,
+      "fixed_prob_positive": 0.000651890819426626,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0092.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0006658381316810846,
+      "fixed_prob_positive": 0.0006658381316810846,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0093.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0009010251378640532,
+      "fixed_prob_positive": 0.0009010251378640532,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0094.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9993687272071838,
+      "fixed_prob_positive": 0.9993687272071838,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0095.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00012472564412746578,
+      "fixed_prob_positive": 0.00012472564412746578,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0096.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999017715454102,
+      "fixed_prob_positive": 0.9999017715454102,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0097.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.145867130020633e-05,
+      "fixed_prob_positive": 7.145867130020633e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0098.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0002434890193399042,
+      "fixed_prob_positive": 0.0002434890193399042,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0099.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 8.045254617172759e-06,
+      "fixed_prob_positive": 8.045254617172759e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0100.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.3143542067555245e-06,
+      "fixed_prob_positive": 7.3143542067555245e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0101.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.270210097776726e-05,
+      "fixed_prob_positive": 2.270210097776726e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0102.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0004917722544632852,
+      "fixed_prob_positive": 0.0004917722544632852,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0103.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.2368391253403388e-05,
+      "fixed_prob_positive": 1.2368391253403388e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0104.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.71775773196714e-05,
+      "fixed_prob_positive": 1.71775773196714e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0105.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0003239641955588013,
+      "fixed_prob_positive": 0.0003239641955588013,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0106.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.359668021905236e-05,
+      "fixed_prob_positive": 1.359668021905236e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0107.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0001979083172045648,
+      "fixed_prob_positive": 0.0001979083172045648,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0108.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.302307494683191e-05,
+      "fixed_prob_positive": 7.302307494683191e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0109.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.4898799892980605e-05,
+      "fixed_prob_positive": 2.4898799892980605e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0110.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.404530773172155e-05,
+      "fixed_prob_positive": 4.404530773172155e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0111.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 9.889287321129814e-05,
+      "fixed_prob_positive": 9.889287321129814e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0112.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00021096752607263625,
+      "fixed_prob_positive": 0.00021096752607263625,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0113.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0006038682186044753,
+      "fixed_prob_positive": 0.0006038682186044753,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0114.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.8050933906342834e-05,
+      "fixed_prob_positive": 2.8050933906342834e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0115.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.998180627822876,
+      "fixed_prob_positive": 0.998180627822876,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0116.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999970555305481,
+      "fixed_prob_positive": 0.999970555305481,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0117.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.2619412852218375e-05,
+      "fixed_prob_positive": 4.2619412852218375e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0118.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00015222016372717917,
+      "fixed_prob_positive": 0.00015222016372717917,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0119.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.8931103113573045e-05,
+      "fixed_prob_positive": 1.8931103113573045e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0120.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.563125417509582e-05,
+      "fixed_prob_positive": 2.563125417509582e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0121.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.998638927936554,
+      "fixed_prob_positive": 0.998638927936554,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0122.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9967086315155029,
+      "fixed_prob_positive": 0.9967086315155029,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0123.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 9.353522727906238e-06,
+      "fixed_prob_positive": 9.353522727906238e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0124.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998157620429993,
+      "fixed_prob_positive": 0.9998157620429993,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0125.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0006491996464319527,
+      "fixed_prob_positive": 0.0006491996464319527,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0126.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0001940014335559681,
+      "fixed_prob_positive": 0.0001940014335559681,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0127.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0002080320118693635,
+      "fixed_prob_positive": 0.0002080320118693635,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0128.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999746084213257,
+      "fixed_prob_positive": 0.9999746084213257,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0129.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999818801879883,
+      "fixed_prob_positive": 0.9999818801879883,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0130.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.8722335880738683e-05,
+      "fixed_prob_positive": 1.8722335880738683e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0131.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.213559102732688e-05,
+      "fixed_prob_positive": 3.213559102732688e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0132.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9996501207351685,
+      "fixed_prob_positive": 0.9996501207351685,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0133.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00010879487672355026,
+      "fixed_prob_positive": 0.00010879487672355026,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0134.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00046470999950543046,
+      "fixed_prob_positive": 0.00046470999950543046,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0135.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0004011162673123181,
+      "fixed_prob_positive": 0.0004011162673123181,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0136.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 9.82054480118677e-05,
+      "fixed_prob_positive": 9.82054480118677e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0137.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0007531073642894626,
+      "fixed_prob_positive": 0.0007531073642894626,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0138.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.4407388486433774e-05,
+      "fixed_prob_positive": 4.4407388486433774e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0139.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999964714050293,
+      "fixed_prob_positive": 0.999964714050293,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0140.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.2092392504855525e-06,
+      "fixed_prob_positive": 4.2092392504855525e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0141.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00019843416521325707,
+      "fixed_prob_positive": 0.00019843416521325707,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0142.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.3694186893408187e-05,
+      "fixed_prob_positive": 2.3694186893408187e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0143.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999198913574219,
+      "fixed_prob_positive": 0.9999198913574219,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0144.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0008890789467841387,
+      "fixed_prob_positive": 0.0008890789467841387,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0145.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0011888659792020917,
+      "fixed_prob_positive": 0.0011888659792020917,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0146.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.979375368449837e-05,
+      "fixed_prob_positive": 7.979375368449837e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0147.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 8.305902883876115e-05,
+      "fixed_prob_positive": 8.305902883876115e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0148.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00048495124792680144,
+      "fixed_prob_positive": 0.00048495124792680144,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0149.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.6812270738882944e-05,
+      "fixed_prob_positive": 4.6812270738882944e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0150.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0001611883781151846,
+      "fixed_prob_positive": 0.0001611883781151846,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0151.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.630669976293575e-05,
+      "fixed_prob_positive": 1.630669976293575e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0152.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 5.1584182074293494e-05,
+      "fixed_prob_positive": 5.1584182074293494e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0153.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 9.2450572992675e-05,
+      "fixed_prob_positive": 9.2450572992675e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0154.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999743700027466,
+      "fixed_prob_positive": 0.9999743700027466,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0155.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998668432235718,
+      "fixed_prob_positive": 0.9998668432235718,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0156.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998582601547241,
+      "fixed_prob_positive": 0.9998582601547241,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0157.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999496340751648,
+      "fixed_prob_positive": 0.999496340751648,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0158.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999793767929077,
+      "fixed_prob_positive": 0.9999793767929077,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0159.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0007887569954618812,
+      "fixed_prob_positive": 0.0007887569954618812,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0160.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0003164408262819052,
+      "fixed_prob_positive": 0.0003164408262819052,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0161.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0004715369432233274,
+      "fixed_prob_positive": 0.0004715369432233274,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0162.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.893049011414405e-05,
+      "fixed_prob_positive": 1.893049011414405e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0163.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00016202400729525834,
+      "fixed_prob_positive": 0.00016202400729525834,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0164.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00012398169201333076,
+      "fixed_prob_positive": 0.00012398169201333076,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0165.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0007829476962797344,
+      "fixed_prob_positive": 0.0007829476962797344,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0166.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0022683104034513235,
+      "fixed_prob_positive": 0.0022683104034513235,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0167.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0004135092021897435,
+      "fixed_prob_positive": 0.0004135092021897435,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0168.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999818801879883,
+      "fixed_prob_positive": 0.9999818801879883,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0169.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0003537925367709249,
+      "fixed_prob_positive": 0.0003537925367709249,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0170.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999668598175049,
+      "fixed_prob_positive": 0.9999668598175049,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0171.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00041903622332029045,
+      "fixed_prob_positive": 0.00041903622332029045,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0172.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0008699586032889783,
+      "fixed_prob_positive": 0.0008699586032889783,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0173.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9991843104362488,
+      "fixed_prob_positive": 0.9991843104362488,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0174.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00024448535987176,
+      "fixed_prob_positive": 0.00024448535987176,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0175.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999685287475586,
+      "fixed_prob_positive": 0.9999685287475586,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0176.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998774528503418,
+      "fixed_prob_positive": 0.9998774528503418,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0177.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.9610724090598524e-05,
+      "fixed_prob_positive": 4.9610724090598524e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0178.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0006721830577589571,
+      "fixed_prob_positive": 0.0006721830577589571,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0179.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.000144332239869982,
+      "fixed_prob_positive": 0.000144332239869982,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0180.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.000511064485181123,
+      "fixed_prob_positive": 0.000511064485181123,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0181.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.798417598474771e-05,
+      "fixed_prob_positive": 6.798417598474771e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0182.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 9.905123442877084e-05,
+      "fixed_prob_positive": 9.905123442877084e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0183.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00012954433623235673,
+      "fixed_prob_positive": 0.00012954433623235673,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0184.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0001649581390665844,
+      "fixed_prob_positive": 0.0001649581390665844,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0185.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00016696371312718838,
+      "fixed_prob_positive": 0.00016696371312718838,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0186.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0015770482132211328,
+      "fixed_prob_positive": 0.0015770482132211328,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0187.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0016161528183147311,
+      "fixed_prob_positive": 0.0016161528183147311,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0188.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00014758155157323927,
+      "fixed_prob_positive": 0.00014758155157323927,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0189.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9992129802703857,
+      "fixed_prob_positive": 0.9992129802703857,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0190.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00031418565777130425,
+      "fixed_prob_positive": 0.00031418565777130425,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0191.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00017272317199967802,
+      "fixed_prob_positive": 0.00017272317199967802,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0192.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00014994289085734636,
+      "fixed_prob_positive": 0.00014994289085734636,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0193.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00014852375898044556,
+      "fixed_prob_positive": 0.00014852375898044556,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0194.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0008483959245495498,
+      "fixed_prob_positive": 0.0008483959245495498,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0195.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0016978232888504863,
+      "fixed_prob_positive": 0.0016978232888504863,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0196.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0016038365429267287,
+      "fixed_prob_positive": 0.0016038365429267287,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0197.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0008147206390276551,
+      "fixed_prob_positive": 0.0008147206390276551,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0198.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0001328353100689128,
+      "fixed_prob_positive": 0.0001328353100689128,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0199.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999750852584839,
+      "fixed_prob_positive": 0.9999750852584839,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0200.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998505115509033,
+      "fixed_prob_positive": 0.9998505115509033,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0201.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0018150225514546037,
+      "fixed_prob_positive": 0.0018150225514546037,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0202.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00019216720829717815,
+      "fixed_prob_positive": 0.00019216720829717815,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0203.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00033516151597723365,
+      "fixed_prob_positive": 0.00033516151597723365,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0204.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0015099706361070275,
+      "fixed_prob_positive": 0.0015099706361070275,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0205.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.075886484613875e-05,
+      "fixed_prob_positive": 1.075886484613875e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0206.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0007899491465650499,
+      "fixed_prob_positive": 0.0007899491465650499,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0207.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0005000791279599071,
+      "fixed_prob_positive": 0.0005000791279599071,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0208.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0006582167115993798,
+      "fixed_prob_positive": 0.0006582167115993798,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0209.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.7687161238864064e-05,
+      "fixed_prob_positive": 3.7687161238864064e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0210.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.8321017452981323e-05,
+      "fixed_prob_positive": 2.8321017452981323e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0211.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.2452185728761833e-05,
+      "fixed_prob_positive": 1.2452185728761833e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0212.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.0837550689757336e-05,
+      "fixed_prob_positive": 1.0837550689757336e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0213.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00012472315574996173,
+      "fixed_prob_positive": 0.00012472315574996173,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0214.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0006332376506179571,
+      "fixed_prob_positive": 0.0006332376506179571,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0215.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999602735042572,
+      "fixed_prob_positive": 0.999602735042572,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0216.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 8.589402568759397e-05,
+      "fixed_prob_positive": 8.589402568759397e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0217.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999808073043823,
+      "fixed_prob_positive": 0.9999808073043823,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0218.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.2396978238248266e-05,
+      "fixed_prob_positive": 2.2396978238248266e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0219.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 8.14277955214493e-05,
+      "fixed_prob_positive": 8.14277955214493e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0220.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999746084213257,
+      "fixed_prob_positive": 0.9999746084213257,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0221.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0003298953524790704,
+      "fixed_prob_positive": 0.0003298953524790704,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0222.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 9.445153409615159e-05,
+      "fixed_prob_positive": 9.445153409615159e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0223.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00023712626716587692,
+      "fixed_prob_positive": 0.00023712626716587692,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0224.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 5.314715235726908e-05,
+      "fixed_prob_positive": 5.314715235726908e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0225.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9994663596153259,
+      "fixed_prob_positive": 0.9994663596153259,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0226.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999885082244873,
+      "fixed_prob_positive": 0.999885082244873,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0227.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.391744237684179e-05,
+      "fixed_prob_positive": 2.391744237684179e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0228.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00017072196351364255,
+      "fixed_prob_positive": 0.00017072196351364255,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0229.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0006385679007507861,
+      "fixed_prob_positive": 0.0006385679007507861,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0230.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999761581420898,
+      "fixed_prob_positive": 0.9999761581420898,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0231.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0007390663377009332,
+      "fixed_prob_positive": 0.0007390663377009332,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0232.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0006442026933655143,
+      "fixed_prob_positive": 0.0006442026933655143,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0233.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00020386074902489781,
+      "fixed_prob_positive": 0.00020386074902489781,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0234.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.2390282285632566e-05,
+      "fixed_prob_positive": 3.2390282285632566e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0235.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0008722258498892188,
+      "fixed_prob_positive": 0.0008722258498892188,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0236.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00048586109187453985,
+      "fixed_prob_positive": 0.00048586109187453985,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0237.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0017592181684449315,
+      "fixed_prob_positive": 0.0017592181684449315,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0238.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.540089427493513e-06,
+      "fixed_prob_positive": 7.540089427493513e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0239.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 5.644142675009789e-06,
+      "fixed_prob_positive": 5.644142675009789e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0240.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.002244028262794018,
+      "fixed_prob_positive": 0.002244028262794018,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0241.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.164034569635987e-05,
+      "fixed_prob_positive": 3.164034569635987e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0242.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998340606689453,
+      "fixed_prob_positive": 0.9998340606689453,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0243.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999397993087769,
+      "fixed_prob_positive": 0.9999397993087769,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0244.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.0022558853961527e-05,
+      "fixed_prob_positive": 1.0022558853961527e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0245.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.1610730325628538e-05,
+      "fixed_prob_positive": 1.1610730325628538e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0246.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0006761636468581855,
+      "fixed_prob_positive": 0.0006761636468581855,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0247.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00010997960634995252,
+      "fixed_prob_positive": 0.00010997960634995252,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0248.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00012532305845525116,
+      "fixed_prob_positive": 0.00012532305845525116,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0249.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998243451118469,
+      "fixed_prob_positive": 0.9998243451118469,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0250.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.723418194567785e-05,
+      "fixed_prob_positive": 3.723418194567785e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0251.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999832272529602,
+      "fixed_prob_positive": 0.999832272529602,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0252.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.378528243862092e-05,
+      "fixed_prob_positive": 7.378528243862092e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0253.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 5.8455254475120455e-05,
+      "fixed_prob_positive": 5.8455254475120455e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0254.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0005327766994014382,
+      "fixed_prob_positive": 0.0005327766994014382,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0255.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999829530715942,
+      "fixed_prob_positive": 0.9999829530715942,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0256.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.656289118225686e-05,
+      "fixed_prob_positive": 3.656289118225686e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0257.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00034021533792838454,
+      "fixed_prob_positive": 0.00034021533792838454,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0258.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.7008423785446212e-05,
+      "fixed_prob_positive": 2.7008423785446212e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0259.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00032056617783382535,
+      "fixed_prob_positive": 0.00032056617783382535,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0260.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0003670560836326331,
+      "fixed_prob_positive": 0.0003670560836326331,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0261.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 5.932974545430625e-06,
+      "fixed_prob_positive": 5.932974545430625e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0262.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.015360885503469e-05,
+      "fixed_prob_positive": 1.015360885503469e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0263.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00030841949046589434,
+      "fixed_prob_positive": 0.00030841949046589434,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0264.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0003196661709807813,
+      "fixed_prob_positive": 0.0003196661709807813,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0265.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 5.2306113502709195e-05,
+      "fixed_prob_positive": 5.2306113502709195e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0266.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.047934584785253e-05,
+      "fixed_prob_positive": 6.047934584785253e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0267.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9996067881584167,
+      "fixed_prob_positive": 0.9996067881584167,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0268.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.545252836076543e-05,
+      "fixed_prob_positive": 6.545252836076543e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0269.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.648396604054142e-06,
+      "fixed_prob_positive": 7.648396604054142e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0270.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.413873845507624e-06,
+      "fixed_prob_positive": 7.413873845507624e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0271.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9987346529960632,
+      "fixed_prob_positive": 0.9987346529960632,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0272.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.777837239089422e-05,
+      "fixed_prob_positive": 4.777837239089422e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0273.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9992116689682007,
+      "fixed_prob_positive": 0.9992116689682007,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0274.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0003265142149757594,
+      "fixed_prob_positive": 0.0003265142149757594,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0275.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999566078186035,
+      "fixed_prob_positive": 0.9999566078186035,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0276.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.505442873574793e-05,
+      "fixed_prob_positive": 3.505442873574793e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0277.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 8.376000914722681e-05,
+      "fixed_prob_positive": 8.376000914722681e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0278.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.46757476311177e-05,
+      "fixed_prob_positive": 4.46757476311177e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0279.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0020288792438805103,
+      "fixed_prob_positive": 0.0020288792438805103,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0280.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.0329567885491997e-05,
+      "fixed_prob_positive": 1.0329567885491997e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0281.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9988403916358948,
+      "fixed_prob_positive": 0.9988403916358948,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0282.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.9459856048342772e-05,
+      "fixed_prob_positive": 1.9459856048342772e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0283.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0002426188439130783,
+      "fixed_prob_positive": 0.0002426188439130783,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0284.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.448992356425151e-05,
+      "fixed_prob_positive": 3.448992356425151e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0285.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00039299653144553304,
+      "fixed_prob_positive": 0.00039299653144553304,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0286.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00011661760072456673,
+      "fixed_prob_positive": 0.00011661760072456673,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0287.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00023230597435031086,
+      "fixed_prob_positive": 0.00023230597435031086,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0288.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.816416473360732e-05,
+      "fixed_prob_positive": 7.816416473360732e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0289.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9996071457862854,
+      "fixed_prob_positive": 0.9996071457862854,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0290.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.423135230055777e-06,
+      "fixed_prob_positive": 7.423135230055777e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0291.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.0443570469506085e-05,
+      "fixed_prob_positive": 4.0443570469506085e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0292.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0008123383158817887,
+      "fixed_prob_positive": 0.0008123383158817887,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0293.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.844748269126285e-05,
+      "fixed_prob_positive": 2.844748269126285e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0294.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9985038042068481,
+      "fixed_prob_positive": 0.9985038042068481,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0295.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 9.523920016363263e-05,
+      "fixed_prob_positive": 9.523920016363263e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0296.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00016480374324601144,
+      "fixed_prob_positive": 0.00016480374324601144,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0297.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.605453902215231e-06,
+      "fixed_prob_positive": 7.605453902215231e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0298.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.264110561460257e-05,
+      "fixed_prob_positive": 6.264110561460257e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0299.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.627715341281146e-05,
+      "fixed_prob_positive": 3.627715341281146e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0300.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998008608818054,
+      "fixed_prob_positive": 0.9998008608818054,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0301.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00021207291865721345,
+      "fixed_prob_positive": 0.00021207291865721345,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0302.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00031125376699492335,
+      "fixed_prob_positive": 0.00031125376699492335,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0303.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.81546907799202e-06,
+      "fixed_prob_positive": 6.81546907799202e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0304.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.7154394451354165e-06,
+      "fixed_prob_positive": 4.7154394451354165e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0305.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998657703399658,
+      "fixed_prob_positive": 0.9998657703399658,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0306.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 9.244791726814583e-05,
+      "fixed_prob_positive": 9.244791726814583e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0307.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.673125658882782e-06,
+      "fixed_prob_positive": 4.673125658882782e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0308.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.683759758947417e-05,
+      "fixed_prob_positive": 7.683759758947417e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0309.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.398405821528286e-05,
+      "fixed_prob_positive": 6.398405821528286e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0310.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00011409550643293187,
+      "fixed_prob_positive": 0.00011409550643293187,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0311.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.43350901757367e-05,
+      "fixed_prob_positive": 7.43350901757367e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0312.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9994423985481262,
+      "fixed_prob_positive": 0.9994423985481262,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0313.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.8126501496881247e-05,
+      "fixed_prob_positive": 4.8126501496881247e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0314.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0007248105248436332,
+      "fixed_prob_positive": 0.0007248105248436332,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0315.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.571451088646427e-05,
+      "fixed_prob_positive": 3.571451088646427e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0316.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.4369534255820327e-05,
+      "fixed_prob_positive": 1.4369534255820327e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0317.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0009384508011862636,
+      "fixed_prob_positive": 0.0009384508011862636,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0318.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.585961818927899e-05,
+      "fixed_prob_positive": 6.585961818927899e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0319.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9987162351608276,
+      "fixed_prob_positive": 0.9987162351608276,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0320.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999362051486969,
+      "fixed_prob_positive": 0.999362051486969,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0321.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.4495099094347097e-05,
+      "fixed_prob_positive": 1.4495099094347097e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0322.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00015784917923156172,
+      "fixed_prob_positive": 0.00015784917923156172,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0323.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 9.577077435096726e-06,
+      "fixed_prob_positive": 9.577077435096726e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0324.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.2187513675598893e-05,
+      "fixed_prob_positive": 1.2187513675598893e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0325.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0015272166347131133,
+      "fixed_prob_positive": 0.0015272166347131133,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0326.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999432563781738,
+      "fixed_prob_positive": 0.9999432563781738,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0327.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.000695614202413708,
+      "fixed_prob_positive": 0.000695614202413708,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0328.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9988088607788086,
+      "fixed_prob_positive": 0.9988088607788086,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0329.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 8.359747880604118e-06,
+      "fixed_prob_positive": 8.359747880604118e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0330.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.1692111002048478e-05,
+      "fixed_prob_positive": 1.1692111002048478e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0331.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 5.844380666530924e-06,
+      "fixed_prob_positive": 5.844380666530924e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0332.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0004483348166104406,
+      "fixed_prob_positive": 0.0004483348166104406,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0333.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0001120989109040238,
+      "fixed_prob_positive": 0.0001120989109040238,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0334.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.4301792361948173e-05,
+      "fixed_prob_positive": 1.4301792361948173e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0335.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.969593672081828e-05,
+      "fixed_prob_positive": 3.969593672081828e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0336.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 5.260634497972205e-05,
+      "fixed_prob_positive": 5.260634497972205e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0337.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999653100967407,
+      "fixed_prob_positive": 0.9999653100967407,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0338.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0004145822022110224,
+      "fixed_prob_positive": 0.0004145822022110224,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0339.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.3150388440408278e-05,
+      "fixed_prob_positive": 1.3150388440408278e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0340.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 4.482737494981848e-05,
+      "fixed_prob_positive": 4.482737494981848e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0341.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9974462985992432,
+      "fixed_prob_positive": 0.9974462985992432,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0342.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.000684297876432538,
+      "fixed_prob_positive": 0.000684297876432538,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0343.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00013383832992985845,
+      "fixed_prob_positive": 0.00013383832992985845,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0344.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999228835105896,
+      "fixed_prob_positive": 0.999228835105896,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0345.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0007989548612385988,
+      "fixed_prob_positive": 0.0007989548612385988,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0346.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999457061290741,
+      "fixed_prob_positive": 0.999457061290741,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0347.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999831914901733,
+      "fixed_prob_positive": 0.9999831914901733,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0348.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999957799911499,
+      "fixed_prob_positive": 0.999957799911499,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0349.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0007702898583374918,
+      "fixed_prob_positive": 0.0007702898583374918,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0350.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9991733431816101,
+      "fixed_prob_positive": 0.9991733431816101,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0351.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999346733093262,
+      "fixed_prob_positive": 0.9999346733093262,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0352.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.4847091481206007e-05,
+      "fixed_prob_positive": 2.4847091481206007e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0353.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0007927517290227115,
+      "fixed_prob_positive": 0.0007927517290227115,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0354.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999697208404541,
+      "fixed_prob_positive": 0.9999697208404541,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0355.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00025072929565794766,
+      "fixed_prob_positive": 0.00025072929565794766,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0356.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0003168541006743908,
+      "fixed_prob_positive": 0.0003168541006743908,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0357.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999094009399414,
+      "fixed_prob_positive": 0.9999094009399414,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0358.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999665379524231,
+      "fixed_prob_positive": 0.999665379524231,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0359.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 9.743496775627136e-05,
+      "fixed_prob_positive": 9.743496775627136e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0360.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.002435196191072464,
+      "fixed_prob_positive": 0.002435196191072464,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0361.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.91366540195304e-06,
+      "fixed_prob_positive": 6.91366540195304e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0362.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 8.20329751149984e-06,
+      "fixed_prob_positive": 8.20329751149984e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0363.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0007742654415778816,
+      "fixed_prob_positive": 0.0007742654415778816,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0364.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00010995684715453535,
+      "fixed_prob_positive": 0.00010995684715453535,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0365.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0007660803967155516,
+      "fixed_prob_positive": 0.0007660803967155516,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0366.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0002488784957677126,
+      "fixed_prob_positive": 0.0002488784957677126,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0367.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.000588035152759403,
+      "fixed_prob_positive": 0.000588035152759403,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0368.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.5876215911703184e-05,
+      "fixed_prob_positive": 1.5876215911703184e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0369.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0005355847533792257,
+      "fixed_prob_positive": 0.0005355847533792257,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0370.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0005241462495177984,
+      "fixed_prob_positive": 0.0005241462495177984,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0371.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 8.063477434916422e-05,
+      "fixed_prob_positive": 8.063477434916422e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0372.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.426960392971523e-05,
+      "fixed_prob_positive": 3.426960392971523e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0373.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0010044914670288563,
+      "fixed_prob_positive": 0.0010044914670288563,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0374.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999663829803467,
+      "fixed_prob_positive": 0.9999663829803467,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0375.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.09428978653159e-05,
+      "fixed_prob_positive": 3.09428978653159e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0376.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.463869340223027e-06,
+      "fixed_prob_positive": 6.463869340223027e-06,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0377.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.9795526643283665e-05,
+      "fixed_prob_positive": 2.9795526643283665e-05,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0378.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999650716781616,
+      "fixed_prob_positive": 0.9999650716781616,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0379.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999374151229858,
+      "fixed_prob_positive": 0.9999374151229858,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0380.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999839067459106,
+      "fixed_prob_positive": 0.9999839067459106,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0381.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999836683273315,
+      "fixed_prob_positive": 0.9999836683273315,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0382.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999679327011108,
+      "fixed_prob_positive": 0.9999679327011108,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0383.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.998701810836792,
+      "fixed_prob_positive": 0.998701810836792,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0384.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999819993972778,
+      "fixed_prob_positive": 0.9999819993972778,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0385.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999933123588562,
+      "fixed_prob_positive": 0.999933123588562,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0386.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.4625260519096628e-05,
+      "fixed_prob_positive": 1.4625260519096628e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0387.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999263286590576,
+      "fixed_prob_positive": 0.9999263286590576,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0388.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999818801879883,
+      "fixed_prob_positive": 0.9999818801879883,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0389.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9997733235359192,
+      "fixed_prob_positive": 0.9997733235359192,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0390.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999614953994751,
+      "fixed_prob_positive": 0.9999614953994751,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0391.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999955415725708,
+      "fixed_prob_positive": 0.999955415725708,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0392.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9988517761230469,
+      "fixed_prob_positive": 0.9988517761230469,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0393.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998089671134949,
+      "fixed_prob_positive": 0.9998089671134949,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0394.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999783039093018,
+      "fixed_prob_positive": 0.9999783039093018,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0395.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999778270721436,
+      "fixed_prob_positive": 0.9999778270721436,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0396.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999976634979248,
+      "fixed_prob_positive": 0.999976634979248,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0397.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998169541358948,
+      "fixed_prob_positive": 0.9998169541358948,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0398.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0018530128290876746,
+      "fixed_prob_positive": 0.0018530128290876746,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0399.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9997546076774597,
+      "fixed_prob_positive": 0.9997546076774597,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0400.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9990955591201782,
+      "fixed_prob_positive": 0.9990955591201782,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0401.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0005930450279265642,
+      "fixed_prob_positive": 0.0005930450279265642,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0402.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0001661605783738196,
+      "fixed_prob_positive": 0.0001661605783738196,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0403.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.000960402365308255,
+      "fixed_prob_positive": 0.000960402365308255,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0404.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00010409057722426951,
+      "fixed_prob_positive": 0.00010409057722426951,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0405.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.211013871710747e-05,
+      "fixed_prob_positive": 7.211013871710747e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0406.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0006526886718347669,
+      "fixed_prob_positive": 0.0006526886718347669,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0407.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999719858169556,
+      "fixed_prob_positive": 0.9999719858169556,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0408.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999783039093018,
+      "fixed_prob_positive": 0.9999783039093018,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0409.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0006834753439761698,
+      "fixed_prob_positive": 0.0006834753439761698,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0410.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999799728393555,
+      "fixed_prob_positive": 0.9999799728393555,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0411.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999334812164307,
+      "fixed_prob_positive": 0.9999334812164307,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0412.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00031969454721547663,
+      "fixed_prob_positive": 0.00031969454721547663,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0413.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999604225158691,
+      "fixed_prob_positive": 0.9999604225158691,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0414.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9997244477272034,
+      "fixed_prob_positive": 0.9997244477272034,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0415.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999089241027832,
+      "fixed_prob_positive": 0.9999089241027832,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0416.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999498128890991,
+      "fixed_prob_positive": 0.9999498128890991,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0417.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999656677246094,
+      "fixed_prob_positive": 0.9999656677246094,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0418.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999655485153198,
+      "fixed_prob_positive": 0.9999655485153198,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0419.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9994509816169739,
+      "fixed_prob_positive": 0.9994509816169739,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0420.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999629259109497,
+      "fixed_prob_positive": 0.9999629259109497,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0421.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999500513076782,
+      "fixed_prob_positive": 0.9999500513076782,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0422.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999816417694092,
+      "fixed_prob_positive": 0.9999816417694092,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0423.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999833106994629,
+      "fixed_prob_positive": 0.9999833106994629,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0424.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999896764755249,
+      "fixed_prob_positive": 0.999896764755249,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0425.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999981164932251,
+      "fixed_prob_positive": 0.999981164932251,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0426.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999786615371704,
+      "fixed_prob_positive": 0.9999786615371704,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0427.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9996415376663208,
+      "fixed_prob_positive": 0.9996415376663208,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0428.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9995779395103455,
+      "fixed_prob_positive": 0.9995779395103455,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0429.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.53718743706122e-05,
+      "fixed_prob_positive": 6.53718743706122e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0430.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0005123955779708922,
+      "fixed_prob_positive": 0.0005123955779708922,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0431.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0001488164853071794,
+      "fixed_prob_positive": 0.0001488164853071794,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0432.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999057948589325,
+      "fixed_prob_positive": 0.999057948589325,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0433.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00041442038491368294,
+      "fixed_prob_positive": 0.00041442038491368294,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0434.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0009437662083655596,
+      "fixed_prob_positive": 0.0009437662083655596,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0435.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999305009841919,
+      "fixed_prob_positive": 0.9999305009841919,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0436.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999579191207886,
+      "fixed_prob_positive": 0.9999579191207886,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0437.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999783039093018,
+      "fixed_prob_positive": 0.9999783039093018,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0438.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999676942825317,
+      "fixed_prob_positive": 0.9999676942825317,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0439.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998629093170166,
+      "fixed_prob_positive": 0.9998629093170166,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0440.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999790191650391,
+      "fixed_prob_positive": 0.9999790191650391,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0441.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999542236328125,
+      "fixed_prob_positive": 0.9999542236328125,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0442.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999698400497437,
+      "fixed_prob_positive": 0.9999698400497437,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0443.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999524354934692,
+      "fixed_prob_positive": 0.9999524354934692,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0444.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998854398727417,
+      "fixed_prob_positive": 0.9998854398727417,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0445.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999819993972778,
+      "fixed_prob_positive": 0.9999819993972778,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0446.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9997935891151428,
+      "fixed_prob_positive": 0.9997935891151428,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0447.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999756813049316,
+      "fixed_prob_positive": 0.9999756813049316,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0448.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999639987945557,
+      "fixed_prob_positive": 0.9999639987945557,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0449.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999582767486572,
+      "fixed_prob_positive": 0.9999582767486572,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0450.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998408555984497,
+      "fixed_prob_positive": 0.9998408555984497,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0451.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0008307726820930839,
+      "fixed_prob_positive": 0.0008307726820930839,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0452.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 5.8537425502436236e-05,
+      "fixed_prob_positive": 5.8537425502436236e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0453.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999798536300659,
+      "fixed_prob_positive": 0.9999798536300659,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0454.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0005395619082264602,
+      "fixed_prob_positive": 0.0005395619082264602,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0455.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999583959579468,
+      "fixed_prob_positive": 0.9999583959579468,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0456.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999748468399048,
+      "fixed_prob_positive": 0.9999748468399048,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0457.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999755620956421,
+      "fixed_prob_positive": 0.9999755620956421,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0458.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9990750551223755,
+      "fixed_prob_positive": 0.9990750551223755,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0459.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999419450759888,
+      "fixed_prob_positive": 0.9999419450759888,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0460.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 6.504937482532114e-05,
+      "fixed_prob_positive": 6.504937482532114e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0461.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 8.775034075370058e-05,
+      "fixed_prob_positive": 8.775034075370058e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0462.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9991462230682373,
+      "fixed_prob_positive": 0.9991462230682373,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0463.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00011784861271735281,
+      "fixed_prob_positive": 0.00011784861271735281,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0464.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999816417694092,
+      "fixed_prob_positive": 0.9999816417694092,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0465.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999716281890869,
+      "fixed_prob_positive": 0.9999716281890869,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0466.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0009604782680980861,
+      "fixed_prob_positive": 0.0009604782680980861,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0467.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999645948410034,
+      "fixed_prob_positive": 0.9999645948410034,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0468.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999768733978271,
+      "fixed_prob_positive": 0.9999768733978271,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0469.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 8.879173401510343e-05,
+      "fixed_prob_positive": 8.879173401510343e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0470.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999330043792725,
+      "fixed_prob_positive": 0.9999330043792725,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0471.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999796152114868,
+      "fixed_prob_positive": 0.9999796152114868,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0472.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999585151672363,
+      "fixed_prob_positive": 0.9999585151672363,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0473.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 9.086180943995714e-05,
+      "fixed_prob_positive": 9.086180943995714e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0474.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00031514684087596834,
+      "fixed_prob_positive": 0.00031514684087596834,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0475.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999772310256958,
+      "fixed_prob_positive": 0.9999772310256958,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0476.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9962775111198425,
+      "fixed_prob_positive": 0.9962775111198425,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0477.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9982831478118896,
+      "fixed_prob_positive": 0.9982831478118896,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0478.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.1513689464190975e-05,
+      "fixed_prob_positive": 3.1513689464190975e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0479.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9996548891067505,
+      "fixed_prob_positive": 0.9996548891067505,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0480.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.547154847183265e-05,
+      "fixed_prob_positive": 3.547154847183265e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0481.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999768733978271,
+      "fixed_prob_positive": 0.9999768733978271,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0482.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999803304672241,
+      "fixed_prob_positive": 0.9999803304672241,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0483.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999780654907227,
+      "fixed_prob_positive": 0.9999780654907227,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0484.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999765157699585,
+      "fixed_prob_positive": 0.9999765157699585,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0485.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999982476234436,
+      "fixed_prob_positive": 0.999982476234436,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0486.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999181032180786,
+      "fixed_prob_positive": 0.9999181032180786,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0487.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9995396137237549,
+      "fixed_prob_positive": 0.9995396137237549,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0488.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.001338320318609476,
+      "fixed_prob_positive": 0.001338320318609476,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0489.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9993849992752075,
+      "fixed_prob_positive": 0.9993849992752075,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0490.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999817609786987,
+      "fixed_prob_positive": 0.9999817609786987,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0491.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999637603759766,
+      "fixed_prob_positive": 0.9999637603759766,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0492.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.2899835787247866e-05,
+      "fixed_prob_positive": 3.2899835787247866e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0493.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999783039093018,
+      "fixed_prob_positive": 0.9999783039093018,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0494.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999712705612183,
+      "fixed_prob_positive": 0.9999712705612183,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0495.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999760389328003,
+      "fixed_prob_positive": 0.9999760389328003,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0496.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999976396560669,
+      "fixed_prob_positive": 0.999976396560669,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0497.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.544199716998264e-05,
+      "fixed_prob_positive": 3.544199716998264e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0498.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999771118164062,
+      "fixed_prob_positive": 0.9999771118164062,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0499.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9990481734275818,
+      "fixed_prob_positive": 0.9990481734275818,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0500.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998334646224976,
+      "fixed_prob_positive": 0.9998334646224976,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0501.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999841451644897,
+      "fixed_prob_positive": 0.9999841451644897,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0502.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999731779098511,
+      "fixed_prob_positive": 0.9999731779098511,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0503.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0013796869898214936,
+      "fixed_prob_positive": 0.0013796869898214936,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0504.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0008424700936302543,
+      "fixed_prob_positive": 0.0008424700936302543,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0505.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9994899034500122,
+      "fixed_prob_positive": 0.9994899034500122,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0506.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999669790267944,
+      "fixed_prob_positive": 0.9999669790267944,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0507.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998295307159424,
+      "fixed_prob_positive": 0.9998295307159424,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0508.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999550580978394,
+      "fixed_prob_positive": 0.9999550580978394,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0509.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9997033476829529,
+      "fixed_prob_positive": 0.9997033476829529,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0510.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998583793640137,
+      "fixed_prob_positive": 0.9998583793640137,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0511.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9992235898971558,
+      "fixed_prob_positive": 0.9992235898971558,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0512.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999573230743408,
+      "fixed_prob_positive": 0.9999573230743408,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0513.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.75908930436708e-05,
+      "fixed_prob_positive": 3.75908930436708e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0514.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998660087585449,
+      "fixed_prob_positive": 0.9998660087585449,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0515.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00030505997710861266,
+      "fixed_prob_positive": 0.00030505997710861266,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0516.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999809265136719,
+      "fixed_prob_positive": 0.9999809265136719,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0517.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999698400497437,
+      "fixed_prob_positive": 0.9999698400497437,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0518.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999523162841797,
+      "fixed_prob_positive": 0.9999523162841797,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0519.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9997619986534119,
+      "fixed_prob_positive": 0.9997619986534119,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0520.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999792575836182,
+      "fixed_prob_positive": 0.9999792575836182,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0521.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999691247940063,
+      "fixed_prob_positive": 0.9999691247940063,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0522.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999737739562988,
+      "fixed_prob_positive": 0.9999737739562988,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0523.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998028874397278,
+      "fixed_prob_positive": 0.9998028874397278,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0524.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998047947883606,
+      "fixed_prob_positive": 0.9998047947883606,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0525.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9986514449119568,
+      "fixed_prob_positive": 0.9986514449119568,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0526.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0004849569813814014,
+      "fixed_prob_positive": 0.0004849569813814014,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0527.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9995087385177612,
+      "fixed_prob_positive": 0.9995087385177612,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0528.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999134540557861,
+      "fixed_prob_positive": 0.9999134540557861,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0529.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.001292582368478179,
+      "fixed_prob_positive": 0.001292582368478179,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0530.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999632835388184,
+      "fixed_prob_positive": 0.9999632835388184,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0531.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999769926071167,
+      "fixed_prob_positive": 0.9999769926071167,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0532.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999797344207764,
+      "fixed_prob_positive": 0.9999797344207764,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0533.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999836683273315,
+      "fixed_prob_positive": 0.9999836683273315,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0534.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0011226534843444824,
+      "fixed_prob_positive": 0.0011226534843444824,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0535.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999840259552002,
+      "fixed_prob_positive": 0.9999840259552002,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0536.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999829530715942,
+      "fixed_prob_positive": 0.9999829530715942,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0537.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999815225601196,
+      "fixed_prob_positive": 0.9999815225601196,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0538.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999767541885376,
+      "fixed_prob_positive": 0.9999767541885376,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0539.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999667406082153,
+      "fixed_prob_positive": 0.9999667406082153,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0540.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998986721038818,
+      "fixed_prob_positive": 0.9998986721038818,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0541.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0001630608894629404,
+      "fixed_prob_positive": 0.0001630608894629404,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0542.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998856782913208,
+      "fixed_prob_positive": 0.9998856782913208,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0543.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998563528060913,
+      "fixed_prob_positive": 0.9998563528060913,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0544.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9995152950286865,
+      "fixed_prob_positive": 0.9995152950286865,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0545.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999821186065674,
+      "fixed_prob_positive": 0.9999821186065674,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0546.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999781847000122,
+      "fixed_prob_positive": 0.9999781847000122,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0547.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999657869338989,
+      "fixed_prob_positive": 0.9999657869338989,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0548.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999794960021973,
+      "fixed_prob_positive": 0.9999794960021973,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0549.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 5.448858792078681e-05,
+      "fixed_prob_positive": 5.448858792078681e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0550.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0035716916900128126,
+      "fixed_prob_positive": 0.0035716916900128126,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0551.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999833106994629,
+      "fixed_prob_positive": 0.9999833106994629,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0552.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999830722808838,
+      "fixed_prob_positive": 0.9999830722808838,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0553.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999825954437256,
+      "fixed_prob_positive": 0.9999825954437256,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0554.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.215055039618164e-05,
+      "fixed_prob_positive": 3.215055039618164e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0555.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999184608459473,
+      "fixed_prob_positive": 0.9999184608459473,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0556.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999796152114868,
+      "fixed_prob_positive": 0.9999796152114868,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0557.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9981158971786499,
+      "fixed_prob_positive": 0.9981158971786499,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0558.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999833106994629,
+      "fixed_prob_positive": 0.9999833106994629,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0559.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999580383300781,
+      "fixed_prob_positive": 0.9999580383300781,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0560.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999894380569458,
+      "fixed_prob_positive": 0.999894380569458,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0561.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.617087036720477e-05,
+      "fixed_prob_positive": 1.617087036720477e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0562.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9989951252937317,
+      "fixed_prob_positive": 0.9989951252937317,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0563.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999281167984009,
+      "fixed_prob_positive": 0.9999281167984009,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0564.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999710321426392,
+      "fixed_prob_positive": 0.9999710321426392,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0565.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999822378158569,
+      "fixed_prob_positive": 0.9999822378158569,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0566.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 3.593760993680917e-05,
+      "fixed_prob_positive": 3.593760993680917e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0567.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9991618394851685,
+      "fixed_prob_positive": 0.9991618394851685,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0568.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999711513519287,
+      "fixed_prob_positive": 0.9999711513519287,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0569.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0008204857585951686,
+      "fixed_prob_positive": 0.0008204857585951686,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0570.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999746084213257,
+      "fixed_prob_positive": 0.9999746084213257,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0571.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 2.5439752789679915e-05,
+      "fixed_prob_positive": 2.5439752789679915e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0572.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9997454285621643,
+      "fixed_prob_positive": 0.9997454285621643,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0573.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 1.4977195860410575e-05,
+      "fixed_prob_positive": 1.4977195860410575e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0574.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.15528367436491e-05,
+      "fixed_prob_positive": 7.15528367436491e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0575.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.000485510186990723,
+      "fixed_prob_positive": 0.000485510186990723,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0576.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999830722808838,
+      "fixed_prob_positive": 0.9999830722808838,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0577.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.00013990690058562905,
+      "fixed_prob_positive": 0.00013990690058562905,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0578.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998917579650879,
+      "fixed_prob_positive": 0.9998917579650879,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0579.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999825954437256,
+      "fixed_prob_positive": 0.9999825954437256,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0580.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999758005142212,
+      "fixed_prob_positive": 0.9999758005142212,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0581.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9993731379508972,
+      "fixed_prob_positive": 0.9993731379508972,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0582.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9997219443321228,
+      "fixed_prob_positive": 0.9997219443321228,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0583.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999975323677063,
+      "fixed_prob_positive": 0.999975323677063,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0584.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999574422836304,
+      "fixed_prob_positive": 0.9999574422836304,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0585.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9998015761375427,
+      "fixed_prob_positive": 0.9998015761375427,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0586.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0008366150432266295,
+      "fixed_prob_positive": 0.0008366150432266295,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0587.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999791383743286,
+      "fixed_prob_positive": 0.9999791383743286,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0588.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999706745147705,
+      "fixed_prob_positive": 0.9999706745147705,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0589.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999681711196899,
+      "fixed_prob_positive": 0.9999681711196899,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0590.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0007955176988616586,
+      "fixed_prob_positive": 0.0007955176988616586,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0591.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999802112579346,
+      "fixed_prob_positive": 0.9999802112579346,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0592.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9989066123962402,
+      "fixed_prob_positive": 0.9989066123962402,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0593.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999748468399048,
+      "fixed_prob_positive": 0.9999748468399048,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0594.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9990478157997131,
+      "fixed_prob_positive": 0.9990478157997131,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0595.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 7.009299588389695e-05,
+      "fixed_prob_positive": 7.009299588389695e-05,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0596.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0007011419511400163,
+      "fixed_prob_positive": 0.0007011419511400163,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0597.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999802112579346,
+      "fixed_prob_positive": 0.9999802112579346,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0598.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999937891960144,
+      "fixed_prob_positive": 0.999937891960144,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0599.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999690055847168,
+      "fixed_prob_positive": 0.9999690055847168,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0600.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999725818634033,
+      "fixed_prob_positive": 0.9999725818634033,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0601.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999788999557495,
+      "fixed_prob_positive": 0.9999788999557495,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0602.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999740123748779,
+      "fixed_prob_positive": 0.9999740123748779,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0603.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999818801879883,
+      "fixed_prob_positive": 0.9999818801879883,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0604.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9980621933937073,
+      "fixed_prob_positive": 0.9980621933937073,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0605.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.99996018409729,
+      "fixed_prob_positive": 0.99996018409729,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0606.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0006369267939589918,
+      "fixed_prob_positive": 0.0006369267939589918,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0607.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999937891960144,
+      "fixed_prob_positive": 0.999937891960144,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0608.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999975323677063,
+      "fixed_prob_positive": 0.999975323677063,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0609.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_prob_positive": 0.0007096223998814821,
+      "fixed_prob_positive": 0.0007096223998814821,
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0610.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.999946117401123,
+      "fixed_prob_positive": 0.999946117401123,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0611.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999839067459106,
+      "fixed_prob_positive": 0.9999839067459106,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0612.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9988279938697815,
+      "fixed_prob_positive": 0.9988279938697815,
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0613.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_prob_positive": 0.9999829530715942,
+      "fixed_prob_positive": 0.9999829530715942,
+      "agent_correct": true,
+      "fixed_correct": true
+    }
+  ]
+}

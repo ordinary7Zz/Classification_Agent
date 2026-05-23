@@ -1,0 +1,58 @@
+{
+  "label_path": "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/500_TestData_Malignancy_Cls/500_TestData_Malignancy_Cls.json",
+  "n_samples": 500,
+  "threshold": 0.5,
+  "n_boot": 2000,
+  "metrics": {
+    "auroc": 0.90712,
+    "auprc": 0.912726,
+    "acc": 0.854,
+    "prec": 0.833962,
+    "recall": 0.884,
+    "f1": 0.858252,
+    "specificity": 0.824,
+    "ece": 0.097336
+  },
+  "metrics_ci95": {
+    "auroc": {
+      "mean": 0.907514,
+      "ci95_lower": 0.878498,
+      "ci95_upper": 0.932918
+    },
+    "auprc": {
+      "mean": 0.913203,
+      "ci95_lower": 0.882326,
+      "ci95_upper": 0.939645
+    },
+    "acc": {
+      "mean": 0.854711,
+      "ci95_lower": 0.824,
+      "ci95_upper": 0.884
+    },
+    "prec": {
+      "mean": 0.834819,
+      "ci95_lower": 0.790066,
+      "ci95_upper": 0.878803
+    },
+    "recall": {
+      "mean": 0.88455,
+      "ci95_lower": 0.842303,
+      "ci95_upper": 0.921575
+    },
+    "f1": {
+      "mean": 0.858736,
+      "ci95_lower": 0.824701,
+      "ci95_upper": 0.888899
+    },
+    "specificity": {
+      "mean": 0.824857,
+      "ci95_lower": 0.777767,
+      "ci95_upper": 0.871216
+    },
+    "ece": {
+      "mean": 0.103161,
+      "ci95_lower": 0.075483,
+      "ci95_upper": 0.130371
+    }
+  }
+}

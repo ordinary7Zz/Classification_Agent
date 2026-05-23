@@ -1,0 +1,422 @@
+[
+  {
+    "image_file": "/mnt/wangbd8/workspace/ThyroidAgent/Classification_Agent/dataset/test/0000.jpg",
+    "image_name": "0000.jpg",
+    "selected_model": "soft_voting_topk_ensemble",
+    "predicted_class": "恶性",
+    "confidence": 0.9418895840644836,
+    "reasoning": "未使用 Agent，按 top_confidence 取前 5 个模型后对类别概率取均值，类别 '恶性' 的平均概率最高（0.9419）。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_all_datasets",
+        "top_class": "恶性",
+        "top_confidence": 0.9999399185180664,
+        "predictions": {
+          "良性": 6.008148193359375e-05,
+          "恶性": 0.9999399185180664
+        }
+      },
+      {
+        "model": "DINO_UNet_TN3K",
+        "top_class": "恶性",
+        "top_confidence": 0.9968260526657104,
+        "predictions": {
+          "良性": 0.0031739473342895508,
+          "恶性": 0.9968260526657104
+        }
+      },
+      {
+        "model": "DINO_UNet_TN5K",
+        "top_class": "恶性",
+        "top_confidence": 0.9988493919372559,
+        "predictions": {
+          "良性": 0.0011506080627441406,
+          "恶性": 0.9988493919372559
+        }
+      },
+      {
+        "model": "DINO_UNet_ThyroidXL",
+        "top_class": "恶性",
+        "top_confidence": 0.9746586084365845,
+        "predictions": {
+          "良性": 0.025341391563415527,
+          "恶性": 0.9746586084365845
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "恶性",
+        "top_confidence": 0.739173948764801,
+        "predictions": {
+          "良性": 0.260826051235199,
+          "恶性": 0.739173948764801
+        }
+      }
+    ],
+    "auxiliary_binary_classification": {
+      "llnm_lymph_node_metastasis": {
+        "relative_path": "0000.jpg",
+        "prob_class_0": 0.8585778474807739,
+        "prob_class_1": 0.14253626763820648,
+        "pred_class": 0
+      },
+      "pathology_subtype_resnet": {
+        "path": "/mnt/wangbd8/workspace/ThyroidAgent/Classification_Agent/dataset/test/0000.jpg",
+        "filename": "0000.jpg",
+        "pred_class": 0,
+        "prob_0": 0.9977425336837769,
+        "prob_1": 0.002257425105199218
+      }
+    }
+  },
+  {
+    "image_file": "/mnt/wangbd8/workspace/ThyroidAgent/Classification_Agent/dataset/test/0001.jpg",
+    "image_name": "0001.jpg",
+    "selected_model": "soft_voting_topk_ensemble",
+    "predicted_class": "恶性",
+    "confidence": 0.8424004226922989,
+    "reasoning": "未使用 Agent，按 top_confidence 取前 5 个模型后对类别概率取均值，类别 '恶性' 的平均概率最高（0.8424）。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_all_datasets",
+        "top_class": "恶性",
+        "top_confidence": 0.9999642372131348,
+        "predictions": {
+          "良性": 3.5762786865234375e-05,
+          "恶性": 0.9999642372131348
+        }
+      },
+      {
+        "model": "DINO_UNet_TN3K",
+        "top_class": "恶性",
+        "top_confidence": 0.97114098072052,
+        "predictions": {
+          "良性": 0.02885901927947998,
+          "恶性": 0.97114098072052
+        }
+      },
+      {
+        "model": "DINO_UNet_TN5K",
+        "top_class": "恶性",
+        "top_confidence": 0.9988238215446472,
+        "predictions": {
+          "良性": 0.0011761784553527832,
+          "恶性": 0.9988238215446472
+        }
+      },
+      {
+        "model": "DINO_UNet_ThyroidXL",
+        "top_class": "恶性",
+        "top_confidence": 0.9975379705429077,
+        "predictions": {
+          "良性": 0.002462029457092285,
+          "恶性": 0.9975379705429077
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.7554649114608765,
+        "predictions": {
+          "良性": 0.7554649114608765,
+          "恶性": 0.24453510344028473
+        }
+      }
+    ],
+    "auxiliary_binary_classification": {
+      "llnm_lymph_node_metastasis": {
+        "relative_path": "0001.jpg",
+        "prob_class_0": 0.8828016519546509,
+        "prob_class_1": 0.11818666756153107,
+        "pred_class": 0
+      },
+      "pathology_subtype_resnet": {
+        "path": "/mnt/wangbd8/workspace/ThyroidAgent/Classification_Agent/dataset/test/0001.jpg",
+        "filename": "0001.jpg",
+        "pred_class": 0,
+        "prob_0": 0.9940576553344727,
+        "prob_1": 0.005942370276898146
+      }
+    }
+  },
+  {
+    "image_file": "/mnt/wangbd8/workspace/ThyroidAgent/Classification_Agent/dataset/test/0002.jpg",
+    "image_name": "0002.jpg",
+    "selected_model": "soft_voting_topk_ensemble",
+    "predicted_class": "良性",
+    "confidence": 0.9019635387230664,
+    "reasoning": "未使用 Agent，按 top_confidence 取前 5 个模型后对类别概率取均值，类别 '良性' 的平均概率最高（0.9020）。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_all_datasets",
+        "top_class": "良性",
+        "top_confidence": 0.9457368180155754,
+        "predictions": {
+          "良性": 0.9457368180155754,
+          "恶性": 0.05426318198442459
+        }
+      },
+      {
+        "model": "DINO_UNet_TN3K",
+        "top_class": "良性",
+        "top_confidence": 0.9971289017703384,
+        "predictions": {
+          "良性": 0.9971289017703384,
+          "恶性": 0.002871098229661584
+        }
+      },
+      {
+        "model": "DINO_UNet_TN5K",
+        "top_class": "良性",
+        "top_confidence": 0.9934117668308318,
+        "predictions": {
+          "良性": 0.9934117668308318,
+          "恶性": 0.006588233169168234
+        }
+      },
+      {
+        "model": "DINO_UNet_ThyroidXL",
+        "top_class": "良性",
+        "top_confidence": 0.9983786307275295,
+        "predictions": {
+          "良性": 0.9983786307275295,
+          "恶性": 0.0016213692724704742
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.5751615762710571,
+        "predictions": {
+          "良性": 0.5751615762710571,
+          "恶性": 0.4248383939266205
+        }
+      }
+    ],
+    "auxiliary_binary_classification": {
+      "llnm_lymph_node_metastasis": {
+        "relative_path": "0002.jpg",
+        "prob_class_0": 0.7826040983200073,
+        "prob_class_1": 0.21858270466327667,
+        "pred_class": 0
+      },
+      "pathology_subtype_resnet": {
+        "path": "/mnt/wangbd8/workspace/ThyroidAgent/Classification_Agent/dataset/test/0002.jpg",
+        "filename": "0002.jpg",
+        "pred_class": 0,
+        "prob_0": 0.9967755675315857,
+        "prob_1": 0.0032243961468338966
+      }
+    }
+  },
+  {
+    "image_file": "/mnt/wangbd8/workspace/ThyroidAgent/Classification_Agent/dataset/test/0003.jpg",
+    "image_name": "0003.jpg",
+    "selected_model": "soft_voting_topk_ensemble",
+    "predicted_class": "良性",
+    "confidence": 0.6392172188963741,
+    "reasoning": "未使用 Agent，按 top_confidence 取前 5 个模型后对类别概率取均值，类别 '良性' 的平均概率最高（0.6392）。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_all_datasets",
+        "top_class": "恶性",
+        "top_confidence": 0.6402637362480164,
+        "predictions": {
+          "良性": 0.35973626375198364,
+          "恶性": 0.6402637362480164
+        }
+      },
+      {
+        "model": "DINO_UNet_TN3K",
+        "top_class": "恶性",
+        "top_confidence": 0.8936412930488586,
+        "predictions": {
+          "良性": 0.10635870695114136,
+          "恶性": 0.8936412930488586
+        }
+      },
+      {
+        "model": "DINO_UNet_TN5K",
+        "top_class": "良性",
+        "top_confidence": 0.9898001542314887,
+        "predictions": {
+          "良性": 0.9898001542314887,
+          "恶性": 0.010199845768511295
+        }
+      },
+      {
+        "model": "DINO_UNet_ThyroidXL",
+        "top_class": "良性",
+        "top_confidence": 0.9977769718971103,
+        "predictions": {
+          "良性": 0.9977769718971103,
+          "恶性": 0.002223028102889657
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.7424139976501465,
+        "predictions": {
+          "良性": 0.7424139976501465,
+          "恶性": 0.2575860321521759
+        }
+      }
+    ],
+    "auxiliary_binary_classification": {
+      "llnm_lymph_node_metastasis": {
+        "relative_path": "0003.jpg",
+        "prob_class_0": 0.7127430438995361,
+        "prob_class_1": 0.2873544692993164,
+        "pred_class": 0
+      },
+      "pathology_subtype_resnet": {
+        "path": "/mnt/wangbd8/workspace/ThyroidAgent/Classification_Agent/dataset/test/0003.jpg",
+        "filename": "0003.jpg",
+        "pred_class": 0,
+        "prob_0": 0.9996201992034912,
+        "prob_1": 0.00037977899773977697
+      }
+    }
+  },
+  {
+    "image_file": "/mnt/wangbd8/workspace/ThyroidAgent/Classification_Agent/dataset/test/0004.jpg",
+    "image_name": "0004.jpg",
+    "selected_model": "soft_voting_topk_ensemble",
+    "predicted_class": "良性",
+    "confidence": 0.8966448598541319,
+    "reasoning": "未使用 Agent，按 top_confidence 取前 5 个模型后对类别概率取均值，类别 '良性' 的平均概率最高（0.8966）。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_all_datasets",
+        "top_class": "良性",
+        "top_confidence": 0.9885668065398932,
+        "predictions": {
+          "良性": 0.9885668065398932,
+          "恶性": 0.01143319346010685
+        }
+      },
+      {
+        "model": "DINO_UNet_TN3K",
+        "top_class": "良性",
+        "top_confidence": 0.9835899192839861,
+        "predictions": {
+          "良性": 0.9835899192839861,
+          "恶性": 0.01641008071601391
+        }
+      },
+      {
+        "model": "DINO_UNet_TN5K",
+        "top_class": "良性",
+        "top_confidence": 0.9918553195893764,
+        "predictions": {
+          "良性": 0.9918553195893764,
+          "恶性": 0.00814468041062355
+        }
+      },
+      {
+        "model": "DINO_UNet_ThyroidXL",
+        "top_class": "良性",
+        "top_confidence": 0.9926565964706242,
+        "predictions": {
+          "良性": 0.9926565964706242,
+          "恶性": 0.0073434035293757915
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.5265556573867798,
+        "predictions": {
+          "良性": 0.5265556573867798,
+          "恶性": 0.4734443724155426
+        }
+      }
+    ],
+    "auxiliary_binary_classification": {
+      "llnm_lymph_node_metastasis": {
+        "relative_path": "0004.jpg",
+        "prob_class_0": 0.01629685051739216,
+        "prob_class_1": 0.9838544726371765,
+        "pred_class": 1
+      },
+      "pathology_subtype_resnet": {
+        "path": "/mnt/wangbd8/workspace/ThyroidAgent/Classification_Agent/dataset/test/0004.jpg",
+        "filename": "0004.jpg",
+        "pred_class": 0,
+        "prob_0": 0.9923530220985413,
+        "prob_1": 0.007647031918168068
+      }
+    }
+  },
+  {
+    "image_file": "/mnt/wangbd8/workspace/ThyroidAgent/Classification_Agent/dataset/test/0005.jpg",
+    "image_name": "0005.jpg",
+    "selected_model": "soft_voting_topk_ensemble",
+    "predicted_class": "良性",
+    "confidence": 0.87557628210634,
+    "reasoning": "未使用 Agent，按 top_confidence 取前 5 个模型后对类别概率取均值，类别 '良性' 的平均概率最高（0.8756）。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_all_datasets",
+        "top_class": "良性",
+        "top_confidence": 0.9982766748871654,
+        "predictions": {
+          "良性": 0.9982766748871654,
+          "恶性": 0.0017233251128345728
+        }
+      },
+      {
+        "model": "DINO_UNet_TN3K",
+        "top_class": "良性",
+        "top_confidence": 0.9962610241491348,
+        "predictions": {
+          "良性": 0.9962610241491348,
+          "恶性": 0.003738975850865245
+        }
+      },
+      {
+        "model": "DINO_UNet_TN5K",
+        "top_class": "良性",
+        "top_confidence": 0.9629570841789246,
+        "predictions": {
+          "良性": 0.9629570841789246,
+          "恶性": 0.03704291582107544
+        }
+      },
+      {
+        "model": "DINO_UNet_ThyroidXL",
+        "top_class": "良性",
+        "top_confidence": 0.9218790084123611,
+        "predictions": {
+          "良性": 0.9218790084123611,
+          "恶性": 0.07812099158763885
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "恶性",
+        "top_confidence": 0.5014923810958862,
+        "predictions": {
+          "良性": 0.49850761890411377,
+          "恶性": 0.5014923810958862
+        }
+      }
+    ],
+    "auxiliary_binary_classification": {
+      "llnm_lymph_node_metastasis": {
+        "relative_path": "0005.jpg",
+        "prob_class_0": 0.8442509174346924,
+        "prob_class_1": 0.15716485679149628,
+        "pred_class": 0
+      },
+      "pathology_subtype_resnet": {
+        "path": "/mnt/wangbd8/workspace/ThyroidAgent/Classification_Agent/dataset/test/0005.jpg",
+        "filename": "0005.jpg",
+        "pred_class": 0,
+        "prob_0": 0.9814187288284302,
+        "prob_1": 0.01858123578131199
+      }
+    }
+  }
+]

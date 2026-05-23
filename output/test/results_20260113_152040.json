@@ -1,0 +1,2902 @@
+[
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000001.jpg",
+    "image_name": "000001.jpg",
+    "selected_model": "DINO_UNet_dataset3_128size",
+    "predicted_class": "良性",
+    "confidence": 0.9999236305739032,
+    "reasoning": "该模型给出了全组最高的置信度0.9999236305739032。输入数据设备为GE Logiq系列，而该模型的训练数据中明确包含了GE Logiq E9和GE S7设备，实现了精准的设备匹配。此外，共有11个模型对“良性”类别达成了一致预测，且置信度均较高，进一步验证了结果的可靠性。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.995724081993103,
+        "predictions": {
+          "良性": 0.004275918006896973,
+          "恶性": 0.995724081993103
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9992147386074066,
+        "predictions": {
+          "良性": 0.9992147386074066,
+          "恶性": 0.0007852613925933838
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "良性",
+        "top_confidence": 0.8448338061571121,
+        "predictions": {
+          "良性": 0.8448338061571121,
+          "恶性": 0.15516619384288788
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9620293378829956,
+        "predictions": {
+          "良性": 0.037970662117004395,
+          "恶性": 0.9620293378829956
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9992788895615377,
+        "predictions": {
+          "良性": 0.9992788895615377,
+          "恶性": 0.0007211104384623468
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9861259814351797,
+        "predictions": {
+          "良性": 0.9861259814351797,
+          "恶性": 0.01387401856482029
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9999236305739032,
+        "predictions": {
+          "良性": 0.9999236305739032,
+          "恶性": 7.636942609678954e-05
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9992821163032204,
+        "predictions": {
+          "良性": 0.9992821163032204,
+          "恶性": 0.0007178836967796087
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9951879824511707,
+        "predictions": {
+          "良性": 0.9951879824511707,
+          "恶性": 0.004812017548829317
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9997966100636404,
+        "predictions": {
+          "良性": 0.9997966100636404,
+          "恶性": 0.00020338993635959923
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9960293900221586,
+        "predictions": {
+          "良性": 0.9960293900221586,
+          "恶性": 0.003970609977841377
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9996969185594935,
+        "predictions": {
+          "良性": 0.9996969185594935,
+          "恶性": 0.000303081440506503
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "良性",
+        "top_confidence": 0.8962298035621643,
+        "predictions": {
+          "良性": 0.8962298035621643,
+          "恶性": 0.10377021133899689
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.9311234951019287,
+        "predictions": {
+          "良性": 0.9311234951019287,
+          "恶性": 0.06887651234865189
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "良性",
+        "top_confidence": 0.9478467702865601,
+        "predictions": {
+          "良性": 0.9478467702865601,
+          "恶性": 0.05215320736169815
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000006.jpg",
+    "image_name": "000006.jpg",
+    "selected_model": "DINO_UNet_dataset4_dilation",
+    "predicted_class": "良性",
+    "confidence": 0.9999876850088185,
+    "reasoning": "在输入设备为GE Logiq的背景下，置信度最高的模型达到了0.9999876850088185。该模型的训练集涵盖了GE Logiq E9和GE S7，与输入图像的设备特征高度契合。全组15个模型均一致预测为“良性”，这种极高的一致性显著提升了诊断的确定性。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9990178465377539,
+        "predictions": {
+          "良性": 0.9990178465377539,
+          "恶性": 0.0009821534622460604
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9993287035613321,
+        "predictions": {
+          "良性": 0.9993287035613321,
+          "恶性": 0.0006712964386679232
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9988911014515907,
+        "predictions": {
+          "良性": 0.9988911014515907,
+          "恶性": 0.0011088985484093428
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9985994055168703,
+        "predictions": {
+          "良性": 0.9985994055168703,
+          "恶性": 0.0014005944831296802
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9997066937212367,
+        "predictions": {
+          "良性": 0.9997066937212367,
+          "恶性": 0.0002933062787633389
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9992543360567652,
+        "predictions": {
+          "良性": 0.9992543360567652,
+          "恶性": 0.0007456639432348311
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9999243175625452,
+        "predictions": {
+          "良性": 0.9999243175625452,
+          "恶性": 7.568243745481595e-05
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9976349349599332,
+        "predictions": {
+          "良性": 0.9976349349599332,
+          "恶性": 0.0023650650400668383
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9999145284818951,
+        "predictions": {
+          "良性": 0.9999145284818951,
+          "恶性": 8.547151810489595e-05
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9999876850088185,
+        "predictions": {
+          "良性": 0.9999876850088185,
+          "恶性": 1.2314991181483492e-05
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9987534154206514,
+        "predictions": {
+          "良性": 0.9987534154206514,
+          "恶性": 0.0012465845793485641
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "良性",
+        "top_confidence": 0.999863776480197,
+        "predictions": {
+          "良性": 0.999863776480197,
+          "恶性": 0.00013622351980302483
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "良性",
+        "top_confidence": 0.647102952003479,
+        "predictions": {
+          "良性": 0.647102952003479,
+          "恶性": 0.352897047996521
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.8264688849449158,
+        "predictions": {
+          "良性": 0.8264688849449158,
+          "恶性": 0.17353111505508423
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "良性",
+        "top_confidence": 0.952252984046936,
+        "predictions": {
+          "良性": 0.952252984046936,
+          "恶性": 0.047747038304805756
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000009.jpg",
+    "image_name": "000009.jpg",
+    "selected_model": "DINO_UNet_dataset4_dilation",
+    "predicted_class": "恶性",
+    "confidence": 0.9994968175888062,
+    "reasoning": "该模型在GE Logiq输入设备上表现出0.9994968175888062的最高置信度。其训练数据包含GE Logiq E9和GE S7，符合设备优先考虑原则。尽管模型间存在分类分歧，但有10个模型以高置信度支持“恶性”预测，优于“良性”预测的表现。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.8392132967710495,
+        "predictions": {
+          "良性": 0.8392132967710495,
+          "恶性": 0.1607867032289505
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9983617663383484,
+        "predictions": {
+          "良性": 0.0016382336616516113,
+          "恶性": 0.9983617663383484
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9911012649536133,
+        "predictions": {
+          "良性": 0.008898735046386719,
+          "恶性": 0.9911012649536133
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9924293160438538,
+        "predictions": {
+          "良性": 0.00757068395614624,
+          "恶性": 0.9924293160438538
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9986352324485779,
+        "predictions": {
+          "良性": 0.0013647675514221191,
+          "恶性": 0.9986352324485779
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9990494847297668,
+        "predictions": {
+          "良性": 0.0009505152702331543,
+          "恶性": 0.9990494847297668
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9506762772798538,
+        "predictions": {
+          "良性": 0.9506762772798538,
+          "恶性": 0.04932372272014618
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.8774967193603516,
+        "predictions": {
+          "良性": 0.12250328063964844,
+          "恶性": 0.8774967193603516
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9941182136535645,
+        "predictions": {
+          "良性": 0.005881786346435547,
+          "恶性": 0.9941182136535645
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9994968175888062,
+        "predictions": {
+          "良性": 0.0005031824111938477,
+          "恶性": 0.9994968175888062
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.7314587235450745,
+        "predictions": {
+          "良性": 0.26854127645492554,
+          "恶性": 0.7314587235450745
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.976597785949707,
+        "predictions": {
+          "良性": 0.02340221405029297,
+          "恶性": 0.976597785949707
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "良性",
+        "top_confidence": 0.8282592296600342,
+        "predictions": {
+          "良性": 0.8282592296600342,
+          "恶性": 0.17174075543880463
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "恶性",
+        "top_confidence": 0.5142613053321838,
+        "predictions": {
+          "良性": 0.48573869466781616,
+          "恶性": 0.5142613053321838
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "良性",
+        "top_confidence": 0.8375518321990967,
+        "predictions": {
+          "良性": 0.8375518321990967,
+          "恶性": 0.16244818270206451
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000011.jpg",
+    "image_name": "000011.jpg",
+    "selected_model": "DINO_UNet_dataset4_128size",
+    "predicted_class": "良性",
+    "confidence": 0.9999008517042967,
+    "reasoning": "置信度最高的模型在GE Logiq设备图像上达到了0.9999008517042967。该模型的训练设备列表包含GE Logiq E9和GE S7，确保了对该品牌图像风格的有效捕捉。全组15个模型对“良性”类别的一致性预测，确保了决策的稳健性。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9990073126973584,
+        "predictions": {
+          "良性": 0.9990073126973584,
+          "恶性": 0.0009926873026415706
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9874347904697061,
+        "predictions": {
+          "良性": 0.9874347904697061,
+          "恶性": 0.012565209530293941
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9989805142395198,
+        "predictions": {
+          "良性": 0.9989805142395198,
+          "恶性": 0.0010194857604801655
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9989318473963067,
+        "predictions": {
+          "良性": 0.9989318473963067,
+          "恶性": 0.0010681526036933064
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9994217026978731,
+        "predictions": {
+          "良性": 0.9994217026978731,
+          "恶性": 0.0005782973021268845
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9993540836148895,
+        "predictions": {
+          "良性": 0.9993540836148895,
+          "恶性": 0.0006459163851104677
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9954629489220679,
+        "predictions": {
+          "良性": 0.9954629489220679,
+          "恶性": 0.004537051077932119
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9994038371369243,
+        "predictions": {
+          "良性": 0.9994038371369243,
+          "恶性": 0.0005961628630757332
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9991723551065661,
+        "predictions": {
+          "良性": 0.9991723551065661,
+          "恶性": 0.0008276448934338987
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9977935825008899,
+        "predictions": {
+          "良性": 0.9977935825008899,
+          "恶性": 0.0022064174991101027
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9999008517042967,
+        "predictions": {
+          "良性": 0.9999008517042967,
+          "恶性": 9.914829570334405e-05
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9993397894431837,
+        "predictions": {
+          "良性": 0.9993397894431837,
+          "恶性": 0.0006602105568163097
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "良性",
+        "top_confidence": 0.8446597456932068,
+        "predictions": {
+          "良性": 0.8446597456932068,
+          "恶性": 0.1553402543067932
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.932941734790802,
+        "predictions": {
+          "良性": 0.932941734790802,
+          "恶性": 0.0670582503080368
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "良性",
+        "top_confidence": 0.9469805359840393,
+        "predictions": {
+          "良性": 0.9469805359840393,
+          "恶性": 0.05301947146654129
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000016.jpg",
+    "image_name": "000016.jpg",
+    "selected_model": "DINO_UNet_dataset3_128size",
+    "predicted_class": "良性",
+    "confidence": 0.9999309005070245,
+    "reasoning": "该模型以0.9999309005070245的置信度领先，且其训练数据包含GE Logiq E9和GE S7，与输入设备品牌完全匹配。在15个参与预测的模型中，有14个模型一致指向“良性”类别，形成了强大的证据链。最高置信度与次高置信度的差异极小，均指向同一结果。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9926848160102963,
+        "predictions": {
+          "良性": 0.9926848160102963,
+          "恶性": 0.007315183989703655
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9968126993626356,
+        "predictions": {
+          "良性": 0.9968126993626356,
+          "恶性": 0.0031873006373643875
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9990408815792762,
+        "predictions": {
+          "良性": 0.9990408815792762,
+          "恶性": 0.0009591184207238257
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9979366969782859,
+        "predictions": {
+          "良性": 0.9979366969782859,
+          "恶性": 0.0020633030217140913
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9995232567016501,
+        "predictions": {
+          "良性": 0.9995232567016501,
+          "恶性": 0.00047674329834990203
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9992231919895858,
+        "predictions": {
+          "良性": 0.9992231919895858,
+          "恶性": 0.0007768080104142427
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9999309005070245,
+        "predictions": {
+          "良性": 0.9999309005070245,
+          "恶性": 6.909949297551066e-05
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9992828514077701,
+        "predictions": {
+          "良性": 0.9992828514077701,
+          "恶性": 0.0007171485922299325
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9991055323625915,
+        "predictions": {
+          "良性": 0.9991055323625915,
+          "恶性": 0.0008944676374085248
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9964769701473415,
+        "predictions": {
+          "良性": 0.9964769701473415,
+          "恶性": 0.00352302985265851
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9999269300460583,
+        "predictions": {
+          "良性": 0.9999269300460583,
+          "恶性": 7.30699539417401e-05
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9979902834165841,
+        "predictions": {
+          "良性": 0.9979902834165841,
+          "恶性": 0.002009716583415866
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "恶性",
+        "top_confidence": 0.5113074779510498,
+        "predictions": {
+          "良性": 0.4886925220489502,
+          "恶性": 0.5113074779510498
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.7092388868331909,
+        "predictions": {
+          "良性": 0.7092388868331909,
+          "恶性": 0.2907611131668091
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "良性",
+        "top_confidence": 0.9701748490333557,
+        "predictions": {
+          "良性": 0.9701748490333557,
+          "恶性": 0.02982517145574093
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000025.jpg",
+    "image_name": "000025.jpg",
+    "selected_model": "DINO_UNet_dataset3_448size",
+    "predicted_class": "恶性",
+    "confidence": 0.9996477365493774,
+    "reasoning": "在GE Logiq设备图像下，置信度最高的模型为0.9996477365493774。该模型的训练集包含GE Logiq E9和GE S7，满足设备匹配要求。虽然存在模型预测分歧，但有10个模型支持“恶性”预测，且多数置信度超过0.99，可靠性高于“良性”预测。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9993749260902405,
+        "predictions": {
+          "良性": 0.0006250739097595215,
+          "恶性": 0.9993749260902405
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9974855184555054,
+        "predictions": {
+          "良性": 0.002514481544494629,
+          "恶性": 0.9974855184555054
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.998915433883667,
+        "predictions": {
+          "良性": 0.0010845661163330078,
+          "恶性": 0.998915433883667
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9992715716362,
+        "predictions": {
+          "良性": 0.0007284283638000488,
+          "恶性": 0.9992715716362
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9994710221653804,
+        "predictions": {
+          "良性": 0.9994710221653804,
+          "恶性": 0.0005289778346195817
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.8441817611455917,
+        "predictions": {
+          "良性": 0.8441817611455917,
+          "恶性": 0.15581823885440826
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9611932039260864,
+        "predictions": {
+          "良性": 0.038806796073913574,
+          "恶性": 0.9611932039260864
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9996477365493774,
+        "predictions": {
+          "良性": 0.0003522634506225586,
+          "恶性": 0.9996477365493774
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9923791936598718,
+        "predictions": {
+          "良性": 0.9923791936598718,
+          "恶性": 0.007620806340128183
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9667538404464722,
+        "predictions": {
+          "良性": 0.03324615955352783,
+          "恶性": 0.9667538404464722
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9960881471633911,
+        "predictions": {
+          "良性": 0.003911852836608887,
+          "恶性": 0.9960881471633911
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9991948008537292,
+        "predictions": {
+          "良性": 0.000805199146270752,
+          "恶性": 0.9991948008537292
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "恶性",
+        "top_confidence": 0.6710813045501709,
+        "predictions": {
+          "良性": 0.3289186954498291,
+          "恶性": 0.6710813045501709
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "恶性",
+        "top_confidence": 0.5218717455863953,
+        "predictions": {
+          "良性": 0.47812825441360474,
+          "恶性": 0.5218717455863953
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "恶性",
+        "top_confidence": 0.5325387716293335,
+        "predictions": {
+          "良性": 0.4674612283706665,
+          "恶性": 0.5325387716293335
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000035.jpg",
+    "image_name": "000035.jpg",
+    "selected_model": "DINO_UNet_dataset4_dilation",
+    "predicted_class": "良性",
+    "confidence": 0.999993776323663,
+    "reasoning": "该模型提供了0.999993776323663的极高置信度，且其训练设备包含GE Logiq E9和GE S7，与输入设备匹配。全组15个模型均预测为“良性”，这种完全一致的投票结果极大增强了结论的权威性。数据驱动的决策过程显示该模型在此设备图像上具有最优性能。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9990347633720376,
+        "predictions": {
+          "良性": 0.9990347633720376,
+          "恶性": 0.0009652366279624403
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9993605191120878,
+        "predictions": {
+          "良性": 0.9993605191120878,
+          "恶性": 0.0006394808879122138
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9989507397403941,
+        "predictions": {
+          "良性": 0.9989507397403941,
+          "恶性": 0.0010492602596059442
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9987387714209035,
+        "predictions": {
+          "良性": 0.9987387714209035,
+          "恶性": 0.001261228579096496
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9996918996621389,
+        "predictions": {
+          "良性": 0.9996918996621389,
+          "恶性": 0.0003081003378611058
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.999367454496678,
+        "predictions": {
+          "良性": 0.999367454496678,
+          "恶性": 0.0006325455033220351
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9991628546267748,
+        "predictions": {
+          "良性": 0.9991628546267748,
+          "恶性": 0.0008371453732252121
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9993853701744229,
+        "predictions": {
+          "良性": 0.9993853701744229,
+          "恶性": 0.0006146298255771399
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9998779750312679,
+        "predictions": {
+          "良性": 0.9998779750312679,
+          "恶性": 0.00012202496873214841
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.999993776323663,
+        "predictions": {
+          "良性": 0.999993776323663,
+          "恶性": 6.223676336958306e-06
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9993475354858674,
+        "predictions": {
+          "良性": 0.9993475354858674,
+          "恶性": 0.0006524645141325891
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9996062754071318,
+        "predictions": {
+          "良性": 0.9996062754071318,
+          "恶性": 0.0003937245928682387
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "良性",
+        "top_confidence": 0.8464879989624023,
+        "predictions": {
+          "良性": 0.8464879989624023,
+          "恶性": 0.15351203083992004
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.7465662956237793,
+        "predictions": {
+          "良性": 0.7465662956237793,
+          "恶性": 0.2534336745738983
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "良性",
+        "top_confidence": 0.7576390504837036,
+        "predictions": {
+          "良性": 0.7576390504837036,
+          "恶性": 0.242360919713974
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000040.jpg",
+    "image_name": "000040.jpg",
+    "selected_model": "DINO_UNet_dataset4_dilation",
+    "predicted_class": "良性",
+    "confidence": 0.9999935658488539,
+    "reasoning": "置信度最高的模型达到了0.9999935658488539，且其训练数据涵盖了GE Logiq E9和GE S7，与输入设备品牌一致。在15个预测模型中，有14个模型一致预测为“良性”，仅1个模型预测为恶性且置信度仅为0.55。这种压倒性的一致性确保了“良性”预测的准确性。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9990269879926927,
+        "predictions": {
+          "良性": 0.9990269879926927,
+          "恶性": 0.0009730120073072612
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9993682338390499,
+        "predictions": {
+          "良性": 0.9993682338390499,
+          "恶性": 0.0006317661609500647
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9989811675623059,
+        "predictions": {
+          "良性": 0.9989811675623059,
+          "恶性": 0.0010188324376940727
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9989524617558345,
+        "predictions": {
+          "良性": 0.9989524617558345,
+          "恶性": 0.0010475382441654801
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9996747047116514,
+        "predictions": {
+          "良性": 0.9996747047116514,
+          "恶性": 0.00032529528834857047
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9993620865861885,
+        "predictions": {
+          "良性": 0.9993620865861885,
+          "恶性": 0.000637913413811475
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9998526104027405,
+        "predictions": {
+          "良性": 0.9998526104027405,
+          "恶性": 0.00014738959725946188
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9993647494120523,
+        "predictions": {
+          "良性": 0.9993647494120523,
+          "恶性": 0.0006352505879476666
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9996098839910701,
+        "predictions": {
+          "良性": 0.9996098839910701,
+          "恶性": 0.0003901160089299083
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9999935658488539,
+        "predictions": {
+          "良性": 0.9999935658488539,
+          "恶性": 6.434151146095246e-06
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9664088822901249,
+        "predictions": {
+          "良性": 0.9664088822901249,
+          "恶性": 0.03359111770987511
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9999189771406236,
+        "predictions": {
+          "良性": 0.9999189771406236,
+          "恶性": 8.102285937638953e-05
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "恶性",
+        "top_confidence": 0.5523587465286255,
+        "predictions": {
+          "良性": 0.4476412534713745,
+          "恶性": 0.5523587465286255
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.6453455090522766,
+        "predictions": {
+          "良性": 0.6453455090522766,
+          "恶性": 0.3546544909477234
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "良性",
+        "top_confidence": 0.6355288624763489,
+        "predictions": {
+          "良性": 0.6355288624763489,
+          "恶性": 0.3644711375236511
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000044.jpg",
+    "image_name": "000044.jpg",
+    "selected_model": "DINO_UNet_dataset4_dilation",
+    "predicted_class": "良性",
+    "confidence": 0.9996490865305532,
+    "reasoning": "该模型在GE Logiq设备图像上给出了0.9996490865305532的最高置信度。其训练过程使用了包含GE Logiq E9和GE S7在内的数据集，符合设备先验知识。全组有12个模型一致预测为“良性”，形成了高度的共识，足以排除个别模型对恶性的误判。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9969189167022705,
+        "predictions": {
+          "良性": 0.003081083297729492,
+          "恶性": 0.9969189167022705
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9991745580919087,
+        "predictions": {
+          "良性": 0.9991745580919087,
+          "恶性": 0.0008254419080913067
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.968085527420044,
+        "predictions": {
+          "良性": 0.031914472579956055,
+          "恶性": 0.968085527420044
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.6688156127929688,
+        "predictions": {
+          "良性": 0.33118438720703125,
+          "恶性": 0.6688156127929688
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9994822739390656,
+        "predictions": {
+          "良性": 0.9994822739390656,
+          "恶性": 0.0005177260609343648
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9993133628740907,
+        "predictions": {
+          "良性": 0.9993133628740907,
+          "恶性": 0.0006866371259093285
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9991404112661257,
+        "predictions": {
+          "良性": 0.9991404112661257,
+          "恶性": 0.0008595887338742614
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9992943607503548,
+        "predictions": {
+          "良性": 0.9992943607503548,
+          "恶性": 0.0007056392496451735
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.99841062433552,
+        "predictions": {
+          "良性": 0.99841062433552,
+          "恶性": 0.0015893756644800305
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9996490865305532,
+        "predictions": {
+          "良性": 0.9996490865305532,
+          "恶性": 0.000350913469446823
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "良性",
+        "top_confidence": 0.8963034152984619,
+        "predictions": {
+          "良性": 0.8963034152984619,
+          "恶性": 0.10369658470153809
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9939175443723798,
+        "predictions": {
+          "良性": 0.9939175443723798,
+          "恶性": 0.00608245562762022
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "良性",
+        "top_confidence": 0.7343462109565735,
+        "predictions": {
+          "良性": 0.7343462109565735,
+          "恶性": 0.2656537890434265
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.740630030632019,
+        "predictions": {
+          "良性": 0.740630030632019,
+          "恶性": 0.25936993956565857
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "良性",
+        "top_confidence": 0.826232373714447,
+        "predictions": {
+          "良性": 0.826232373714447,
+          "恶性": 0.17376762628555298
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000046.jpg",
+    "image_name": "000046.jpg",
+    "selected_model": "DINO_UNet_dataset4_dilation",
+    "predicted_class": "恶性",
+    "confidence": 0.9999752044677734,
+    "reasoning": "置信度最高的模型达到了0.9999752044677734，且其训练集包含GE Logiq E9和GE S7，与输入设备高度匹配。在15个模型中，有13个模型一致预测为“恶性”，且置信度多在0.90以上。该预测结果在设备匹配和模型一致性方面均表现卓越。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.965427815914154,
+        "predictions": {
+          "良性": 0.03457218408584595,
+          "恶性": 0.965427815914154
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9065448641777039,
+        "predictions": {
+          "良性": 0.09345513582229614,
+          "恶性": 0.9065448641777039
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9928411468863487,
+        "predictions": {
+          "良性": 0.9928411468863487,
+          "恶性": 0.007158853113651276
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9986258745193481,
+        "predictions": {
+          "良性": 0.0013741254806518555,
+          "恶性": 0.9986258745193481
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9983882904052734,
+        "predictions": {
+          "良性": 0.0016117095947265625,
+          "恶性": 0.9983882904052734
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.999200165271759,
+        "predictions": {
+          "良性": 0.0007998347282409668,
+          "恶性": 0.999200165271759
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "良性",
+        "top_confidence": 0.6707103252410889,
+        "predictions": {
+          "良性": 0.6707103252410889,
+          "恶性": 0.32928967475891113
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9923173189163208,
+        "predictions": {
+          "良性": 0.007682681083679199,
+          "恶性": 0.9923173189163208
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9983915686607361,
+        "predictions": {
+          "良性": 0.001608431339263916,
+          "恶性": 0.9983915686607361
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9999752044677734,
+        "predictions": {
+          "良性": 2.47955322265625e-05,
+          "恶性": 0.9999752044677734
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9927597045898438,
+        "predictions": {
+          "良性": 0.00724029541015625,
+          "恶性": 0.9927597045898438
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9984883069992065,
+        "predictions": {
+          "良性": 0.001511693000793457,
+          "恶性": 0.9984883069992065
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "恶性",
+        "top_confidence": 0.7530220150947571,
+        "predictions": {
+          "良性": 0.24697798490524292,
+          "恶性": 0.7530220150947571
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "恶性",
+        "top_confidence": 0.9173592329025269,
+        "predictions": {
+          "良性": 0.08264076709747314,
+          "恶性": 0.9173592329025269
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "恶性",
+        "top_confidence": 0.9301872849464417,
+        "predictions": {
+          "良性": 0.06981271505355835,
+          "恶性": 0.9301872849464417
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000048.jpg",
+    "image_name": "000048.jpg",
+    "selected_model": "DINO_UNet_dataset4_dilation",
+    "predicted_class": "恶性",
+    "confidence": 0.9999797344207764,
+    "reasoning": "该模型以0.9999797344207764的最高置信度领先，且训练设备包含GE Logiq E9和GE S7，与输入设备匹配。全组15个模型均一致预测为“恶性”，这种无分歧的预测结果极大地提高了结论的可靠性。模型间的置信度差异极小，均表现出极高的确定性。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9991614818572998,
+        "predictions": {
+          "良性": 0.0008385181427001953,
+          "恶性": 0.9991614818572998
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.998615026473999,
+        "predictions": {
+          "良性": 0.0013849735260009766,
+          "恶性": 0.998615026473999
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9971593618392944,
+        "predictions": {
+          "良性": 0.0028406381607055664,
+          "恶性": 0.9971593618392944
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9991962313652039,
+        "predictions": {
+          "良性": 0.0008037686347961426,
+          "恶性": 0.9991962313652039
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.999126136302948,
+        "predictions": {
+          "良性": 0.000873863697052002,
+          "恶性": 0.999126136302948
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9992031455039978,
+        "predictions": {
+          "良性": 0.0007968544960021973,
+          "恶性": 0.9992031455039978
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9988532066345215,
+        "predictions": {
+          "良性": 0.0011467933654785156,
+          "恶性": 0.9988532066345215
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9999126195907593,
+        "predictions": {
+          "良性": 8.738040924072266e-05,
+          "恶性": 0.9999126195907593
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.999300479888916,
+        "predictions": {
+          "良性": 0.0006995201110839844,
+          "恶性": 0.999300479888916
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9999797344207764,
+        "predictions": {
+          "良性": 2.0265579223632812e-05,
+          "恶性": 0.9999797344207764
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9951640367507935,
+        "predictions": {
+          "良性": 0.004835963249206543,
+          "恶性": 0.9951640367507935
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9997366070747375,
+        "predictions": {
+          "良性": 0.00026339292526245117,
+          "恶性": 0.9997366070747375
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "恶性",
+        "top_confidence": 0.7888927459716797,
+        "predictions": {
+          "良性": 0.2111072540283203,
+          "恶性": 0.7888927459716797
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "恶性",
+        "top_confidence": 0.8655951619148254,
+        "predictions": {
+          "良性": 0.13440483808517456,
+          "恶性": 0.8655951619148254
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "恶性",
+        "top_confidence": 0.524945855140686,
+        "predictions": {
+          "良性": 0.47505414485931396,
+          "恶性": 0.524945855140686
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000054.jpg",
+    "image_name": "000054.jpg",
+    "selected_model": "DINO_UNet_dataset4_dilation",
+    "predicted_class": "恶性",
+    "confidence": 0.9998373985290527,
+    "reasoning": "在GE Logiq设备图像下，置信度最高的模型达到0.9998373985290527。该模型的训练数据包含GE Logiq E9和GE S7，满足设备匹配原则。尽管存在分类分歧，但有10个模型支持“恶性”预测，且其置信度普遍高于支持“良性”的模型。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9210909977555275,
+        "predictions": {
+          "良性": 0.9210909977555275,
+          "恶性": 0.0789090022444725
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.6287416219711304,
+        "predictions": {
+          "良性": 0.37125837802886963,
+          "恶性": 0.6287416219711304
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "良性",
+        "top_confidence": 0.994494881015271,
+        "predictions": {
+          "良性": 0.994494881015271,
+          "恶性": 0.005505118984729052
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9992245435714722,
+        "predictions": {
+          "良性": 0.000775456428527832,
+          "恶性": 0.9992245435714722
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.6103505492210388,
+        "predictions": {
+          "良性": 0.3896494507789612,
+          "恶性": 0.6103505492210388
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9989327788352966,
+        "predictions": {
+          "良性": 0.0010672211647033691,
+          "恶性": 0.9989327788352966
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9642439484596252,
+        "predictions": {
+          "良性": 0.035756051540374756,
+          "恶性": 0.9642439484596252
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9977917671203613,
+        "predictions": {
+          "良性": 0.002208232879638672,
+          "恶性": 0.9977917671203613
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9972323775291443,
+        "predictions": {
+          "良性": 0.002767622470855713,
+          "恶性": 0.9972323775291443
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9998373985290527,
+        "predictions": {
+          "良性": 0.00016260147094726562,
+          "恶性": 0.9998373985290527
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9772369861602783,
+        "predictions": {
+          "良性": 0.02276301383972168,
+          "恶性": 0.9772369861602783
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9990371465682983,
+        "predictions": {
+          "良性": 0.0009628534317016602,
+          "恶性": 0.9990371465682983
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "良性",
+        "top_confidence": 0.8398619294166565,
+        "predictions": {
+          "良性": 0.8398619294166565,
+          "恶性": 0.1601380705833435
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.7607526779174805,
+        "predictions": {
+          "良性": 0.7607526779174805,
+          "恶性": 0.23924732208251953
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "良性",
+        "top_confidence": 0.6838172674179077,
+        "predictions": {
+          "良性": 0.6838172674179077,
+          "恶性": 0.3161827325820923
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000060.jpg",
+    "image_name": "000060.jpg",
+    "selected_model": "DINO_UNet_dataset4_dilation",
+    "predicted_class": "良性",
+    "confidence": 0.9999668775963073,
+    "reasoning": "置信度最高的模型为0.9999668775963073，且其训练设备包含GE Logiq E9和GE S7，与输入设备品牌匹配。全组14个模型一致预测为“良性”，仅1个模型出现分歧。这种高度的群体一致性配合极高的单体置信度，使该决策非常稳健。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9986393408617005,
+        "predictions": {
+          "良性": 0.9986393408617005,
+          "恶性": 0.0013606591382995248
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9855435825884342,
+        "predictions": {
+          "良性": 0.9855435825884342,
+          "恶性": 0.01445641741156578
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "良性",
+        "top_confidence": 0.7789551913738251,
+        "predictions": {
+          "良性": 0.7789551913738251,
+          "恶性": 0.22104480862617493
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "良性",
+        "top_confidence": 0.998942106962204,
+        "predictions": {
+          "良性": 0.998942106962204,
+          "恶性": 0.0010578930377960205
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9895413275808096,
+        "predictions": {
+          "良性": 0.9895413275808096,
+          "恶性": 0.010458672419190407
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9983684612670913,
+        "predictions": {
+          "良性": 0.9983684612670913,
+          "恶性": 0.0016315387329086661
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9801878333091736,
+        "predictions": {
+          "良性": 0.019812166690826416,
+          "恶性": 0.9801878333091736
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9992606610176153,
+        "predictions": {
+          "良性": 0.9992606610176153,
+          "恶性": 0.0007393389823846519
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9988811638904735,
+        "predictions": {
+          "良性": 0.9988811638904735,
+          "恶性": 0.0011188361095264554
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9999668775963073,
+        "predictions": {
+          "良性": 0.9999668775963073,
+          "恶性": 3.312240369268693e-05
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "良性",
+        "top_confidence": 0.867184653878212,
+        "predictions": {
+          "良性": 0.867184653878212,
+          "恶性": 0.13281534612178802
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9984287216793746,
+        "predictions": {
+          "良性": 0.9984287216793746,
+          "恶性": 0.0015712783206254244
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "良性",
+        "top_confidence": 0.9568755626678467,
+        "predictions": {
+          "良性": 0.9568755626678467,
+          "恶性": 0.04312444478273392
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.941932201385498,
+        "predictions": {
+          "良性": 0.941932201385498,
+          "恶性": 0.058067794889211655
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "良性",
+        "top_confidence": 0.945479691028595,
+        "predictions": {
+          "良性": 0.945479691028595,
+          "恶性": 0.05452029034495354
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000076.jpg",
+    "image_name": "000076.jpg",
+    "selected_model": "DINO_UNet_dataset4_dilation",
+    "predicted_class": "恶性",
+    "confidence": 0.9999836683273315,
+    "reasoning": "该模型提供了0.9999836683273315的最高置信度，且训练设备涵盖GE Logiq E9和GE S7，与输入设备匹配。在15个模型中，有14个模型一致预测为“恶性”，形成了极强的预测共识。最高置信度与次高置信度的差距仅为0.00006，进一步证实了结果的稳定性。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9994268417358398,
+        "predictions": {
+          "良性": 0.0005731582641601562,
+          "恶性": 0.9994268417358398
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9987847208976746,
+        "predictions": {
+          "良性": 0.0012152791023254395,
+          "恶性": 0.9987847208976746
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "良性",
+        "top_confidence": 0.8118238151073456,
+        "predictions": {
+          "良性": 0.8118238151073456,
+          "恶性": 0.18817618489265442
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9994045495986938,
+        "predictions": {
+          "良性": 0.0005954504013061523,
+          "恶性": 0.9994045495986938
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9990826845169067,
+        "predictions": {
+          "良性": 0.0009173154830932617,
+          "恶性": 0.9990826845169067
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9992066025733948,
+        "predictions": {
+          "良性": 0.0007933974266052246,
+          "恶性": 0.9992066025733948
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9951068162918091,
+        "predictions": {
+          "良性": 0.004893183708190918,
+          "恶性": 0.9951068162918091
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9999215602874756,
+        "predictions": {
+          "良性": 7.843971252441406e-05,
+          "恶性": 0.9999215602874756
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9998422861099243,
+        "predictions": {
+          "良性": 0.0001577138900756836,
+          "恶性": 0.9998422861099243
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9999836683273315,
+        "predictions": {
+          "良性": 1.633167266845703e-05,
+          "恶性": 0.9999836683273315
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9573224782943726,
+        "predictions": {
+          "良性": 0.04267752170562744,
+          "恶性": 0.9573224782943726
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.999833345413208,
+        "predictions": {
+          "良性": 0.0001666545867919922,
+          "恶性": 0.999833345413208
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "恶性",
+        "top_confidence": 0.9165732860565186,
+        "predictions": {
+          "良性": 0.08342671394348145,
+          "恶性": 0.9165732860565186
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "恶性",
+        "top_confidence": 0.9039971232414246,
+        "predictions": {
+          "良性": 0.09600287675857544,
+          "恶性": 0.9039971232414246
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "恶性",
+        "top_confidence": 0.8830074071884155,
+        "predictions": {
+          "良性": 0.11699259281158447,
+          "恶性": 0.8830074071884155
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000083.jpg",
+    "image_name": "000083.jpg",
+    "selected_model": "DINO_UNet_dataset2_gamtl",
+    "predicted_class": "恶性",
+    "confidence": 0.9992992877960205,
+    "reasoning": "置信度最高的模型达到了0.9992992877960205，且其训练数据包含GE Logiq E9，与输入设备品牌相符。全组有12个模型一致预测为“恶性”，且置信度均保持在较高水平。该模型在处理此特定设备图像时表现出优异的确定性和一致性。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9992992877960205,
+        "predictions": {
+          "良性": 0.0007007122039794922,
+          "恶性": 0.9992992877960205
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9986051917076111,
+        "predictions": {
+          "良性": 0.001394808292388916,
+          "恶性": 0.9986051917076111
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9989768266677856,
+        "predictions": {
+          "良性": 0.0010231733322143555,
+          "恶性": 0.9989768266677856
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.999116837978363,
+        "predictions": {
+          "良性": 0.0008831620216369629,
+          "恶性": 0.999116837978363
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9977090358734131,
+        "predictions": {
+          "良性": 0.002290964126586914,
+          "恶性": 0.9977090358734131
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9941510558128357,
+        "predictions": {
+          "良性": 0.005848944187164307,
+          "恶性": 0.9941510558128357
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9983731508255005,
+        "predictions": {
+          "良性": 0.0016268491744995117,
+          "恶性": 0.9983731508255005
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9905937314033508,
+        "predictions": {
+          "良性": 0.00940626859664917,
+          "恶性": 0.9905937314033508
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.998420000076294,
+        "predictions": {
+          "良性": 0.0015799999237060547,
+          "恶性": 0.998420000076294
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9951040744781494,
+        "predictions": {
+          "良性": 0.004895925521850586,
+          "恶性": 0.9951040744781494
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9980984330177307,
+        "predictions": {
+          "良性": 0.0019015669822692871,
+          "恶性": 0.9980984330177307
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.6810308694839478,
+        "predictions": {
+          "良性": 0.31896913051605225,
+          "恶性": 0.6810308694839478
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "良性",
+        "top_confidence": 0.6058670282363892,
+        "predictions": {
+          "良性": 0.6058670282363892,
+          "恶性": 0.39413297176361084
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.5258218050003052,
+        "predictions": {
+          "良性": 0.5258218050003052,
+          "恶性": 0.4741781949996948
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "恶性",
+        "top_confidence": 0.5349200367927551,
+        "predictions": {
+          "良性": 0.4650799632072449,
+          "恶性": 0.5349200367927551
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000086.jpg",
+    "image_name": "000086.jpg",
+    "selected_model": "DINO_UNet_dataset4_dilation",
+    "predicted_class": "良性",
+    "confidence": 0.9999834958289284,
+    "reasoning": "该模型以0.9999834958289284的最高置信度领先，且训练设备包含GE Logiq E9和GE S7，与输入设备匹配。全组15个模型均一致预测为“良性”，且大多数模型的置信度超过0.99。这种极高的一致性和单体置信度确保了诊断结果的准确性。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.5778361856937408,
+        "predictions": {
+          "良性": 0.5778361856937408,
+          "恶性": 0.42216381430625916
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9983217599801719,
+        "predictions": {
+          "良性": 0.9983217599801719,
+          "恶性": 0.0016782400198280811
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9988179396605119,
+        "predictions": {
+          "良性": 0.9988179396605119,
+          "恶性": 0.001182060339488089
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9988394499523565,
+        "predictions": {
+          "良性": 0.9988394499523565,
+          "恶性": 0.0011605500476434827
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9997000329603907,
+        "predictions": {
+          "良性": 0.9997000329603907,
+          "恶性": 0.0002999670396093279
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9993596256244928,
+        "predictions": {
+          "良性": 0.9993596256244928,
+          "恶性": 0.0006403743755072355
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9999201870741672,
+        "predictions": {
+          "良性": 0.9999201870741672,
+          "恶性": 7.981292583281174e-05
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9993507499457337,
+        "predictions": {
+          "良性": 0.9993507499457337,
+          "恶性": 0.0006492500542663038
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9997922350012232,
+        "predictions": {
+          "良性": 0.9997922350012232,
+          "恶性": 0.00020776499877683818
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9999834958289284,
+        "predictions": {
+          "良性": 0.9999834958289284,
+          "恶性": 1.6504171071574092e-05
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9998734677647008,
+        "predictions": {
+          "良性": 0.9998734677647008,
+          "恶性": 0.00012653223529923707
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9988437567371875,
+        "predictions": {
+          "良性": 0.9988437567371875,
+          "恶性": 0.0011562432628124952
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "良性",
+        "top_confidence": 0.7865777015686035,
+        "predictions": {
+          "良性": 0.7865777015686035,
+          "恶性": 0.21342231333255768
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.8993538618087769,
+        "predictions": {
+          "良性": 0.8993538618087769,
+          "恶性": 0.10064611583948135
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "良性",
+        "top_confidence": 0.9231852293014526,
+        "predictions": {
+          "良性": 0.9231852293014526,
+          "恶性": 0.07681480050086975
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000093.jpg",
+    "image_name": "000093.jpg",
+    "selected_model": "DINO_UNet_dataset4_dilation",
+    "predicted_class": "良性",
+    "confidence": 0.9999800692312419,
+    "reasoning": "置信度最高的模型达到0.9999800692312419，且其训练数据包含匹配的GE Logiq E9和GE S7设备。在15个模型中，有14个模型一致预测为“良性”，仅1个模型预测为恶性。这种压倒性的多数投票结果配合极高的置信度，使得预测结果高度可信。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9904204392805696,
+        "predictions": {
+          "良性": 0.9904204392805696,
+          "恶性": 0.009579560719430447
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9993238598108292,
+        "predictions": {
+          "良性": 0.9993238598108292,
+          "恶性": 0.0006761401891708374
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9986177682876587,
+        "predictions": {
+          "良性": 0.0013822317123413086,
+          "恶性": 0.9986177682876587
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9986459421925247,
+        "predictions": {
+          "良性": 0.9986459421925247,
+          "恶性": 0.0013540578074753284
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9996934832306579,
+        "predictions": {
+          "良性": 0.9996934832306579,
+          "恶性": 0.00030651676934212446
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9993454584036954,
+        "predictions": {
+          "良性": 0.9993454584036954,
+          "恶性": 0.0006545415963046253
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9987538463901728,
+        "predictions": {
+          "良性": 0.9987538463901728,
+          "恶性": 0.0012461536098271608
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9993277938920073,
+        "predictions": {
+          "良性": 0.9993277938920073,
+          "恶性": 0.0006722061079926789
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9998282978485804,
+        "predictions": {
+          "良性": 0.9998282978485804,
+          "恶性": 0.00017170215141959488
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9999800692312419,
+        "predictions": {
+          "良性": 0.9999800692312419,
+          "恶性": 1.9930768758058548e-05
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "良性",
+        "top_confidence": 0.9963571140542626,
+        "predictions": {
+          "良性": 0.9963571140542626,
+          "恶性": 0.003642885945737362
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9998633863724535,
+        "predictions": {
+          "良性": 0.9998633863724535,
+          "恶性": 0.0001366136275464669
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "良性",
+        "top_confidence": 0.6706435680389404,
+        "predictions": {
+          "良性": 0.6706435680389404,
+          "恶性": 0.3293564021587372
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.7633594274520874,
+        "predictions": {
+          "良性": 0.7633594274520874,
+          "恶性": 0.23664060235023499
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "良性",
+        "top_confidence": 0.8462275266647339,
+        "predictions": {
+          "良性": 0.8462275266647339,
+          "恶性": 0.1537724733352661
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000101.jpg",
+    "image_name": "000101.jpg",
+    "selected_model": "DINO_UNet_dataset4_dilation",
+    "predicted_class": "恶性",
+    "confidence": 0.9999817609786987,
+    "reasoning": "该模型提供了0.9999817609786987的最高置信度，且训练设备包含GE Logiq E9和GE S7，与输入设备匹配。在15个模型中，有14个模型一致预测为“恶性”，仅1个模型出现分歧。极高的置信度和强大的模型一致性共同支持了这一决策。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9992151260375977,
+        "predictions": {
+          "良性": 0.0007848739624023438,
+          "恶性": 0.9992151260375977
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9987708926200867,
+        "predictions": {
+          "良性": 0.00122910737991333,
+          "恶性": 0.9987708926200867
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9989585876464844,
+        "predictions": {
+          "良性": 0.001041412353515625,
+          "恶性": 0.9989585876464844
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9989249469945207,
+        "predictions": {
+          "良性": 0.9989249469945207,
+          "恶性": 0.0010750530054792762
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9990835189819336,
+        "predictions": {
+          "良性": 0.0009164810180664062,
+          "恶性": 0.9990835189819336
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9992006421089172,
+        "predictions": {
+          "良性": 0.0007993578910827637,
+          "恶性": 0.9992006421089172
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9989810585975647,
+        "predictions": {
+          "良性": 0.0010189414024353027,
+          "恶性": 0.9989810585975647
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9999178647994995,
+        "predictions": {
+          "良性": 8.213520050048828e-05,
+          "恶性": 0.9999178647994995
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9998492002487183,
+        "predictions": {
+          "良性": 0.00015079975128173828,
+          "恶性": 0.9998492002487183
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9999817609786987,
+        "predictions": {
+          "良性": 1.823902130126953e-05,
+          "恶性": 0.9999817609786987
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9992357492446899,
+        "predictions": {
+          "良性": 0.0007642507553100586,
+          "恶性": 0.9992357492446899
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9997592568397522,
+        "predictions": {
+          "良性": 0.00024074316024780273,
+          "恶性": 0.9997592568397522
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "恶性",
+        "top_confidence": 0.9074057936668396,
+        "predictions": {
+          "良性": 0.0925942063331604,
+          "恶性": 0.9074057936668396
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "恶性",
+        "top_confidence": 0.9210107326507568,
+        "predictions": {
+          "良性": 0.07898926734924316,
+          "恶性": 0.9210107326507568
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "恶性",
+        "top_confidence": 0.7681416273117065,
+        "predictions": {
+          "良性": 0.23185837268829346,
+          "恶性": 0.7681416273117065
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000105.jpg",
+    "image_name": "000105.jpg",
+    "selected_model": "DINO_UNet_dataset4_dilation",
+    "predicted_class": "良性",
+    "confidence": 0.9997336531814653,
+    "reasoning": "置信度最高的模型为0.9997336531814653，且其训练设备包含GE Logiq E9和GE S7，与输入设备品牌一致。全组有9个模型一致预测为“良性”，且置信度普遍极高。虽然存在分类分歧，但“良性”预测在置信度和设备匹配上均占据明显优势。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9831705689430237,
+        "predictions": {
+          "良性": 0.01682943105697632,
+          "恶性": 0.9831705689430237
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9950266270898283,
+        "predictions": {
+          "良性": 0.9950266270898283,
+          "恶性": 0.004973372910171747
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9986864924430847,
+        "predictions": {
+          "良性": 0.0013135075569152832,
+          "恶性": 0.9986864924430847
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9987122917082161,
+        "predictions": {
+          "良性": 0.9987122917082161,
+          "恶性": 0.0012877082917839289
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.9992988841258921,
+        "predictions": {
+          "良性": 0.9992988841258921,
+          "恶性": 0.0007011158741079271
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9936152696609497,
+        "predictions": {
+          "良性": 0.006384730339050293,
+          "恶性": 0.9936152696609497
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.979215145111084,
+        "predictions": {
+          "良性": 0.020784854888916016,
+          "恶性": 0.979215145111084
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9991114016156644,
+        "predictions": {
+          "良性": 0.9991114016156644,
+          "恶性": 0.0008885983843356371
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "良性",
+        "top_confidence": 0.5095389783382416,
+        "predictions": {
+          "良性": 0.5095389783382416,
+          "恶性": 0.4904610216617584
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "良性",
+        "top_confidence": 0.9997336531814653,
+        "predictions": {
+          "良性": 0.9997336531814653,
+          "恶性": 0.00026634681853465736
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9969183206558228,
+        "predictions": {
+          "良性": 0.003081679344177246,
+          "恶性": 0.9969183206558228
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "良性",
+        "top_confidence": 0.9988476403523237,
+        "predictions": {
+          "良性": 0.9988476403523237,
+          "恶性": 0.0011523596476763487
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "良性",
+        "top_confidence": 0.9743753671646118,
+        "predictions": {
+          "良性": 0.9743753671646118,
+          "恶性": 0.025624612346291542
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "良性",
+        "top_confidence": 0.9520809650421143,
+        "predictions": {
+          "良性": 0.9520809650421143,
+          "恶性": 0.04791906476020813
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "良性",
+        "top_confidence": 0.9777876138687134,
+        "predictions": {
+          "良性": 0.9777876138687134,
+          "恶性": 0.022212356328964233
+        }
+      }
+    ]
+  },
+  {
+    "image_file": "D:\\WorkFiles\\A DataSets\\ThyroidAgent\\test_image\\000115.jpg",
+    "image_name": "000115.jpg",
+    "selected_model": "DINO_UNet_dataset4_dilation",
+    "predicted_class": "恶性",
+    "confidence": 0.9999626874923706,
+    "reasoning": "该模型以0.9999626874923706的最高置信度领先，且训练数据包含GE Logiq E9和GE S7，实现了精准的设备匹配。全组15个模型均一致预测为“恶性”，这种完全一致的预测结果消除了任何不确定性。模型表现稳定，置信度极高，决策非常可靠。",
+    "all_predictions": [
+      {
+        "model": "DINO_UNet_dataset2_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9970619082450867,
+        "predictions": {
+          "良性": 0.00293809175491333,
+          "恶性": 0.9970619082450867
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9987230896949768,
+        "predictions": {
+          "良性": 0.0012769103050231934,
+          "恶性": 0.9987230896949768
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9899657964706421,
+        "predictions": {
+          "良性": 0.01003420352935791,
+          "恶性": 0.9899657964706421
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset2_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9990033507347107,
+        "predictions": {
+          "良性": 0.0009966492652893066,
+          "恶性": 0.9990033507347107
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.9969600439071655,
+        "predictions": {
+          "良性": 0.0030399560928344727,
+          "恶性": 0.9969600439071655
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9880686402320862,
+        "predictions": {
+          "良性": 0.011931359767913818,
+          "恶性": 0.9880686402320862
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.996086835861206,
+        "predictions": {
+          "良性": 0.003913164138793945,
+          "恶性": 0.996086835861206
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset3_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9998224377632141,
+        "predictions": {
+          "良性": 0.00017756223678588867,
+          "恶性": 0.9998224377632141
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_gamtl",
+        "top_class": "恶性",
+        "top_confidence": 0.998863697052002,
+        "predictions": {
+          "良性": 0.0011363029479980469,
+          "恶性": 0.998863697052002
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_dilation",
+        "top_class": "恶性",
+        "top_confidence": 0.9999626874923706,
+        "predictions": {
+          "良性": 3.731250762939453e-05,
+          "恶性": 0.9999626874923706
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_128size",
+        "top_class": "恶性",
+        "top_confidence": 0.9992683529853821,
+        "predictions": {
+          "良性": 0.0007316470146179199,
+          "恶性": 0.9992683529853821
+        }
+      },
+      {
+        "model": "DINO_UNet_dataset4_448size",
+        "top_class": "恶性",
+        "top_confidence": 0.9987875819206238,
+        "predictions": {
+          "良性": 0.0012124180793762207,
+          "恶性": 0.9987875819206238
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset2",
+        "top_class": "恶性",
+        "top_confidence": 0.6667341589927673,
+        "predictions": {
+          "良性": 0.33326584100723267,
+          "恶性": 0.6667341589927673
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset3",
+        "top_class": "恶性",
+        "top_confidence": 0.6576712131500244,
+        "predictions": {
+          "良性": 0.3423287868499756,
+          "恶性": 0.6576712131500244
+        }
+      },
+      {
+        "model": "AutoGluon_autogluon_radiomics_dataset4",
+        "top_class": "恶性",
+        "top_confidence": 0.7226769924163818,
+        "predictions": {
+          "良性": 0.27732300758361816,
+          "恶性": 0.7226769924163818
+        }
+      }
+    ]
+  }
+]

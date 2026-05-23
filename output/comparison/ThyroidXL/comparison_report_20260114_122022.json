@@ -1,0 +1,4974 @@
+{
+  "summary": {
+    "agent_method": {
+      "accuracy": 0.757328990228013,
+      "precision": 0.817174515235457,
+      "recall": 0.7804232804232805,
+      "f1_score": 0.7983761840324762,
+      "correct_count": 465,
+      "total_count": 614,
+      "auroc": 0.7942224912563893,
+      "auprc": 0.8269423433313009,
+      "sensitivity": 0.7804232804232805,
+      "specificity": 0.7203389830508474
+    },
+    "fixed_method": {
+      "accuracy": 0.760586319218241,
+      "precision": 0.8147138964577657,
+      "recall": 0.791005291005291,
+      "f1_score": 0.8026845637583894,
+      "correct_count": 467,
+      "total_count": 614,
+      "auroc": 0.7919244910770333,
+      "auprc": 0.8199177635643369,
+      "sensitivity": 0.791005291005291,
+      "specificity": 0.711864406779661
+    },
+    "improvement": {
+      "accuracy_diff": -0.0032573289902280145,
+      "precision_diff": 0.0024606187776913258,
+      "recall_diff": -0.010582010582010581,
+      "f1_diff": -0.004308379725913136,
+      "auroc_diff": 0.0022980001793559968,
+      "auprc_diff": 0.007024579766964023,
+      "sensitivity_diff": -0.010582010582010581,
+      "specificity_diff": 0.008474576271186418
+    }
+  },
+  "confusion_matrices": {
+    "agent_method": {
+      "恶性": {
+        "恶性": 170,
+        "良性": 66
+      },
+      "良性": {
+        "恶性": 83,
+        "良性": 295
+      }
+    },
+    "fixed_method": {
+      "恶性": {
+        "恶性": 168,
+        "良性": 68
+      },
+      "良性": {
+        "恶性": 79,
+        "良性": 299
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "image_name": "0000.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0001.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0002.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0003.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0004.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0005.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0006.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0007.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0008.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0009.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0010.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0011.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0012.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0013.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0014.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0015.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0016.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0017.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0018.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0019.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0020.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0021.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0022.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0023.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0024.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0025.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0026.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0027.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0028.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0029.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0030.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0031.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0032.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0033.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0034.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0035.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0036.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0037.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0038.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0039.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0040.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0041.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0042.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0043.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0044.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0045.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0046.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0047.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0048.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0049.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0050.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0051.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0052.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0053.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0054.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0055.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0056.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0057.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0058.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0059.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0060.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0061.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0062.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0063.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0064.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0065.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0066.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0067.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0068.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0069.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0070.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0071.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0072.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0073.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0074.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0075.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0076.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0077.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0078.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0079.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0080.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0081.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0082.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0083.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0084.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0085.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0086.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0087.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0088.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0089.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0090.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0091.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0092.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0093.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0094.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0095.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0096.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0097.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0098.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0099.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0100.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0101.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0102.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0103.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0104.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0105.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0106.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0107.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0108.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0109.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0110.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0111.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0112.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0113.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0114.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0115.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0116.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0117.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0118.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0119.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0120.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0121.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0122.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0123.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0124.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0125.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0126.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0127.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0128.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0129.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0130.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0131.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0132.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0133.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0134.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0135.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0136.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0137.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0138.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0139.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0140.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0141.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0142.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0143.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0144.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0145.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0146.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0147.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0148.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0149.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0150.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0151.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0152.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0153.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0154.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0155.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0156.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0157.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0158.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0159.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0160.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0161.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0162.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0163.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0164.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0165.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0166.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0167.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0168.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0169.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0170.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0171.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0172.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0173.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0174.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0175.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0176.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0177.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0178.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0179.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0180.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0181.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0182.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0183.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0184.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0185.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0186.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0187.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0188.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0189.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0190.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0191.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0192.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0193.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0194.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0195.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0196.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0197.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0198.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0199.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0200.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0201.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0202.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0203.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0204.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0205.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0206.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0207.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0208.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0209.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0210.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0211.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0212.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0213.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0214.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0215.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0216.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0217.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0218.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0219.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0220.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0221.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0222.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0223.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0224.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0225.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0226.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0227.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0228.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0229.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0230.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0231.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0232.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0233.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0234.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0235.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0236.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0237.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0238.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0239.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0240.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0241.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0242.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0243.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0244.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0245.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0246.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0247.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0248.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0249.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0250.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0251.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0252.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0253.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0254.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0255.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0256.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0257.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0258.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0259.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0260.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0261.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0262.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0263.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0264.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0265.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0266.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0267.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0268.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0269.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0270.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0271.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0272.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0273.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0274.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0275.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0276.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0277.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0278.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0279.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0280.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0281.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0282.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0283.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0284.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0285.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0286.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0287.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0288.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0289.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0290.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0291.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0292.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0293.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0294.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0295.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0296.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0297.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0298.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0299.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0300.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0301.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0302.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0303.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0304.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0305.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0306.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0307.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0308.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0309.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0310.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0311.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0312.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0313.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0314.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0315.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0316.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0317.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0318.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0319.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0320.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0321.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0322.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0323.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0324.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0325.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0326.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0327.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0328.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0329.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0330.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0331.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0332.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0333.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0334.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0335.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0336.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0337.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0338.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0339.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0340.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0341.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0342.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0343.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0344.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0345.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0346.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0347.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0348.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0349.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0350.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0351.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0352.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0353.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0354.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0355.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0356.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0357.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0358.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0359.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0360.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0361.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0362.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0363.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0364.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0365.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0366.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0367.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0368.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0369.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0370.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0371.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0372.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0373.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0374.jpg",
+      "true_label": "良性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0375.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0376.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0377.jpg",
+      "true_label": "良性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0378.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0379.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0380.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0381.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0382.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0383.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0384.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0385.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0386.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0387.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0388.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0389.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0390.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0391.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0392.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0393.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0394.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0395.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0396.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0397.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0398.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0399.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0400.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0401.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0402.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0403.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0404.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0405.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0406.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0407.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0408.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0409.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0410.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0411.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0412.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0413.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0414.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0415.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0416.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0417.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0418.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0419.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0420.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0421.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0422.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0423.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0424.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0425.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0426.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0427.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0428.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0429.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0430.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0431.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0432.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0433.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0434.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0435.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0436.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0437.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0438.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0439.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0440.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0441.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0442.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0443.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0444.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0445.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0446.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0447.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0448.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "恶性",
+      "agent_correct": false,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0449.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0450.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0451.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0452.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0453.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0454.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0455.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0456.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0457.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0458.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0459.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0460.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0461.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0462.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0463.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0464.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0465.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0466.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0467.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0468.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0469.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0470.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0471.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0472.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0473.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0474.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0475.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0476.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0477.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0478.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0479.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0480.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0481.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0482.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0483.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0484.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0485.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0486.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0487.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0488.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0489.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0490.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0491.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0492.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0493.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0494.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0495.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0496.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0497.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0498.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0499.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0500.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0501.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0502.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0503.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0504.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0505.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0506.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0507.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0508.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0509.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0510.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0511.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0512.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0513.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0514.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0515.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0516.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0517.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0518.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0519.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0520.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0521.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0522.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0523.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0524.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0525.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0526.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0527.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0528.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0529.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0530.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0531.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0532.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0533.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0534.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0535.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0536.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0537.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0538.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0539.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0540.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0541.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0542.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0543.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0544.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0545.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0546.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0547.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0548.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0549.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0550.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0551.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0552.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0553.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0554.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0555.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0556.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0557.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0558.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0559.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0560.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0561.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0562.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0563.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0564.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0565.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0566.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0567.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0568.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0569.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0570.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0571.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0572.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0573.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0574.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0575.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0576.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0577.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0578.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0579.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0580.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0581.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0582.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0583.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0584.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0585.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0586.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0587.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0588.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0589.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0590.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0591.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0592.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0593.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0594.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0595.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0596.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0597.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0598.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0599.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0600.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0601.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0602.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0603.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0604.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0605.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0606.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0607.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0608.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0609.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "良性",
+      "fixed_prediction": "良性",
+      "agent_correct": false,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0610.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0611.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    },
+    {
+      "image_name": "0612.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "良性",
+      "agent_correct": true,
+      "fixed_correct": false
+    },
+    {
+      "image_name": "0613.jpg",
+      "true_label": "恶性",
+      "agent_prediction": "恶性",
+      "fixed_prediction": "恶性",
+      "agent_correct": true,
+      "fixed_correct": true
+    }
+  ]
+}

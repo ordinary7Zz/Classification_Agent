@@ -1,0 +1,58 @@
+{
+  "label_path": "/mnt/wangbd8/workspace/DataSets/ThyroidAgent/train_val_test/Cine-Clip/test/Cine-Clip_test_label.json",
+  "n_samples": 3482,
+  "threshold": 0.5,
+  "n_boot": 2000,
+  "metrics": {
+    "auroc": 0.973481,
+    "auprc": 0.872634,
+    "acc": 0.935956,
+    "prec": 0.69746,
+    "recall": 0.766497,
+    "f1": 0.730351,
+    "specificity": 0.957578,
+    "ece": 0.159926
+  },
+  "metrics_ci95": {
+    "auroc": {
+      "mean": 0.973423,
+      "ci95_lower": 0.967979,
+      "ci95_upper": 0.978462
+    },
+    "auprc": {
+      "mean": 0.872413,
+      "ci95_lower": 0.84635,
+      "ci95_upper": 0.895469
+    },
+    "acc": {
+      "mean": 0.935919,
+      "ci95_lower": 0.927915,
+      "ci95_upper": 0.943423
+    },
+    "prec": {
+      "mean": 0.697156,
+      "ci95_lower": 0.655879,
+      "ci95_upper": 0.738502
+    },
+    "recall": {
+      "mean": 0.766449,
+      "ci95_lower": 0.7225,
+      "ci95_upper": 0.808185
+    },
+    "f1": {
+      "mean": 0.729927,
+      "ci95_lower": 0.695235,
+      "ci95_upper": 0.764003
+    },
+    "specificity": {
+      "mean": 0.957532,
+      "ci95_lower": 0.950755,
+      "ci95_upper": 0.96481
+    },
+    "ece": {
+      "mean": 0.159926,
+      "ci95_lower": 0.153018,
+      "ci95_upper": 0.166486
+    }
+  }
+}

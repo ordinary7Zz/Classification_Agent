@@ -1,0 +1,58 @@
+{
+  "label_path": "/mnt/wangbd8/workspace/ThyroidAgent/Classification_Agent/dataset/tn3k_test_label.json",
+  "n_samples": 6,
+  "threshold": 0.5,
+  "n_boot": 2000,
+  "metrics": {
+    "auroc": null,
+    "auprc": null,
+    "acc": 0.666667,
+    "prec": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "specificity": 0.666667,
+    "ece": 0.411815
+  },
+  "metrics_ci95": {
+    "auroc": {
+      "mean": null,
+      "ci95_lower": null,
+      "ci95_upper": null
+    },
+    "auprc": {
+      "mean": null,
+      "ci95_lower": null,
+      "ci95_upper": null
+    },
+    "acc": {
+      "mean": 0.669083,
+      "ci95_lower": 0.333333,
+      "ci95_upper": 1.0
+    },
+    "prec": {
+      "mean": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    "recall": {
+      "mean": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    "f1": {
+      "mean": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    "specificity": {
+      "mean": 0.669083,
+      "ci95_lower": 0.333333,
+      "ci95_upper": 1.0
+    },
+    "ece": {
+      "mean": 0.411276,
+      "ci95_lower": 0.151488,
+      "ci95_upper": 0.692213
+    }
+  }
+}
