@@ -1,7 +1,10 @@
 # 超大目录（必须忽略）
 weights/
 Malignant_Cls_Agent/
-output/
+output/ThyroidXL
+output/TN3K
+output/TN5K
+output/DDTI
 
 # 自动生成 / 缓存 / 无需上传
 __pycache__/
